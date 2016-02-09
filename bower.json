@@ -1,0 +1,11 @@
+{
+  "name": "FGTM",
+  "version": "1.5.0",
+  "author": "Roger Ennis",
+  "devDependencies": {
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.3",
+    "normalize.css": "~3.0.1",
+    "bootstrap-sass-only": "~3.4.4"
+  }
+}
