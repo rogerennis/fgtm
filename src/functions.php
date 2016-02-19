@@ -63,11 +63,10 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 // HTML5 Blank navigation
-function html5blank_nav()
+function fgtm_nav()
 {
     wp_nav_menu(
     array(
-        'theme_location'  => 'header-menu',
         'menu'            => '',
         'container'       => 'div',
         'container_class' => 'menu-{menu slug}-container',
@@ -80,12 +79,39 @@ function html5blank_nav()
         'after'           => '',
         'link_before'     => '',
         'link_after'      => '',
-        'items_wrap'      => '<ul>%3$s</ul>',
         'depth'           => 0,
-        'walker'          => ''
+        'walker'          => '',
+        'theme_location'  => 'primary',
+        'items_wrap'      => '<div class="fgtm-menu"><div><div><ul>%3$s</ul></div></div></div>'
         )
     );
 }
+
+// Register HTML5 Blank Navigation
+function register_html5_menu()
+{
+    register_nav_menus(array( // Using array to specify more menus if needed
+        'primary' => __('Main FGTM Menu', 'FGTM Main Navigation'), // Main Navigation
+        'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
+        'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
+        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+    ));
+}
+
+
+// Remove the <div> surrounding the dynamic navigation to cleanup markup
+function my_wp_nav_menu_args($args = '')
+{
+    $args['container'] = false;
+    return $args;
+}
+
+// Remove Injected classes, ID's and Page ID's from Navigation <li> items
+function my_css_attributes_filter($var)
+{
+    return is_array($var) ? array() : '';
+}
+
 
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
@@ -101,6 +127,12 @@ function html5blank_header_scripts()
 
             // Modernizr
             wp_register_script('modernizr', get_template_directory_uri() . '/bower_components/modernizr/modernizr.js', array(), '2.8.3');
+            
+            // Bootstrap Script
+/*
+            wp_register_script('bootstrap-sass', get_template_directory_uri() . '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js', array(), '3.3.6');
+            wp_register_script('bootstrap-sass', get_template_directory_uri() . '/bower_components/bootstrap-sass/assets/javascripts/bootstrap-sprockets.js', array(), '3.3.6');
+*/
 
             // Custom scripts
             wp_register_script(
@@ -109,7 +141,8 @@ function html5blank_header_scripts()
                 array(
                     'conditionizr',
                     'modernizr',
-                    'jquery'),
+                    'jquery',
+                    'bootstrap-sass'),
                 '1.0.0');
 
             // Enqueue Scripts
@@ -155,28 +188,6 @@ function html5blank_styles()
     }
 }
 
-// Register HTML5 Blank Navigation
-function register_html5_menu()
-{
-    register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
-        'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
-    ));
-}
-
-// Remove the <div> surrounding the dynamic navigation to cleanup markup
-function my_wp_nav_menu_args($args = '')
-{
-    $args['container'] = false;
-    return $args;
-}
-
-// Remove Injected classes, ID's and Page ID's from Navigation <li> items
-function my_css_attributes_filter($var)
-{
-    return is_array($var) ? array() : '';
-}
 
 // Remove invalid rel attribute values in the categorylist
 function remove_category_rel_from_category_list($thelist)
@@ -234,6 +245,22 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h3>'
     ));
 }
+
+//Registering Footer Widgets
+function fgtm_widgets_init() {
+    
+    register_sidebar( array(
+        'name' => __( '1. Social Footer Widget Area', 'fgtm' ),
+        'id' => 'first-footer-widget-area',   //change id after adding more widgets
+        'description' => __( 'The first footer widget area', 'fgtm' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+}
+
+
 
 // Remove wp_head() injected Recent Comment styles
 function my_remove_recent_comments_style()
@@ -388,6 +415,7 @@ add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+add_action( 'widgets_init', 'fgtm_widgets_init' );
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds

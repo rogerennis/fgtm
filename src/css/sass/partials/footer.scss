@@ -4,4 +4,202 @@
  */
 
 
-.footer {}
+#footer-container {
+   background: $footer-bg;
+   color: $white;
+   margin-top: 30px;
+   padding: 60px 15px 50px;
+   text-align: center;
+    
+   .footer {
+     text-align: center;
+       
+     .full-width-widget {
+        width: 100%;
+        margin: 0 0 60px 0;
+           
+           
+        a {
+           color: transparent;
+               
+           .facebook {
+              width: 11%;
+              height: 11%;
+              margin: 0 10px;
+                
+              &.svg path {
+                 fill: $white;
+              }
+           }
+               
+           .twitter {
+              width: 11%;
+              height: 11%;
+              margin: 0 10px;
+               
+              &.svg path {
+                 fill: $white;
+              }
+           }
+               
+           .insta {
+              width: 11%;
+              height: 11%;
+              margin: 0 10px;
+              
+              &.svg path {
+                 fill: $white;
+              }
+           }
+           
+           .youtube {
+              width: 14%;
+              height: 14%;
+              margin: 0 10px;
+              
+              &.svg path {
+                 fill: $white;
+              }
+           }
+        }
+     }
+        
+      .footer-logo{
+         width: 22%;
+         display: flex;
+         margin: 0 auto 25px;
+      }
+      
+      a,
+      link,
+      hover,
+      active {
+         color: $footer-link;
+      }
+   }
+}
+
+
+/***********************************************
+* TABLET
+***********************************************/
+
+/* Portrait */
+@media only screen
+   and (min-device-width: 768px)
+   and (max-device-width: 1023px)
+   and (orientation: portrait) {
+      
+      #footer-container {
+         .footer {
+            .full-width-widget {
+               a {
+                  .facebook {
+                     width: 40px;
+                     height: 40px;
+                     margin: 0 10px;
+                       
+                     &.svg path {
+                        fill: $white;
+                     }
+                  }
+                      
+                  .twitter {
+                     width: 40px;
+                     height: 40px;
+                     margin: 0 10px;
+                      
+                     &.svg path {
+                        fill: $white;
+                     }
+                  }
+                      
+                  .insta {
+                     width: 40px;
+                     height: 40px;
+                     margin: 0 10px;
+                     
+                     &.svg path {
+                        fill: $white;
+                     }
+                  }
+                  
+                  .youtube {
+                     width: 50px;
+                     height: 50px;
+                     margin: 0 10px;
+                     
+                     &.svg path {
+                        fill: $white;
+                     }
+                  }
+               }
+            }
+              
+            .footer-logo{
+               width: 90px;
+            }
+         }
+      }
+}
+
+
+/***********************************************
+* DESKTOP
+***********************************************/
+
+
+@media only screen
+    and (min-device-width: 1024px) {
+       #footer-container {
+         .footer {
+            .full-width-widget {
+               a {
+                  .facebook {
+                     width: 40px;
+                     height: 40px;
+                     margin: 0 10px;
+                       
+                     &.svg path {
+                        fill: $white;
+                     }
+                  }
+                      
+                  .twitter {
+                     width: 40px;
+                     height: 40px;
+                     margin: 0 10px;
+                      
+                     &.svg path {
+                        fill: $white;
+                     }
+                  }
+                      
+                  .insta {
+                     width: 40px;
+                     height: 40px;
+                     margin: 0 10px;
+                     
+                     &.svg path {
+                        fill: $white;
+                     }
+                  }
+                  
+                  .youtube {
+                     width: 50px;
+                     height: 50px;
+                     margin: 0 10px;
+                     
+                     &.svg path {
+                        fill: $white;
+                     }
+                  }
+               }
+            }
+              
+            .footer-logo{
+               width: 90px;
+            }
+         }
+      }
+}

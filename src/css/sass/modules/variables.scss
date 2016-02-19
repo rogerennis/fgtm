@@ -5,15 +5,27 @@
 
 
 /**
+ * Nav
+ */
+
+$hamburger-menu-size: 75px;
+$hamburger-menu-border-radius: .12em;
+// $hover-color: darken($menu-color, 10%);
+$hamburger-menu-line-height: 3px;
+$hover-line-height: $hamburger-menu-line-height;
+$anim-duration: .4s;
+
+/**
  * Typography
  */
 
-$font-family-base: "Geogrotesque-Light","Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;;
+$font-family-base: "Geogrotesque-Light", "Geogrotesque-Regular", "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
 $font-light: "Geogrotesque-Light";
+$font-regular: "Geogrotesque-Regular";
 $font-medium: "Geogrotesque-Medium";
 $font-semibold: "Geogrotesque-SemiBold";
 $font-bold: "Geogrotesque-Bold";
-$font-size-base: 140%;
+$font-size-base: 160%;
 $line-height-base: 1.5;
 
 
@@ -21,9 +33,25 @@ $line-height-base: 1.5;
  * Colors
  */
 
-$text-color: #404041;
+$white: #fff;
 $body-bg: #f5f5f5;
+$text-color: #404041;
+$fgtm-black: #404041;
+
+$fgtm-green: #00ab88;
+$fgtm-green-two: #00b192;
+$fgtm-green-three: #14b89c;
+$fgtm-green-four: #6dc6b1;
+$fgtm-green-five: #9fd7c8;
+
+$fgtm-red: #aa1e25;
 $selection-bg: #04A4CC;
+
+$content-bg-color: rgba(0,171,136,0.95);
+$hamburger-menu-bg-color: transparent;
+
+$footer-bg: #282828;
+$footer-link: #696A6C;
 
 
 /**

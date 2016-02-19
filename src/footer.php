@@ -1,18 +1,64 @@
-			<!-- footer -->
+		</div>
+		<!-- /wrapper -->
+		
+		<!-- footer -->
+		<div id="footer-container">
 			<footer class="footer" role="contentinfo">
 
+                <!-- Social Media -->
+                    <aside class="full-width-widget" role="complementary">
+                        <div>
+                            <a href="http://www.facebook.com/">
+                                <img class="facebook svg" title="Facebook" src="http://www.fgtm.dev/wp-content/themes/fgtm2016/src/img/icons/facebook.svg" alt="Facebook"/>
+                            </a>
+                            <a href="http://www.twitter.com/">
+                                <img class="twitter svg" title="Twitter" src="http://www.fgtm.dev/wp-content/themes/fgtm2016/src/img/icons/twitter.svg" alt="Twitter"/>
+                            </a>
+                            <a href="http://www.instagram.com/">
+                                <img class="insta svg" title="Instagram" src="http://www.fgtm.dev/wp-content/themes/fgtm2016/src/img/icons/instagram.svg" alt="Instagram"/>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCD-7VHa4bAnfIqOs2bWvwmw">
+                                <img class="youtube svg" title="Youtube" src="http://www.fgtm.dev/wp-content/themes/fgtm2016/src/img/icons/youtube.svg" alt="Youtube"/>
+                            </a>
+                        </div>
+                        
+                        <!--
+                    	<?php
+                        	if(is_active_sidebar('first-footer-widget-area')) {
+                        ?>
+                            <?php dynamic_sidebar('first-footer-widget-area'); ?>
+                        <?php
+                            } 
+                        ?>
+                        -->
+                    </aside>
+                
+                <!-- /Social Media -->
+                
+                
+				<!-- LOGO -->
+    			<div class="footer-logo">
+    				<a href="<?php echo home_url(); ?>">
+                        <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/fgtm_logo.svg" alt="Logo" class="logo-img">
+    				</a>
+    			</div>
+    			<!-- /LOGO -->
+    			
+    			<p>142 Salvation Road, Brampton ON L7A 0G2</p>
+				
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					&copy;
+					<?php echo date('Y'); ?>
+					Copyright <?php bloginfo('name'); ?> <br><br>
+					<a href="//www.rogerennis.com" title="Roger Ennis"> Designed &amp; Developed: Roger Ennis</a>
 				</p>
 				<!-- /copyright -->
 
 			</footer>
 			<!-- /footer -->
-
-		</div>
-		<!-- /wrapper -->
+        </div>
 
 		<?php wp_footer(); ?>
 
@@ -28,3 +74,20 @@
 
 	</body>
 </html>
+
+<!--
+<div>
+    <a href="http://www.facebook.com/">
+        <img title="Facebook" src="/img/icons/facebook.svg" alt="Facebook"/>
+    </a>
+    <a href="http://www.twitter.com/">
+        <img title="Twitter" src="/img/icons/twitter.svg" alt="Twitter"/>
+    </a>
+    <a href="http://www.instagram.com/">
+        <img title="Instagram" src="/img/icons/instagram.svg" alt="Instagram"/>
+    </a>
+    <a href="https://www.youtube.com/channel/UCD-7VHa4bAnfIqOs2bWvwmw">
+        <img title="Youtube" src="/img/icons/youtube.svg" alt="Youtube"/>
+    </a>
+</div>
+-->

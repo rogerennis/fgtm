@@ -11,7 +11,7 @@
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="<?php bloginfo('description'); ?>">
+		<meta name="description" keywords="bootstrap, church, brampton, fgtm, jesus" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
 		<script>
@@ -26,23 +26,31 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+        <!-- nav -->
+        <div id="nav-container">
+            <nav role="navigation">
+                <!-- LOGO -->
+    			<div class="logo">
+    				<a href="<?php echo home_url(); ?>">
+                        <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/fgtm_logo.svg" alt="Logo" class="logo-img">
+    				</a>
+    			</div>
+    			<!-- /LOGO -->
+    			<div class="menu-copy" aria-label="Menu" >Menu</div>
+    			<div class="outer-menu">
+        			<input class="checkbox-toggle" type="checkbox" />
+        			<div class="hamburger">
+                        <div></div>
+                    </div>
+    		        <?php fgtm_nav(); ?>
+    			</div>
+    		</nav>
+        </div>
+        <!-- /nav -->
+        
 		<!-- wrapper -->
-		<div class="wrapper">
-            <!-- nav -->
-                <nav class="nav" role="navigation">
-                    <!-- LOGO -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/fgtm_logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /LOGO -->
-					
-				    <?php html5blank_nav(); ?>
-				</nav>
-            <!-- /nav -->
-			
+		<div id="pushWrapper" class="wrapper">
 			<!-- header -->
 			<header class="header clear" role="banner">
 

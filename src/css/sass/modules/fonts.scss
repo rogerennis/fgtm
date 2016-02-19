@@ -16,6 +16,17 @@
 }
 
 @font-face {
+  font-family: "Geogrotesque-Regular";
+  src: url("fonts/Geogrotesque-Regular.eot");
+  src: url("fonts/Geogrotesque-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Geogrotesque-Regular.woff") format("woff"),
+    url("fonts/Geogrotesque-Regular.ttf") format("truetype"),
+    url("fonts/Geogrotesque-Regular.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Geogrotesque-Medium";
   src: url("fonts/Geogrotesque-Medium.eot");
   src: url("fonts/Geogrotesque-Medium.eot?#iefix") format("embedded-opentype"),
@@ -47,14 +58,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
-/*
-$font-light: "Geogrotesque-Light";
-$font-medium: "Geogrotesque-Medium";
-$font-semibold: "Geogrotesque-SemiBold";
-$font-bold: "Geogrotesque-Bold";
-*/
 
 
 /*

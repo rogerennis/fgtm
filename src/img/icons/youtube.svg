@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="125px" height="99px" viewBox="0 0 125 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>youtube</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SOCIAL-ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-556.000000, -29.000000)" fill="#F0F0F0">
+            <g id="social" sketch:type="MSLayerGroup" transform="translate(18.000000, 30.000000)">
+                <path d="M649.668627,2.425 C645.969216,1.2125 623.156176,0 600.343137,0 C577.530098,0 554.717059,1.2125 551.017647,2.425 C541.152549,5.45625 538.686275,26.675 538.686275,48.5 C538.686275,70.325 541.152549,91.54375 551.017647,94.575 C554.717059,95.7875 577.530098,97 600.343137,97 C623.156176,97 645.969216,95.7875 649.668627,94.575 C659.533725,91.54375 662,70.325 662,48.5 C662,26.675 659.533725,5.45625 649.668627,2.425 L649.668627,2.425 Z M588.011765,75.78125 L588.011765,21.21875 L625.005882,48.5 L588.011765,75.78125 L588.011765,75.78125 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

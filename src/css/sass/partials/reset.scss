@@ -41,10 +41,12 @@ a {
 
   &:focus,
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
-  &:active {}
+  &:active {
+      
+  }
 }
 
 input[type="text"],
