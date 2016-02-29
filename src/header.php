@@ -48,12 +48,3 @@
     		</nav>
         </div>
         <!-- /nav -->
-        
-		<!-- wrapper -->
-		<div id="pushWrapper" class="wrapper">
-			<!-- header -->
-			<header class="header clear" role="banner">
-
-
-			</header>
-			<!-- /header -->

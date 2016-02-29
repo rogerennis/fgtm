@@ -30,22 +30,3 @@
   src: url("fonts/Geogrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Geogrotesque-Bold.woff") format("woff"), url("fonts/Geogrotesque-Bold.ttf") format("truetype"), url("fonts/Geogrotesque-Bold.svg#font-name") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-/*
-$font-light: "Geogrotesque-Light";
-$font-medium: "Geogrotesque-Medium";
-$font-semibold: "Geogrotesque-SemiBold";
-$font-bold: "Geogrotesque-Bold";
-*/
-/*
-@font-face {
-  font-family: "Font-Name";
-  src: url("fonts/font-name.eot");
-  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"),
-    url("fonts/font-name.woff") format("woff"),
-    url("fonts/font-name.ttf") format("truetype"),
-    url("fonts/font-name.svg#font-name") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-*/

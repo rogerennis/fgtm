@@ -8,12 +8,12 @@
  * Nav
  */
 
-$hamburger-menu-size: 75px;
+$hamburger-menu-size: 65px;
 $hamburger-menu-border-radius: .12em;
-// $hover-color: darken($menu-color, 10%);
 $hamburger-menu-line-height: 3px;
 $hover-line-height: $hamburger-menu-line-height;
 $anim-duration: .4s;
+$anim-duration-all: .2s;
 
 /**
  * Typography
@@ -25,8 +25,9 @@ $font-regular: "Geogrotesque-Regular";
 $font-medium: "Geogrotesque-Medium";
 $font-semibold: "Geogrotesque-SemiBold";
 $font-bold: "Geogrotesque-Bold";
-$font-size-base: 160%;
-$line-height-base: 1.5;
+
+$font-size-base: 100%;
+$line-height-base: 1;
 
 
 /**
@@ -58,7 +59,7 @@ $footer-link: #696A6C;
  * Grid
  */
 
-$wrapper-width: 1280px;
+$wrapper-width: 1200px;
 
 
 $padding-horizontal-base: 5px;

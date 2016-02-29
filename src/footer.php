@@ -1,4 +1,4 @@
-		</div>
+      </div>
 		<!-- /wrapper -->
 		
 		<!-- footer -->
@@ -45,7 +45,7 @@
     			</div>
     			<!-- /LOGO -->
     			
-    			<p>142 Salvation Road, Brampton ON L7A 0G2</p>
+    			<p>140 Salvation Road, Brampton ON L7A 0W7</p>
 				
 				<!-- copyright -->
 				<p class="copyright">

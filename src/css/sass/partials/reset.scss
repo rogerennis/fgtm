@@ -15,7 +15,7 @@
 
 html {
   // `font-size` for REM use
-  font-size: 62.5%;
+  font-size: $font-size-base;
   // Cancel hightlight color when tapping in iOS
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -27,6 +27,58 @@ body {
   color: $text-color;
   background-color: $body-bg;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   font-size: 3.036em;
+   line-height: 0.428;
+}
+
+h2 {
+   font-size: 2.335em;
+   line-height: 0.557;
+}
+
+h3 {
+   font-size: 1.796em;
+   line-height: 0.724;
+}
+
+h4 {
+   font-size: 1.382em;
+   line-height: 0.941;
+}
+
+p {
+   font-size: 1.063em;
+   line-height: 1.223;
+}
+
+h5 {
+   font-size: 0.818em;
+   line-height: 1.589;
+}
+
+h6 {
+   font-size: 0.629em;
+   line-height: 2.067;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
 
 img {
   // Don't allow <IMG> to be larger then its container

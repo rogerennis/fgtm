@@ -6,7 +6,7 @@
 
 
 #nav-container {
-    padding: 10px 15px 13px;
+    padding: 16px 15px 19px;
     background: $white;
     width: 100%;
     position: fixed;
@@ -14,7 +14,6 @@
     right: 0;
     left: 0;
     z-index: 1030;
-    margin-bottom: 20px;
     
     flex-direction: row;
     justify-content: space-between;
@@ -29,7 +28,8 @@
         flex-grow: 1;
         
         .logo {
-            width: 77px;  //26.5%;
+            width: 65px;  //26.5%;
+            height: 65px;
             display: inline-block;
             margin-right: auto;
         }
@@ -103,7 +103,7 @@
                 z-index: 1;
                 width: $hamburger-menu-size;
                 height: $hamburger-menu-size;
-                padding: 0.5em 0em 0.5em 1.7em;
+                padding: 1em 0em 1.0em 1.0em;
                 background: $hamburger-menu-bg-color;
                 border-radius: 0 $hamburger-menu-border-radius $hamburger-menu-border-radius 0;
                 cursor: pointer;
@@ -125,7 +125,7 @@
                         content: '';
                         position: absolute;
                         z-index: 1;
-                        top: -$hamburger-menu-size / 5;
+                        top: -$hamburger-menu-size / 4;
                         left: 0;
                         width: 100%;
                         height: $hamburger-menu-line-height;
@@ -134,7 +134,7 @@
                     }
                   
                     &:after {
-                        top: $hamburger-menu-size / 5;
+                        top: $hamburger-menu-size / 4;
                     }
                 }
             }
@@ -186,7 +186,7 @@
                             
                             > li {
                                 padding: 0;
-                                margin: 1em 2.5em;
+                                margin: 1em 1.2em;
                                 font-size: 1.7em;
                                 display: block;
                                 
@@ -260,7 +260,8 @@
       #nav-container {
          nav {
             .logo {
-               width: 80px;
+               width: 70px;
+               height: 70px;
             }
             
             .outer-menu {
@@ -290,13 +291,13 @@
     and (min-device-width: 1024px) {
         
       #nav-container {
-         padding-right: 60px;
+         padding-right: 55px;
          padding-left: 60px;
          padding-bottom: 0px;
          
          nav {
             .logo {
-              padding-bottom: 15px;
+              margin-bottom: 12px;
             }
             
             .menu-copy {
@@ -306,8 +307,8 @@
             .outer-menu {
                position: none;
                display: flex;
-               width: 77%;
-               padding-top: 22px;
+               width: 90%;
+               padding-top: 17px;
               
                  
                .checkbox-toggle {
@@ -321,22 +322,10 @@
                  
                .fgtm-menu {
                   position: inherit;
-/*
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-*/
                   pointer-events: all;
                   visibility: visible;
                   overflow: visible;
                   backface-visibility: visible;
-/*
-                  outline: 1px solid transparent;
-                  display: flex;
-                  align-items: right;
-                  justify-content: space-between;
-*/
                      
                   > div {
                      width: 119vw;
@@ -369,12 +358,12 @@
                            margin: 0;
                            display: inline-block;
                            max-height: 100%;
-                           font-family: $font-medium;
+                           font-family: $font-regular;
                                  
                            > li {
-                              padding: 0 0.7em 1.25em 0.7em;
+                              padding: 0em 0.7em 1.2em 0.7em;
                               margin: 0;
-                              font-size: 1.4em;
+                              font-size: 1.2em;
                               display: inline-block;
                               transition: border-bottom $anim-duration ease;
                               
@@ -401,20 +390,6 @@
                                     color: $fgtm-green;
                                     border-bottom: 0;
                                  }
-                                 
-/*
-                                 &:after {
-                                    content: '';
-                                    position: absolute;
-                                    z-index: 1;
-                                    bottom: -.15em;
-                                    left: 0;
-                                    width: 0;
-                                    height: $hover-line-height;
-                                    background: $fgtm-red;
-                                    transition: width $anim-duration ease;
-                                 }
-*/
                               }
                                      
                               .sub-menu {
