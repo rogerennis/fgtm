@@ -83,6 +83,7 @@
 
 .home-live-service-container {
    background: $fgtm-green;
+   transition: all $anim-duration-all ease $anim-duration-all;
    
    a {
       color: $white;
@@ -209,7 +210,7 @@
           header {
              &.header {
                 .hero-unit-image {
-                   height: 80vh;
+                   height: 74.91vh;
                 }
                 
                 .full-logo {
@@ -315,6 +316,10 @@
        }
         
        .home-live-service-container {
+         &:hover {
+            background: $fgtm-hover;
+         }
+         
          a {
             font-size: 1.4em;
             
@@ -327,7 +332,6 @@
             
             &:hover {
                transform: scale(1.2);
-               background: $fgtm-hover;
             }
                
             span {

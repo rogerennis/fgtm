@@ -390,6 +390,8 @@ input[type="search"] {
 
 .home-live-service-container {
   background: #00ab88;
+  -webkit-transition: all 0.2s ease 0.2s;
+  transition: all 0.2s ease 0.2s;
 }
 .home-live-service-container a {
   color: white;
@@ -471,7 +473,7 @@ input[type="search"] {
 ***********************************************/
 @media only screen and (min-device-width: 1024px) {
   .header-container header.header .hero-unit-image {
-    height: 80vh;
+    height: 74.91vh;
   }
   .header-container header.header .full-logo {
     top: 320px;
@@ -579,6 +581,9 @@ input[type="search"] {
     fill: #00ab88;
   }
 
+  .home-live-service-container:hover {
+    background: #01715a;
+  }
   .home-live-service-container a {
     font-size: 1.4em;
   }
@@ -589,7 +594,6 @@ input[type="search"] {
   .home-live-service-container a:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    background: #01715a;
   }
 }
 /**
