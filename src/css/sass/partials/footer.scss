@@ -22,7 +22,9 @@
         a {
            color: transparent;
                
-           .facebook {
+           .facebook,
+           .twitter,
+           .insta {
               width: 30px;
               height: 30px;
               margin: 0 10px;
@@ -31,31 +33,11 @@
                  fill: $white;
               }
            }
-               
-           .twitter {
-              width: 30px;
-              height: 30px;
-              margin: 0 10px;
-               
-              &.svg path {
-                 fill: $white;
-              }
-           }
-               
-           .insta {
-              width: 30px;
-              height: 30px;
-              margin: 0 10px;
-              
-              &.svg path {
-                 fill: $white;
-              }
-           }
            
            .youtube {
               width: 40px;
               height: 40px;
-              margin: 0 10px;
+              margin: -5px 10px;
               
               &.svg path {
                  fill: $white;
@@ -65,7 +47,7 @@
      }
         
       .footer-logo{
-         width: 82px;
+         width: 62px;
          display: flex;
          margin: 0 auto 25px;
       }
@@ -94,40 +76,20 @@
          .footer {
             .full-width-widget {
                a {
-                  .facebook {
-                     width: 40px;
-                     height: 40px;
-                     margin: 0 10px;
-                       
-                     &.svg path {
-                        fill: $white;
-                     }
-                  }
-                      
-                  .twitter {
-                     width: 40px;
-                     height: 40px;
-                     margin: 0 10px;
-                      
-                     &.svg path {
-                        fill: $white;
-                     }
-                  }
-                      
+                  .facebook,
+                  .twitter,
                   .insta {
-                     width: 40px;
-                     height: 40px;
-                     margin: 0 10px;
-                     
+                     width: 30px;
+                     height: 30px;
+                       
                      &.svg path {
                         fill: $white;
                      }
                   }
                   
                   .youtube {
-                     width: 50px;
-                     height: 50px;
-                     margin: 0 10px;
+                     width: 40px;
+                     height: 40px;
                      
                      &.svg path {
                         fill: $white;
@@ -137,7 +99,7 @@
             }
               
             .footer-logo{
-               width: 90px;
+               width: 60px;
             }
          }
       }
@@ -155,31 +117,12 @@
          .footer {
             .full-width-widget {
                a {
-                  .facebook {
-                     width: 30px;
-                     height: 30px;
-                     margin: 0 10px;
-                       
-                     &.svg path {
-                        fill: $white;
-                     }
-                  }
-                      
-                  .twitter {
-                     width: 30px;
-                     height: 30px;
-                     margin: 0 10px;
-                      
-                     &.svg path {
-                        fill: $white;
-                     }
-                  }
-                      
+                  .facebook,
+                  .twitter,
                   .insta {
                      width: 30px;
                      height: 30px;
-                     margin: 0 10px;
-                     
+                       
                      &.svg path {
                         fill: $white;
                      }
@@ -188,7 +131,6 @@
                   .youtube {
                      width: 40px;
                      height: 40px;
-                     margin: 0 10px;
                      
                      &.svg path {
                         fill: $white;
@@ -198,7 +140,7 @@
             }
               
             .footer-logo{
-               width: 70px;
+               width: 60px;
             }
          }
       }

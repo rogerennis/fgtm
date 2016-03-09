@@ -9,16 +9,16 @@
                     <aside class="full-width-widget" role="complementary">
                         <div>
                             <a href="http://www.facebook.com/">
-                                <img class="facebook svg" title="Facebook" src="http://www.fgtm.dev/wp-content/themes/fgtm2016/src/img/icons/facebook.svg" alt="Facebook"/>
+                                <img class="facebook svg" title="Facebook" src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.svg" alt="Facebook"/>
                             </a>
                             <a href="http://www.twitter.com/">
-                                <img class="twitter svg" title="Twitter" src="http://www.fgtm.dev/wp-content/themes/fgtm2016/src/img/icons/twitter.svg" alt="Twitter"/>
+                                <img class="twitter svg" title="Twitter" src="<?php echo get_template_directory_uri(); ?>/img/icons/twitter.svg" alt="Twitter"/>
                             </a>
                             <a href="http://www.instagram.com/">
-                                <img class="insta svg" title="Instagram" src="http://www.fgtm.dev/wp-content/themes/fgtm2016/src/img/icons/instagram.svg" alt="Instagram"/>
+                                <img class="insta svg" title="Instagram" src="<?php echo get_template_directory_uri(); ?>/img/icons/instagram.svg" alt="Instagram"/>
                             </a>
                             <a href="https://www.youtube.com/channel/UCD-7VHa4bAnfIqOs2bWvwmw">
-                                <img class="youtube svg" title="Youtube" src="http://www.fgtm.dev/wp-content/themes/fgtm2016/src/img/icons/youtube.svg" alt="Youtube"/>
+                                <img class="youtube svg" title="Youtube" src="<?php echo get_template_directory_uri(); ?>/img/icons/youtube.svg" alt="Youtube"/>
                             </a>
                         </div>
                         

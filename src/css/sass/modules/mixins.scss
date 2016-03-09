@@ -14,3 +14,75 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin background-size($size) {
+   -webkit-background-size: $size;
+   -moz-background-size: $size;
+   -o-background-size: $size;
+   background-size: $size;
+}
+
+
+
+// BORDER
+
+@mixin border-radius($radius) {
+   -webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+   -ms-border-radius: $radius;
+   border-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius) {
+   -webkit-border-top-left-radius: $radius;
+   -moz-border-top-left-radius: $radius;
+   -ms-border-top-left-radius: $radius;
+   border-top-left-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius) {
+   -webkit-border-top-right-radius: $radius;
+   -moz-border-top-right-radius: $radius;
+   -ms-border-top-right-radius: $radius;
+   border-top-right-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius) {
+   -webkit-border-bottom-left-radius: $radius;
+   -moz-border-bottom-left-radius: $radius;
+   -ms-border-bottom-left-radius: $radius;
+   border-bottom-left-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius) {
+   -webkit-border-top-right-radius: $radius;
+   -moz-border-top-right-radius: $radius;
+   -ms-border-top-right-radius: $radius;
+   border-top-right-radius: $radius;
+}
+
+// BUTTON
+
+@mixin green-btn {
+   background: $fgtm-green;
+   border: 0;
+   color: #fff;
+   padding: 1.1rem 2rem;
+   text-transform: uppercase;
+   @include border-radius(6px);
+   transition: all $anim-duration ease;
+}
+
+@mixin green-btn-with-hover {
+   background: $fgtm-green-three;
+   border: 0;
+   color: #fff;
+   padding: 1.1rem 2rem;
+   text-transform: uppercase;
+   @include border-radius(6px);
+   transition: all $anim-duration ease;
+   
+   &:hover {
+      background: $fgtm-green;
+   }
+}

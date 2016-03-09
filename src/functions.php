@@ -30,6 +30,9 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
+    add_image_size('events-home', 480, '', true); //280
+    add_image_size('nursery-home', 480, '', true);
+    add_image_size('youth-home', 480, '', true);
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
@@ -128,6 +131,12 @@ function html5blank_header_scripts()
             // Modernizr
             wp_register_script('modernizr', get_template_directory_uri() . '/bower_components/modernizr/modernizr.js', array(), '2.8.3');
             
+            // FlexSlider
+            wp_register_script('flexslider', get_template_directory_uri() . '/bower_components/flexslider/jquery.flexslider-min.js', array('jquery'), '2.6.0', true);
+            
+            // FlexSlider
+            wp_register_script('waypoints', get_template_directory_uri() . '/bower_components/waypoints/lib/jquery.waypoints.min.js', array('jquery'), '4.0.0', true);
+            
             // Bootstrap Script
 /*
             wp_register_script('bootstrap-sass', get_template_directory_uri() . '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js', array(), '3.3.6');
@@ -141,12 +150,13 @@ function html5blank_header_scripts()
                 array(
                     'conditionizr',
                     'modernizr',
-                    'jquery',
-                    'bootstrap-sass'),
+                    'jquery'),
                 '1.0.0');
 
             // Enqueue Scripts
             wp_enqueue_script('html5blankscripts');
+            wp_enqueue_script('flexslider');
+            wp_enqueue_script('waypoints');
 
         // If production
         } else {
@@ -174,10 +184,15 @@ function html5blank_styles()
     if (HTML5_DEBUG) {
         // normalize-css
         wp_register_style('normalize', get_template_directory_uri() . '/bower_components/normalize.css/normalize.css', array(), '3.0.1');
+        
+        // flexslider.css
+        wp_register_style('flexslider', get_template_directory_uri() . '/bower_components/flexslider/flexslider.css', array(), '2.6.0');
 
         // Custom CSS
         wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array('normalize'), '1.0');
 
+        // flexslider CSS
+        wp_enqueue_style('flexslider');
         // Register CSS
         wp_enqueue_style('html5blank');
     } else {

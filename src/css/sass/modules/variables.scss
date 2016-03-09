@@ -26,8 +26,8 @@ $font-medium: "Geogrotesque-Medium";
 $font-semibold: "Geogrotesque-SemiBold";
 $font-bold: "Geogrotesque-Bold";
 
-$font-size-base: 100%;
-$line-height-base: 1;
+$font-size-base: 106.3%;
+$line-height-base: 1.223;
 
 
 /**
@@ -36,14 +36,23 @@ $line-height-base: 1;
 
 $white: #fff;
 $body-bg: #f5f5f5;
+$body-section: #E6E6E6;
 $text-color: #404041;
+
 $fgtm-black: #404041;
+$fgtm-black-two: #565659;
+$fgtm-black-three: #696a6c;
+$fgtm-black-four: #8b8d90;
+$fgtm-black-five: #afb1b3;
+$fgtm-black-five: #d5d6d8;
 
 $fgtm-green: #00ab88;
 $fgtm-green-two: #00b192;
 $fgtm-green-three: #14b89c;
 $fgtm-green-four: #6dc6b1;
 $fgtm-green-five: #9fd7c8;
+
+$fgtm-hover: #01715a;
 
 $fgtm-red: #aa1e25;
 $selection-bg: #04A4CC;
@@ -59,12 +68,12 @@ $footer-link: #696A6C;
  * Grid
  */
 
-$wrapper-width: 1200px;
+$wrapper-width: 1000px;
 
 
 $padding-horizontal-base: 5px;
 $padding-vertical-base: 5px;
 $margin-horizontal-base: 5px;
 $margin-vertical-base: 5px;
-$margin-horizontal-large: 15px;
-$margin-vertical-large: 15px;
+$margin-horizontal-large: 20px;
+$margin-vertical-large: 20px;

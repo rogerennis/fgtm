@@ -1,0 +1,360 @@
+/**
+ * partials/home
+ * ---
+ */
+ 
+// Events & Service Times
+.home-events {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column; //TODO: change to row for bigger screen sizes
+  
+  .event,
+  .times {
+     flex-grow: 1;
+     flex-shrink: 1;
+     flex-basis: auto;
+     
+     h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+     }
+  }
+   
+  .event {
+    margin-bottom: 4em
+  }
+   
+   .times {
+      .services {
+         .service {
+            &:last-child {
+               margin-top: 2rem;
+            }
+           
+            .service-time {
+               margin-bottom: 2.5rem;
+             
+               h4 {
+                 text-transform: uppercase;
+                 
+                  &:last-child {
+                     margin-top: 0.8rem;
+                  }
+               }
+            }
+           
+            h5 {
+               color: $fgtm-black-three;
+               text-transform: uppercase;
+               font-family: $font-medium;
+               margin-bottom: 0.5rem;
+            }
+           
+            p {
+               color: $fgtm-black-three;
+            }
+         }
+      }
+   }
+}
+
+// Youth
+.home-youth {
+   padding: 5em 0;
+   display: flex;
+   flex-direction: column; //TODO: change to row for bigger screen sizes
+   background: $body-section;
+   
+   .wrapper {
+      main {
+         .nursery,
+         .youth {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            margin-bottom: 5em;
+            
+            h3 {
+               text-transform: uppercase;
+               text-align: center;
+               margin-bottom: 3rem;
+            }
+            
+            img {
+               &.nursery-home,
+               &.youth-home {
+                  margin-bottom: 1.5em;
+               }
+            }
+            
+            p {
+               text-align: center;
+            }
+            
+            .btn-container {
+               text-align: center;
+               
+               .fgtm-btn {
+                  margin-top: 1rem;
+                  display: block;
+                  font-size: 1.063em;
+               }
+            }
+         }
+         
+         .youth {
+            margin-bottom: 0em;
+         }
+      }
+   }
+   
+}
+
+// Sermon
+.home-sermon {
+   padding: 5em 0;
+   display: flex;
+   flex-direction: column; //TODO: change to row for bigger screen sizes
+   
+   .sermons {
+      margin-bottom: 1em;
+      
+      h3 {
+         text-transform: uppercase;
+         text-align: center;
+         margin-bottom: 3rem;
+      }
+   }
+   
+   .btn-container {
+      text-align: center;
+      
+      .fgtm-btn {
+         margin-top: 1rem;
+         display: block;
+         font-size: 1.063em;
+      }
+   }
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+
+@media only screen
+   and (min-device-width: 600px) {
+      
+      //  Events & Service Times
+      .home-events {
+         
+         .event,
+         .times {
+            h3 {
+               font-size: 2.166em; // 1.796em + 1/4 scale
+            }
+         }
+         
+         .times {
+            .services {
+               display: flex;
+               
+               .service {
+                  width: 50%;
+                 
+                  &:last-child {
+                     margin-top: 0;
+                     margin-left: 2rem;
+                  }
+               }
+            }
+         }
+      }
+      
+      // Youth
+      .home-youth {
+         .wrapper {
+            main {
+               .nursery,
+               .youth {
+                  h3 {
+                     font-size: 2.166em; // 1.796em + 1/4 scale
+                  }
+                  
+                  .btn-container {
+                     text-align: center;
+                     
+                     .fgtm-btn {
+                        display: inline-block;
+                     }
+                  }
+               }
+            }
+         }
+      }
+      
+      // Sermon
+      .home-sermon {
+         .sermons {
+            h3 {
+               font-size: 2.166em; // 1.796em + 1/4 scale
+            }
+         }
+         
+         .btn-container {
+            .fgtm-btn {
+               display: inline-block;
+            }
+         }
+      }
+      
+   }
+
+
+@media only screen
+   and (min-device-width: 736px) {
+      
+      //  Events & Service Times
+      .home-events {
+         
+      }
+      
+      // Youth
+      .home-youth {
+         
+      }
+      
+      // Sermon
+      .home-sermon {
+         
+      }
+      
+   }
+ 
+ 
+ /***********************************************
+* TABLET
+***********************************************/
+
+/* Portrait */
+@media only screen
+   and (min-device-width: 768px)
+   and (max-device-width: 1023px)
+   and (orientation: portrait) {
+      
+      
+   }
+
+
+/***********************************************
+* DESKTOP
+***********************************************/
+
+
+@media only screen
+   and (min-device-width: 900px) {
+       
+       // Events & Service Times
+       .home-events {
+         flex-direction: row;
+        
+         .event,
+         .times {
+            width: 50%;
+         }
+         
+         .event {
+            margin-bottom: 0em
+         }
+         
+         .times {
+            margin-left: 2em;
+            
+            .services {
+               .service {
+                  &:last-child {
+                     margin-top: 0rem;
+                  }
+                 
+                  .service-time {
+                     margin-bottom: 2.5rem;
+                   
+                     h4 {
+                       text-transform: uppercase;
+                       
+                        &:last-child {
+                           margin-top: 0.8rem;
+                        }
+                     }
+                  }
+                 
+                  h5 {
+                     color: $fgtm-black-three;
+                     text-transform: uppercase;
+                     font-family: $font-medium;
+                     margin-bottom: 0.5rem;
+                  }
+                 
+                  p {
+                     color: $fgtm-black-three;
+                  }
+               }
+            }
+         }
+      }
+      
+      // Youth
+      .home-youth {
+         flex-direction: row;
+         
+         .wrapper {
+            main {
+               display: flex;
+               
+               .nursery,
+               .youth {
+                  width: 45%;
+                  
+                  img {
+                     &.nursery-home,
+                     &.youth-home {
+                        margin-bottom: 1.5em;
+                     }
+                  }
+                  
+                  .btn-container {
+                     .fgtm-btn {
+                        background: $fgtm-green;
+                        transition: all $anim-duration ease;
+                        
+                        &:hover {
+                           background: $fgtm-hover;
+                        }
+                     }
+     
+                  }
+               }
+            }
+         }
+         
+         .youth {
+            margin-bottom: 0em;
+            margin-left: 2em;
+         }
+      }
+      
+      // Sermon
+      .home-sermon {
+         .btn-container {
+            .fgtm-btn {
+               background: $fgtm-green;
+               transition: all $anim-duration ease;
+               
+               &:hover {
+                  background: $fgtm-hover;
+               }
+            }
+         }
+      }
+   }

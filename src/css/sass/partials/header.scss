@@ -19,10 +19,7 @@
             height: 61.7vh;
             flex: 1;
             background: url('img/hero-image.jpg') no-repeat center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+            @include background-size(cover);
          
             .img-overlay {
                background-color: rgba(0,0,0,0.3);
@@ -37,7 +34,7 @@
             position: absolute;
             text-align: center;
             left: 0;
-            top: 210px;
+            top: 190px;
             width: 100%;
             opacity: 1;
             transition: all $anim-duration-all ease $anim-duration-all;
@@ -51,13 +48,23 @@
          
          .hero-call-to-action {
             position: absolute;
+            display: flex;
             width: 100%;
             text-align: center;
             
             
             .new-here-link {
                position: relative;
-               display: none;
+               flex: 1 1 auto;
+               justify-content: center;
+               bottom: 65px;
+               
+               a {
+                  color: $white;
+                  font-family: $font-regular;
+                  font-size: 1.1em;
+                  text-transform: none;
+               }
             }
             
             .see-more {
@@ -75,9 +82,10 @@
 }
 
 .home-live-service-container {
+   background: $fgtm-green;
+   
    a {
       color: $white;
-      font-family: $font-medium;
       text-transform: uppercase;
       display: flex;
       align-items: center;
@@ -85,8 +93,7 @@
       font-size: 1.15em;
       
       &.home-live-service-btn {
-         background: $fgtm-green;
-         padding: 1.5em 2em;
+         padding: 1em 2em;
          transition: all $anim-duration-all ease $anim-duration-all;
       }
       
@@ -101,7 +108,7 @@
       
       span {
          background: url("img/arrow-right.svg") no-repeat 0 0px;
-         background-size: contain;
+         @include background-size(contain);
          width: 20px;
          height: 20px;
          margin-left: 12px;
@@ -109,53 +116,223 @@
    }
 }
 
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+
+@media only screen
+   and (min-device-width: 568px) {
+      
+      // Header container
+      .header-container {
+         header {
+            &.header {
+               .hero-unit-image {
+                  height: 88vh;
+               }
+               
+               .full-logo {
+                  top: 200px;
+                  
+                  .full-logo-img {
+                     max-width: 60%;
+                  }
+               }
+               
+               .hero-call-to-action {
+                  .new-here-link {
+                     font-size: 1.063em;
+                  }
+               }
+            }
+         }
+      }
+   }
+   
+   
+@media only screen
+   and (min-device-width: 600px)
+   and (orientation: portrait) {
+      
+      // Header container
+      .header-container {
+         header {
+            &.header {
+               .hero-unit-image {
+                  height: 50vh;
+               }
+               
+               .full-logo {
+                  top: 250px;
+                  
+                  .full-logo-img {
+                     max-width: 80%;
+                  }
+               }
+            }
+         }
+      }
+      
+      .home-live-service-container {
+         a {
+            font-size: 1.1em;
+         }
+      }
+      
+   }
+
+
 /***********************************************
 * TABLET
 ***********************************************/
 
 /* Portrait */
-/*
 @media only screen
    and (min-device-width: 768px)
    and (max-device-width: 1023px)
    and (orientation: portrait) {
-      .home-live-service-container {
-         a {
-            font-size: 1.2em;
-            
-            div {
-               
-               &:hover {
-                  transform: scale(1.2);
-               }
-            }
-         }
-      }
-}
-*/
+      
+      
+      
+   }
 
 /***********************************************
 * DESKTOP
 ***********************************************/
 
-/*
 @media only screen
     and (min-device-width: 1024px) {
+       
+       // Header container
+       .header-container {
+          header {
+             &.header {
+                .hero-unit-image {
+                   height: 80vh;
+                }
+                
+                .full-logo {
+                   top: 320px;
+                   
+                   .full-logo-img {
+                      max-width: 100%;
+                   }
+                }
+                
+                .hero-call-to-action {
+                  position: absolute;
+                  display: flex;
+                  width: 100%;
+                  text-align: center;
+                  
+                  
+                  .new-here-link {
+                     position: relative;
+                     flex: 1 1 auto;
+                     justify-content: center;
+                     bottom: 65px;
+                     transition: all $anim-duration ease;
+                     
+                     a {
+                        color: $white;
+                        font-family: $font-regular;
+                        font-size: 1.2em;
+                        text-transform: none;
+                        transition: all $anim-duration ease;
+                        
+                        &:hover {
+                           color: $fgtm-green;
+                        }
+                     }
+                  }
+                  
+                  .see-more {
+                     position: relative;
+                     display: block;
+                     flex: 1 1 auto;
+                     bottom: 65px;
+                     color: $white;
+                     font-size: 1.2em;
+                     font-family: $font-regular;
+                     cursor: pointer;
+                     transition: all $anim-duration ease;
+                     
+                     &:hover {
+                        color: $fgtm-green;
+                     }
+                     
+                     &:after {
+                        content: "";
+                     }
+                  }
+                  
+                  .social-media {
+                     position: relative;
+                     display: block;
+                     flex: 1 1 auto;
+                     bottom: 65px;
+                     
+                     a {
+                       color: transparent;
+                           
+                       .facebook,
+                       .twitter,
+                       .insta {
+                          width: 25px;
+                          height: 25px;
+                          margin: 0 10px;
+                            
+                          &.svg path {
+                             fill: $white;
+                             transition: all $anim-duration ease;
+                             
+                             &:hover {
+                                fill: $fgtm-green;
+                             }
+                          }
+                       }
+                       
+                       .youtube {
+                          width: 35px;
+                          height: 35px;
+                          margin: -5px 10px;
+                          
+                          &.svg path {
+                             fill: $white;
+                             transition: all $anim-duration ease;
+                             
+                             &:hover {
+                                fill: $fgtm-green;
+                             }
+                          }
+                       }
+                    }
+                  }
+               }
+             }
+          }
+       }
+        
        .home-live-service-container {
          a {
-            font-size: 1.5em;
+            font-size: 1.4em;
             
             div {
                &:after {
                   width: 31px;
                   height: 31px;
                }
+            }
+            
+            &:hover {
+               transform: scale(1.2);
+               background: $fgtm-hover;
+            }
                
-               &:hover {
-                  transform: scale(1.2);
-               }
+            span {
+               
             }
          }
       }
 }
-*/

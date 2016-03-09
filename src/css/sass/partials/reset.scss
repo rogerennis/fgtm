@@ -22,7 +22,6 @@ html {
 
 body {
   font-family: $font-family-base;
-  font-size: $font-size-base;
   line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;
@@ -77,6 +76,8 @@ h6 {
 ul {
    list-style: none;
    padding: 0;
+   font-size: 1.063em;
+   line-height: 1.223;
 }
 
 
@@ -112,4 +113,8 @@ input[type="search"] {
   background-color: $selection-bg;
   color: $body-bg;
   text-shadow: none;
+}
+
+.fgtm-btn {
+   @include green-btn;
 }
