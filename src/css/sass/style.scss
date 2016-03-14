@@ -17,11 +17,18 @@
 @import "partials/wordpress";
 @import "partials/utils";
 @import "partials/wrapper";
-@import "partials/header";
 @import "partials/nav";
 @import "partials/sidebar";
 @import "partials/footer";
 @import "partials/print";
 
-// Custom
-@import "partials/home";
+// Templates
+@import "partials/home/homeHeader";
+@import "partials/home/home";
+@import "partials/templates/pageHeader";
+@import "partials/templates/newHere";
+@import "partials/templates/about";
+@import "partials/templates/calendar";
+@import "partials/templates/media";
+@import "partials/templates/giving";
+@import "partials/templates/contact";

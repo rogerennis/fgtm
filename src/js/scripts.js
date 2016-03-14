@@ -50,18 +50,20 @@
          });
          
          // Waypoints
+/*
          var waypoints = $("#homeEvents").waypoint(
             function(direction) {
                console.log(this.element.id + "hit");
             }, {
                offset: '13%'
          });
+*/
          
          
          $(".see-more").click( function () {
             var target = $("#homeEvents");
             
-            $('html, body').animate({
+            $("html, body").animate({
                scrollTop: target.offset().top - 100
             }, 1000);
          });

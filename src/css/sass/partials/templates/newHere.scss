@@ -1,0 +1,177 @@
+/**
+ * partials/Templates/New here
+ * ---
+ * New here Page
+ */
+ 
+ 
+ // What we Believe
+.newHere-believe-container {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(252, 252, 252, 0.1), rgba(252, 252, 252, 0.1)), url('img/whatWeBelieve.jpg') no-repeat center center; 
+  @include background-size(1030%);
+  
+  .believe {
+     flex-grow: 1;
+     flex-shrink: 1;
+     flex-basis: auto;
+     text-align: center;
+     color: $fgtm-black;
+     
+     > h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      
+      > p {
+         margin-bottom: 1rem;
+         line-height: 1.593;
+      }
+   }
+}
+
+
+// Service Times
+.newHere-service-times {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: url('img/exclusive_paper.png') left top; 
+  @include background-size(cover);
+  
+  .wrapper {
+     .service-times {
+         flex-grow: 1;
+         flex-shrink: 1;
+         flex-basis: auto;
+         text-align: center;
+         color: $fgtm-black;
+        
+         > h3 {
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 3rem;
+         }
+         
+         .time-container {
+            border: 1px solid $fgtm-black-five;
+            padding: 1.4em 0 1.4em 0;
+            margin: 0rem 1.1rem 0rem 1.1rem;
+            @include border-radius(90px);
+            
+            .time-content {
+               > .clock {
+                  width: 20vw;
+                  height: 11vh;
+               }
+               
+               > .first-time,
+               > .second-time,
+               > .third-time {
+                  padding: 1.4em 0 1.4em 0;
+                  
+                  p:nth-child(1) {
+                     text-transform: uppercase;
+                     font-family: $font-medium;
+                     font-size: 1.433em;
+                  }
+                  
+                  p:nth-child(2) {
+                     text-transform: uppercase;
+                     font-family: $font-regular;
+                     color: $fgtm-black-three;
+                     font-size: 1.063em;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+// Experience Youth
+.newHere-youth {
+   padding: 5em 0;
+   display: flex;
+   flex-direction: column;
+   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/experienceYouth.jpg') center center no-repeat; 
+   @include background-size(1220%);
+   
+   .wrapper {
+      .youth {
+         flex-grow: 1;
+         flex-shrink: 1;
+         flex-basis: auto;
+         text-align: center;
+         color: $white;
+         
+         > h3 {
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 1.5rem;
+         }
+         
+         .nursery,
+         .children,
+         .jr-youth,
+         .young-adults {
+            width: 100%;
+            height: 65vh;
+            background: $white;
+            color: $fgtm-black;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 7rem 1.5rem 0 1.5rem;
+            font-size: 2.5em;
+         }
+      }
+      
+      .btn-container {
+         text-align: center;
+         
+         .fgtm-btn {
+            margin-top: 1rem;
+            display: block;
+            font-size: 1.063em;
+         }
+      }
+   }
+}
+
+// CTA
+.newHere-cta {
+   padding: 5em 0;
+   display: flex;
+   flex-direction: column;
+   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('img/checkoutEvent.jpeg') center center no-repeat; 
+   @include background-size(710%);
+   
+   .wrapper {
+      .cta {
+         flex-grow: 1;
+         flex-shrink: 1;
+         flex-basis: auto;
+         text-align: center;
+         color: $white;
+         
+         > h3 {
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 1.5rem;
+         }
+      }
+      
+      .btn-container {
+         text-align: center;
+         
+         .fgtm-btn {
+            margin-top: 1rem;
+            display: block;
+            font-size: 1.063em;
+         }
+      }
+   }
+}

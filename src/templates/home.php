@@ -14,31 +14,29 @@
             <div class="img-overlay"></div>
          </div>
          <div class="full-logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/fgtm_logo_white_FINAL.svg" alt="Faith Gospel Tabernacle Ministries" class="full-logo-img">
+             <figure><img src="<?php echo get_template_directory_uri(); ?>/img/fgtm_logo_white_FINAL.svg" alt="Faith Gospel Tabernacle Ministries" class="full-logo-img"></figure>
          </div>
          <div class="hero-call-to-action">
-            <div class="new-here-link"><a href=<?php echo get_template_directory_uri(); ?>/new-here>New here? See what to expect...</a></div>
+            <div class="new-here-link"><a href="<?php echo get_template_directory_uri(); ?>/new-here">New here? See what to expect...</a></div>
             <div class="see-more">See More</div>
             <div class="social-media">
                <a href="http://www.facebook.com/">
-                  <img class="facebook svg" title="Facebook" src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.svg" alt="Facebook"/>
+                   <figure><img class="facebook svg" title="Facebook" src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.svg" alt="Facebook"/></figure>
                </a>
                <a href="http://www.twitter.com/">
-                  <img class="twitter svg" title="Twitter" src="<?php echo get_template_directory_uri(); ?>/img/icons/twitter.svg" alt="Twitter"/>
+                   <figure><img class="twitter svg" title="Twitter" src="<?php echo get_template_directory_uri(); ?>/img/icons/twitter.svg" alt="Twitter"/></figure>
                </a>
                <a href="http://www.instagram.com/">
-                  <img class="insta svg" title="Instagram" src="<?php echo get_template_directory_uri(); ?>/img/icons/instagram.svg" alt="Instagram"/>
+                   <figure><img class="insta svg" title="Instagram" src="<?php echo get_template_directory_uri(); ?>/img/icons/instagram.svg" alt="Instagram"/></figure>
                </a>
                <a href="https://www.youtube.com/channel/UCD-7VHa4bAnfIqOs2bWvwmw">
-                  <img class="youtube svg" title="Youtube" src="<?php echo get_template_directory_uri(); ?>/img/icons/youtube.svg" alt="Youtube"/>
+                   <figure><img class="youtube svg" title="Youtube" src="<?php echo get_template_directory_uri(); ?>/img/icons/youtube.svg" alt="Youtube"/></figure>
                </a>
             </div>
          </div>
       </header>
    </div>
-
-   <div class="clear"></div>
-
+   
    <div class="home-live-service-container">
       <a href="http://www.google.com" target="_blank" class="home-live-service-btn"><div>Watch the live service</div><span></span></a>
    </div>
