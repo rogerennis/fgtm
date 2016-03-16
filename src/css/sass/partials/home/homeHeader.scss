@@ -203,140 +203,139 @@
 ***********************************************/
 
 @media only screen
-    and (min-device-width: 1024px) {
-       
-       // Header container
-       .header-container {
-          header {
-             &.header {
-                .hero-unit-image {
-                   height: 74.91vh;
-                }
-                
-                .full-logo {
-                   top: 320px;
-                   
-                   .full-logo-img {
-                      max-width: 100%;
-                   }
-                }
-                
-                .hero-call-to-action {
-                  position: absolute;
-                  display: flex;
-                  width: 100%;
-                  text-align: center;
-                  
-                  
-                  .new-here-link {
-                     position: relative;
-                     flex: 1 1 auto;
-                     justify-content: center;
-                     bottom: 65px;
-                     transition: all $anim-duration ease;
-                     
-                     a {
-                        color: $white;
-                        font-family: $font-regular;
-                        font-size: 1.2em;
-                        text-transform: none;
-                        transition: all $anim-duration ease;
-                        
-                        &:hover {
-                           color: $fgtm-green;
-                        }
-                     }
-                  }
-                  
-                  .see-more {
-                     position: relative;
-                     display: block;
-                     flex: 1 1 auto;
-                     bottom: 65px;
-                     color: $white;
-                     font-size: 1.2em;
-                     font-family: $font-regular;
-                     cursor: pointer;
-                     transition: all $anim-duration ease;
-                     
-                     &:hover {
-                        color: $fgtm-green;
-                     }
-                     
-                     &:after {
-                        content: "";
-                     }
-                  }
-                  
-                  .social-media {
-                     position: relative;
-                     display: block;
-                     flex: 1 1 auto;
-                     bottom: 65px;
-                     
-                     a {
-                       color: transparent;
-                           
-                       .facebook,
-                       .twitter,
-                       .insta {
-                          width: 25px;
-                          height: 25px;
-                          margin: 0 10px;
-                            
-                          &.svg path {
-                             fill: $white;
-                             transition: all $anim-duration ease;
-                             
-                             &:hover {
-                                fill: $fgtm-green;
-                             }
-                          }
-                       }
-                       
-                       .youtube {
-                          width: 35px;
-                          height: 35px;
-                          margin: -5px 10px;
-                          
-                          &.svg path {
-                             fill: $white;
-                             transition: all $anim-duration ease;
-                             
-                             &:hover {
-                                fill: $fgtm-green;
-                             }
-                          }
-                       }
-                    }
-                  }
-               }
-             }
-          }
-       }
+  and (min-device-width: 1024px) {
+     
+  // Header container
+  .header-container {
+    header {
+      &.header {
+        .hero-unit-image {
+          height: 74.91vh;
+        }
         
-       .home-live-service-container {
-         &:hover {
-            background: $fgtm-hover;
-         }
-         
-         a {
-            font-size: 1.4em;
-            
-            div {
-               &:after {
-                  width: 31px;
-                  height: 31px;
-               }
+        .full-logo {
+          top: 320px;
+           
+          .full-logo-img {
+            max-width: 100%;
+          }
+        }
+        
+        .hero-call-to-action {
+          position: absolute;
+          display: flex;
+          width: 100%;
+          text-align: center;
+          
+          .new-here-link {
+            position: relative;
+            flex: 1 1 auto;
+            justify-content: center;
+            bottom: 65px;
+            transition: all $anim-duration ease;
+             
+            a {
+              color: $white;
+              font-family: $font-regular;
+              font-size: 1.2em;
+              text-transform: none;
+              transition: all $anim-duration ease;
+              
+              &:hover {
+                color: $fgtm-green;
+              }
             }
+          }
+          
+          .see-more {
+            position: relative;
+            display: block;
+            flex: 1 1 auto;
+            bottom: 65px;
+            color: $white;
+            font-size: 1.2em;
+            font-family: $font-regular;
+            cursor: pointer;
+            transition: all $anim-duration ease;
             
             &:hover {
-               transform: scale(1.2);
+              color: $fgtm-green;
             }
-               
-            span {
-               
+            
+            &:after {
+              content: "";
             }
-         }
+          }
+          
+          .social-media {
+            position: relative;
+            display: flex;
+            flex: 1 1 auto;
+            bottom: 65px;
+            
+            a {
+              color: transparent;
+            
+              figure {
+                margin: 0;
+              
+                .facebook,
+                .twitter,
+                .insta {
+                  width: 25px;
+                  height: 25px;
+                  margin: 0 10px;
+                     
+                  &.svg path {
+                    fill: $white;
+                    transition: all $anim-duration ease;
+                    
+                    &:hover {
+                      fill: $fgtm-green;
+                    }
+                  }
+                }
+               
+                .youtube {
+                  width: 35px;
+                  height: 35px;
+                  margin: -5px 10px;
+                  
+                  &.svg path {
+                    fill: $white;
+                    transition: all $anim-duration ease;
+                     
+                    &:hover {
+                     fill: $fgtm-green;
+                    }
+                  }
+                }
+              }
+            }  
+          }
+        }
       }
+    }
+  }
+      
+  .home-live-service-container {
+    &:hover {
+      background: $fgtm-hover;
+    }
+   
+    a {
+      font-size: 1.4em;
+      
+      div {
+        &:after {
+          width: 31px;
+          height: 31px;
+        }
+      }
+      
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
 }

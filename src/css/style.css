@@ -987,41 +987,44 @@ input[type="search"] {
   }
   .header-container header.header .hero-call-to-action .social-media {
     position: relative;
-    display: block;
+    display: flex;
     flex: 1 1 auto;
     bottom: 65px;
   }
   .header-container header.header .hero-call-to-action .social-media a {
     color: transparent;
   }
-  .header-container header.header .hero-call-to-action .social-media a .facebook,
-  .header-container header.header .hero-call-to-action .social-media a .twitter,
-  .header-container header.header .hero-call-to-action .social-media a .insta {
+  .header-container header.header .hero-call-to-action .social-media a figure {
+    margin: 0;
+  }
+  .header-container header.header .hero-call-to-action .social-media a figure .facebook,
+  .header-container header.header .hero-call-to-action .social-media a figure .twitter,
+  .header-container header.header .hero-call-to-action .social-media a figure .insta {
     width: 25px;
     height: 25px;
     margin: 0 10px;
   }
-  .header-container header.header .hero-call-to-action .social-media a .facebook.svg path,
-  .header-container header.header .hero-call-to-action .social-media a .twitter.svg path,
-  .header-container header.header .hero-call-to-action .social-media a .insta.svg path {
+  .header-container header.header .hero-call-to-action .social-media a figure .facebook.svg path,
+  .header-container header.header .hero-call-to-action .social-media a figure .twitter.svg path,
+  .header-container header.header .hero-call-to-action .social-media a figure .insta.svg path {
     fill: #fff;
     transition: all 0.4s ease;
   }
-  .header-container header.header .hero-call-to-action .social-media a .facebook.svg path:hover,
-  .header-container header.header .hero-call-to-action .social-media a .twitter.svg path:hover,
-  .header-container header.header .hero-call-to-action .social-media a .insta.svg path:hover {
+  .header-container header.header .hero-call-to-action .social-media a figure .facebook.svg path:hover,
+  .header-container header.header .hero-call-to-action .social-media a figure .twitter.svg path:hover,
+  .header-container header.header .hero-call-to-action .social-media a figure .insta.svg path:hover {
     fill: #00ab88;
   }
-  .header-container header.header .hero-call-to-action .social-media a .youtube {
+  .header-container header.header .hero-call-to-action .social-media a figure .youtube {
     width: 35px;
     height: 35px;
     margin: -5px 10px;
   }
-  .header-container header.header .hero-call-to-action .social-media a .youtube.svg path {
+  .header-container header.header .hero-call-to-action .social-media a figure .youtube.svg path {
     fill: #fff;
     transition: all 0.4s ease;
   }
-  .header-container header.header .hero-call-to-action .social-media a .youtube.svg path:hover {
+  .header-container header.header .hero-call-to-action .social-media a figure .youtube.svg path:hover {
     fill: #00ab88;
   }
 
