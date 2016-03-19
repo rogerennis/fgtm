@@ -976,7 +976,7 @@ input[type="search"] {
 }
 .header-container header.header .full-logo .full-logo-img {
   position: relative;
-  padding: 0 3em;
+  padding: 0 1em;
 }
 .header-container header.header .hero-call-to-action {
   position: absolute;
@@ -2010,4 +2010,22 @@ input[type="search"] {
   padding: 1rem 0 1rem 0;
   text-transform: uppercase;
   font-family: "Geogrotesque-Medium";
+}
+
+/**
+ * partials/Templates/Calendar
+ * ---
+ * Calendar Page
+ */
+.calendar-container {
+  padding: 5em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
