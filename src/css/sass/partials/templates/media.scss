@@ -1,0 +1,82 @@
+/**
+ * partials/Templates/Media
+ * ---
+ * Media Page
+ */
+ 
+ // Live Service
+.media-service {
+   background: $fgtm-green;
+   transition: all $anim-duration-all ease $anim-duration-all;
+   padding: 2.5em 2em;
+   
+   h3 {
+     color: $white;
+     text-align: center;
+   }
+   
+   a {
+      color: $white;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15em;
+      
+      &.media-live-service-btn {
+         padding: 0.5em 2em 0 2em;
+         transition: all $anim-duration-all ease $anim-duration-all;
+      }
+      
+      div {
+         transition: all $anim-duration-all ease $anim-duration-all;
+         text-align: center;
+         
+         &:hover {
+            transform: none;
+         }
+      }
+      
+      span {
+         background: url("img/arrow-right.svg") no-repeat 0 0px;
+         @include background-size(contain);
+         width: 20px;
+         height: 20px;
+         margin-left: 12px;
+      }
+   }
+}
+
+// Videos
+.media-videos {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column; //TODO: change to row for bigger screen sizes
+  background: $body-section;
+   
+  .wrapper {
+    .media {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      text-align: center;
+      color: $fgtm-black;
+     
+      > h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+    }
+    
+    .btn-container {
+      text-align: center;
+       
+      .fgtm-btn {
+        margin-top: 1rem;
+        display: block;
+        font-size: 1.063em;
+      }
+    }
+  }
+}

@@ -2029,3 +2029,98 @@ input[type="search"] {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
+/**
+ * partials/Templates/Media
+ * ---
+ * Media Page
+ */
+.media-service {
+  background: #00ab88;
+  -webkit-transition: all 0.2s ease 0.2s;
+  transition: all 0.2s ease 0.2s;
+  padding: 2.5em 2em;
+}
+.media-service h3 {
+  color: #fff;
+  text-align: center;
+}
+.media-service a {
+  color: #fff;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.15em;
+}
+.media-service a.media-live-service-btn {
+  padding: 0.5em 2em 0 2em;
+  -webkit-transition: all 0.2s ease 0.2s;
+  transition: all 0.2s ease 0.2s;
+}
+.media-service a div {
+  -webkit-transition: all 0.2s ease 0.2s;
+  transition: all 0.2s ease 0.2s;
+  text-align: center;
+}
+.media-service a div:hover {
+  -webkit-transform: none;
+  transform: none;
+}
+.media-service a span {
+  background: url("img/arrow-right.svg") no-repeat 0 0px;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+}
+
+.media-videos {
+  padding: 5em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #E6E6E6;
+}
+.media-videos .wrapper .media {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  text-align: center;
+  color: #404041;
+}
+.media-videos .wrapper .media > h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.media-videos .wrapper .btn-container {
+  text-align: center;
+}
+.media-videos .wrapper .btn-container .fgtm-btn {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.063em;
+}

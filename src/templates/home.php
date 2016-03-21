@@ -178,25 +178,23 @@
    </div>
 	<!-- /YOUTH -->
    		
-   <div class="wrapper">
-   	<main role="main">
-
-   		<!-- SERMONS -->
-         <div id="homeSermon">
-            <section class="home-sermon">
-               <div class="sermons">
-                  <h3>Sermons</h3>
-                  
-                  <iframe width="100%" height="400" download="true" show_artwork="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player?url=http%3A%2F%2Fsoundcloud.com%2Ffaith-gospel-tabernacle&amp;color=aa1e25&amp;auto_play=false&show_comments=true&show_user=true&show_reposts=true"></iframe>
-               </div>
-               <div class="btn-container">
-                  <a href="#" class="fgtm-btn">Explore more media</a>
-               </div>
-            </section>
-         </div>
-   		<!-- /SERMON -->
-   	</main>
-   </div>
+  <div class="wrapper">
+    <main role="main">
+      <!-- SERMONS -->
+      <div id="homeSermon">
+        <section class="home-sermon">
+          <div class="sermons">
+            <h3>Sermons</h3>
+            <iframe width="100%" height="400" download="true" show_artwork="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player?url=http%3A%2F%2Fsoundcloud.com%2Ffaith-gospel-tabernacle&amp;color=aa1e25&amp;auto_play=false&show_comments=true&show_user=true&show_reposts=true"></iframe>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="fgtm-btn">Explore more media</a>
+          </div>
+        </section>
+      </div>
+      <!-- /SERMON -->
+    </main>
+  </div>
    
 	<!-- MAP -->
    <div id="homeMap">
