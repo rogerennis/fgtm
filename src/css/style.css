@@ -1665,4 +1665,81 @@ input[type="search"] {
   flex-direction: column;
 }
 
+/**
+ * partials/Templates/Giving
+ * ---
+ * Giving Page
+ */
+.giving-paypal {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(230, 231, 232, 0.8), rgba(230, 231, 232, 0.8)), url("img/giving2.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.giving-paypal .wrapper .paypal {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  color: #404041;
+}
+.giving-paypal .wrapper .paypal > h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.giving-paypal .wrapper .paypal .paypal-logo {
+  margin-bottom: 2rem;
+  width: 40%;
+}
+.giving-paypal .wrapper .paypal form {
+  text-align: center;
+}
+.giving-paypal .wrapper .paypal form input {
+  display: block;
+  width: 100%;
+}
+.giving-paypal .wrapper .paypal form input.fgtm-btn {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.063em;
+  position: relative;
+}
+
+.giving-donate {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(93, 118, 3, 0.74), rgba(77, 98, 3, 0.74)), url("img/giving2.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.giving-donate .wrapper .donate {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  color: #fff;
+}
+.giving-donate .wrapper .donate > h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.giving-donate .wrapper .donate .btn-container {
+  text-align: center;
+}
+.giving-donate .wrapper .donate .btn-container .fgtm-btn {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.063em;
+  position: relative;
+}
+
 /*# sourceMappingURL=style.css.map */

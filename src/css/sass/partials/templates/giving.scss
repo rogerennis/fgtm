@@ -1,0 +1,89 @@
+/**
+ * partials/Templates/Giving
+ * ---
+ * Giving Page
+ */
+ 
+// Paypal
+.giving-paypal {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(230, 231, 232, 0.8), rgba(230, 231, 232, 0.8)), url('img/giving2.jpg') no-repeat center center; 
+  @include background-size(cover);
+  
+  .wrapper {
+    .paypal {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      text-align: center;
+      color: $fgtm-black;
+      
+      > h3 {
+         text-transform: uppercase;
+         text-align: center;
+         margin-bottom: 3rem;
+      }
+      
+      .paypal-logo {
+        margin-bottom: 2rem;
+        width: 40%;
+      }
+      
+      form {
+        text-align: center;
+        
+        input {
+          display: block;
+          width: 100%;
+          
+          &.fgtm-btn {
+            margin-top: 1rem;
+            display: block;
+            font-size: 1.063em;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Donate
+.giving-donate {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(93, 118, 3, 0.74), rgba(77, 98, 3, 0.74)), url('img/giving2.jpg') no-repeat center center; 
+  @include background-size(cover);
+  
+  .wrapper {
+    .donate {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      text-align: center;
+      color: $white;
+      
+      > h3 {
+         text-transform: uppercase;
+         text-align: center;
+         margin-bottom: 3rem;
+      }
+      
+      .btn-container {
+        text-align: center;
+        
+        .fgtm-btn {
+          margin-top: 1rem;
+          display: block;
+          font-size: 1.063em;
+          position: relative;
+        }
+        
+      }
+    }
+  }
+}

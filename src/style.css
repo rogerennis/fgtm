@@ -2029,3 +2029,104 @@ input[type="search"] {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
+/**
+ * partials/Templates/Giving
+ * ---
+ * Giving Page
+ */
+.giving-paypal {
+  padding: 5em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: -webkit-linear-gradient(rgba(230, 231, 232, 0.8), rgba(230, 231, 232, 0.8)), url("img/giving2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(230, 231, 232, 0.8), rgba(230, 231, 232, 0.8)), url("img/giving2.jpg") no-repeat center center;
+  background-size: cover;
+}
+.giving-paypal .wrapper .paypal {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  text-align: center;
+  color: #404041;
+}
+.giving-paypal .wrapper .paypal > h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.giving-paypal .wrapper .paypal .paypal-logo {
+  margin-bottom: 2rem;
+  width: 40%;
+}
+.giving-paypal .wrapper .paypal form {
+  text-align: center;
+}
+.giving-paypal .wrapper .paypal form input {
+  display: block;
+  width: 100%;
+}
+.giving-paypal .wrapper .paypal form input.fgtm-btn {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.063em;
+  position: relative;
+}
+
+.giving-donate {
+  padding: 5em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: -webkit-linear-gradient(rgba(93, 118, 3, 0.74), rgba(77, 98, 3, 0.74)), url("img/giving2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(93, 118, 3, 0.74), rgba(77, 98, 3, 0.74)), url("img/giving2.jpg") no-repeat center center;
+  background-size: cover;
+}
+.giving-donate .wrapper .donate {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  text-align: center;
+  color: #fff;
+}
+.giving-donate .wrapper .donate > h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.giving-donate .wrapper .donate .btn-container {
+  text-align: center;
+}
+.giving-donate .wrapper .donate .btn-container .fgtm-btn {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.063em;
+  position: relative;
+}
