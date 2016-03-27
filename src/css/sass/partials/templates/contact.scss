@@ -1,0 +1,119 @@
+/**
+ * partials/Templates/Contact
+ * ---
+ * Contact Page
+ */
+ 
+ //Address
+.contact-address {
+  padding: 5em 0 3em 0;
+  display: flex;
+  flex-direction: column;
+   
+  .say-hi {
+    margin-bottom: 3rem;
+    text-align: center;
+    
+    h3 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  .address {
+    text-align: center;
+    align-content: center;
+    
+    h4 {
+      margin-bottom: 1rem;
+      
+      &:last-child {
+        margin-bottom: 0rem;
+      }
+    }
+    
+    address {
+      margin-bottom: 1rem;
+    }
+    
+    a {
+      &.tel {
+        display: inline-flex;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+
+//Form
+.contact-ask {
+  padding-bottom: 5em;
+  
+  fieldset {
+    padding: 2rem 1rem;
+    @include border-radius(6px);
+    background: $white;
+    border: 1px solid $fgtm-black-five;
+    
+    h3 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .just-contact-form-wrap {
+      p {
+        font-size: 0.818em;
+        margin-bottom: 0.9rem;
+        
+        .just_contact_form_name,
+        .just_contact_form_email,
+        .just_contact_form_url,
+        .just_contact_form_subject,
+        .just_contact_form_message,
+        .just_contact_form_captcha {
+          width: 100%;
+          border: 1px solid $fgtm-black-five;
+          padding: 0.6rem 0.3rem;
+          margin-top: 0.2rem;
+          @include border-radius(6px);
+        }
+        
+        .just_contact_form_message {
+          height: 5rem;
+        }
+      }
+      
+      p:nth-child(n+7) {
+        font-size: 1.063em;
+        
+        .just-contact-form-submit {
+          background: $fgtm-green;
+          border: 0;
+          color: $white;
+          padding: 1.1rem 0rem;
+          text-transform: uppercase;
+          width: 100%;
+          @include border-radius(6px);
+          font-family: $font-light;
+        }
+      }
+      
+      .just-contact-form-result {
+        background: $fgtm-red;
+        padding: 1rem 0rem;
+        text-align: center;
+        @include border-radius(6px);
+        
+        p {
+          color: $white;
+          font-size: 1.063em;
+          margin: 0px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
