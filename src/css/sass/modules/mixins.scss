@@ -22,6 +22,12 @@
    background-size: $size;
 }
 
+@mixin appearance($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  appearance: $value;
+}
+
 
 
 // BORDER

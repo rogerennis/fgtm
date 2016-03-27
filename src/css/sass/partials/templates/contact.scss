@@ -79,6 +79,8 @@
           padding: 0.6rem 0.3rem;
           margin-top: 0.2rem;
           @include border-radius(6px);
+          @include appearance(none);
+          background: transparent;
         }
         
         .just_contact_form_message {
