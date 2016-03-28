@@ -37,7 +37,7 @@
     				</a>
     			</div>
     			<!-- /LOGO -->
-    			<div class="menu-copy" aria-label="Menu" >Menu</div>
+    			<label class="menu-copy" aria-label="Menu" >Menu</label>
     			<div class="outer-menu">
         			<input class="checkbox-toggle" type="checkbox" />
         			<div class="hamburger">

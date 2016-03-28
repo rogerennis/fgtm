@@ -253,32 +253,36 @@
 
 /* Portrait */
 @media only screen
-   and (min-device-width: 768px)
-   and (max-device-width: 1023px)
-   and (orientation: portrait) {
+  and (min-width: 768px) {
       
-      #nav-container {
-         nav {
-            .logo {
-               width: 70px;
-               height: 70px;
-            }
-            
-            .outer-menu {
-               width: 10vw;
-            
-               .checkbox-toggle {
-                  &:checked {
-                     & ~ .fgtm-menu {
-                        > div {
-                           transform: scale(1.6);
-                        }
-                     }
-                  }
-               }
-            }
-         }
+  #nav-container {
+    padding-bottom: 10px;
+    
+    nav {
+      .logo {
+        width: 65px;
+        height: 65px;
       }
+       
+      .menu-copy {
+        top: 19px;
+      }
+       
+      .outer-menu {
+        width: 10vw;
+       
+        .checkbox-toggle {
+          &:checked {
+            & ~ .fgtm-menu {
+              > div {
+                transform: scale(1.6);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -288,7 +292,7 @@
 
 
 @media only screen
-    and (min-device-width: 1024px) {
+    and (min-width: 1024px) {
         
       #nav-container {
          padding: 20px 55px 0px 60px;
@@ -359,8 +363,8 @@
                            font-family: $font-regular;
                                  
                            > li {
-                              padding: 0em 0.7em 1.27em 0.7em;
-                              margin: 0;
+                              padding: 0em 0.7em 1.36em 0.7em;
+                              margin: -2px;
                               font-size: 1.2em;
                               display: inline-block;
                               transition: border-bottom $anim-duration ease;
