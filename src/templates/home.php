@@ -17,7 +17,7 @@
              <figure><img src="<?php echo get_template_directory_uri(); ?>/img/fgtm_logo_white_FINAL.svg" alt="Faith Gospel Tabernacle Ministries" class="full-logo-img"></figure>
          </div>
          <div class="hero-call-to-action">
-            <div class="new-here-link"><a href="<?php echo get_template_directory_uri(); ?>/new-here">New here? See what to expect...</a></div>
+            <div class="new-here-link"><a href="<?php echo get_template_directory_uri(); ?>/new-here">New here? See what to expect.</a></div>
             <div class="see-more">See More</div>
             <div class="social-media">
                <a href="http://www.facebook.com/">
@@ -38,7 +38,7 @@
    </div>
    
    <div class="home-live-service-container">
-      <a href="http://www.google.com" target="_blank" class="home-live-service-btn"><div>Watch the live service</div><span></span></a>
+      <a href="http://www.google.com" target="_blank" class="home-live-service-btn"><div>Watch the Sunday live service</div><span></span></a>
    </div>
    <!-- /END HEADER -->
 
@@ -204,9 +204,11 @@
          <div>
             <?php echo do_shortcode("[huge_it_maps id='2']"); ?>
          </div>
+<!--
          <div class="home-live-service-container">
             <a href="http://www.google.com" target="_blank" class="home-live-service-btn"><div>See it on google</div><span></span></a>
          </div>
+-->
       </section>
    </div>
 	<!-- /MAP -->

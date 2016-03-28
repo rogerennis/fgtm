@@ -34,7 +34,7 @@
             position: absolute;
             text-align: center;
             left: 0;
-            top: 190px;
+            top: 200px;
             width: 100%;
             opacity: 1;
             transition: all $anim-duration-all ease $anim-duration-all;
@@ -94,7 +94,7 @@
       font-size: 1.15em;
       
       &.home-live-service-btn {
-         padding: 1em 2em;
+         padding: 1.5em 2em;
          transition: all $anim-duration-all ease $anim-duration-all;
       }
       
@@ -107,6 +107,7 @@
          }
       }
       
+/*
       span {
          background: url("img/arrow-right.svg") no-repeat 0 0px;
          @include background-size(contain);
@@ -114,6 +115,7 @@
          height: 20px;
          margin-left: 12px;
       }
+*/
    }
 }
 
@@ -123,65 +125,61 @@
 ***********************************************/
 
 @media only screen
-   and (min-device-width: 568px) {
-      
-      // Header container
-      .header-container {
-         header {
-            &.header {
-               .hero-unit-image {
-                  height: 88vh;
-               }
-               
-               .full-logo {
-                  top: 200px;
-                  
-                  .full-logo-img {
-                     max-width: 60%;
-                  }
-               }
-               
-               .hero-call-to-action {
-                  .new-here-link {
-                     font-size: 1.063em;
-                  }
-               }
-            }
-         }
+  and (min-width: 568px) {
+     
+  // Header container
+  .header-container {
+    header {
+      &.header {
+        .hero-unit-image {
+          height: 88vh;
+        }
+         
+        .full-logo {
+          top: 150px;
+            
+          .full-logo-img {
+            max-width: 60%;
+          }
+        }
+         
+        .hero-call-to-action {
+          .new-here-link {
+            font-size: 1.063em;
+          }
+        }
       }
-   }
-   
+    }
+  }
+}
+  
    
 @media only screen
-   and (min-device-width: 600px)
-   and (orientation: portrait) {
-      
-      // Header container
-      .header-container {
-         header {
-            &.header {
-               .hero-unit-image {
-                  height: 50vh;
-               }
-               
-               .full-logo {
-                  top: 250px;
-                  
-                  .full-logo-img {
-                     max-width: 80%;
-                  }
-               }
-            }
-         }
+  and (min-width: 600px) {
+     
+  // Header container
+  .header-container {
+    header {
+      &.header {
+        .hero-unit-image {
+          height: 75vh;
+        }
+         
+        .full-logo {
+          .full-logo-img {
+            max-width: 55%;
+          }
+        }
       }
-      
-      .home-live-service-container {
-         a {
-            font-size: 1.1em;
-         }
-      }
-      
-   }
+    }
+  }
+  
+  .home-live-service-container {
+    a {
+      font-size: 1.1em;
+    }
+  }
+}
 
 
 /***********************************************
@@ -190,20 +188,40 @@
 
 /* Portrait */
 @media only screen
-   and (min-device-width: 768px)
-   and (max-device-width: 1023px)
-   and (orientation: portrait) {
-      
-      
-      
-   }
+  and (min-width: 768px) {
+  
+  // Header container
+  .header-container {
+    header {
+      &.header {
+        .hero-unit-image {
+          height: 45vh;
+        }
+         
+        .full-logo {
+          top: 230px;
+          
+          .full-logo-img {
+            max-width: 50%;
+          }
+        }
+      }
+    }
+  }
+  
+  .home-live-service-container {
+    a {
+      font-size: 1.15em;
+    }
+  }
+}
 
 /***********************************************
 * DESKTOP
 ***********************************************/
 
 @media only screen
-  and (min-device-width: 1024px) {
+  and (min-width: 1024px) {
      
   // Header container
   .header-container {

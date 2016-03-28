@@ -825,7 +825,7 @@ input[type="search"] {
   position: absolute;
   text-align: center;
   left: 0;
-  top: 190px;
+  top: 200px;
   width: 100%;
   opacity: 1;
   transition: all 0.2s ease 0.2s;
@@ -873,9 +873,18 @@ input[type="search"] {
   align-items: center;
   justify-content: center;
   font-size: 1.15em;
+  /*
+        span {
+           background: url("img/arrow-right.svg") no-repeat 0 0px;
+           @include background-size(contain);
+           width: 20px;
+           height: 20px;
+           margin-left: 12px;
+        }
+  */
 }
 .home-live-service-container a.home-live-service-btn {
-  padding: 1em 2em;
+  padding: 1.5em 2em;
   transition: all 0.2s ease 0.2s;
 }
 .home-live-service-container a div {
@@ -885,26 +894,16 @@ input[type="search"] {
 .home-live-service-container a div:hover {
   transform: none;
 }
-.home-live-service-container a span {
-  background: url("img/arrow-right.svg") no-repeat 0 0px;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
-  margin-left: 12px;
-}
 
 /***********************************************
 * CONTINUE MOBILE
 ***********************************************/
-@media only screen and (min-device-width: 568px) {
+@media only screen and (min-width: 568px) {
   .header-container header.header .hero-unit-image {
     height: 88vh;
   }
   .header-container header.header .full-logo {
-    top: 200px;
+    top: 150px;
   }
   .header-container header.header .full-logo .full-logo-img {
     max-width: 60%;
@@ -913,15 +912,12 @@ input[type="search"] {
     font-size: 1.063em;
   }
 }
-@media only screen and (min-device-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 600px) {
   .header-container header.header .hero-unit-image {
-    height: 50vh;
-  }
-  .header-container header.header .full-logo {
-    top: 250px;
+    height: 75vh;
   }
   .header-container header.header .full-logo .full-logo-img {
-    max-width: 80%;
+    max-width: 55%;
   }
 
   .home-live-service-container a {
@@ -932,10 +928,25 @@ input[type="search"] {
 * TABLET
 ***********************************************/
 /* Portrait */
+@media only screen and (min-width: 768px) {
+  .header-container header.header .hero-unit-image {
+    height: 45vh;
+  }
+  .header-container header.header .full-logo {
+    top: 230px;
+  }
+  .header-container header.header .full-logo .full-logo-img {
+    max-width: 50%;
+  }
+
+  .home-live-service-container a {
+    font-size: 1.15em;
+  }
+}
 /***********************************************
 * DESKTOP
 ***********************************************/
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .header-container header.header .hero-unit-image {
     height: 74.91vh;
   }
