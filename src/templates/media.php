@@ -7,38 +7,42 @@
 
 <?php get_header(); ?>
 
-   <!-- HEADER -->
-   <div class="page-header-container">
-      <header class="header" role="banner">
-         <?php
-            if (has_post_thumbnail()) {
-                $thumbnail_data = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'pageHeader' );
-                $thumbnail_url = $thumbnail_data[0];
-            }
-         ?>
-         <div class="page-header" id="post-<?php the_ID(); ?>"style="background:url('<?php echo $thumbnail_url ?>') no-repeat; background-size: cover;">
-            <div class="img-overlay"></div>
-         </div>
-         <div class="heading">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-               <h1>
-                  <?php the_title() ?>
-               </h1>
-               <?php the_content(); ?>
-           	<?php endwhile; endif; ?>
-         </div>
-      </header>
-   </div>
-   <!-- /END HEADER -->
+  <!-- HEADER -->
+  <div class="page-header-container">
+    <header class="header" role="banner">
+      <?php
+         if (has_post_thumbnail()) {
+             $thumbnail_data = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'pageHeader' );
+             $thumbnail_url = $thumbnail_data[0];
+         }
+      ?>
+      <div class="page-header" id="post-<?php the_ID(); ?>"style="background:url('<?php echo $thumbnail_url ?>') no-repeat; background-size: cover;">
+        <div class="img-overlay"></div>
+      </div>
+      <div class="heading">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <h1>
+            <?php the_title() ?>
+          </h1>
+          <?php the_content(); ?>
+        <?php endwhile; endif; ?>
+      </div>
+    </header>
+  </div>
+  <!-- /END HEADER -->
    
-   <!-- LIVE SERVICE -->
-   <div id="mediaService">
-      <section class="media-service">
-         <h3>Live Service</h3>
-         <a href="http://www.google.com" target="_blank" class="media-live-service-btn"><div>Watch Now</div><span></span></a>
-      </section>
-   </div>
-   <!-- /LIVE SERVICE -->
+  <!-- LIVE SERVICE -->
+  <div id="mediaService">
+    <section class="media-service">
+      <h3>Live Service</h3>
+      <div class="ustream-container">
+        <iframe width="100%" height="100%" 
+	 allowfullscreen webkitallowfullscreen src="http://www.ustream.tv/embed/4664505?html5ui&showtitle=false" frameborder="0">
+        </iframe>
+      </div>
+    </section>
+  </div>
+  <!-- /LIVE SERVICE -->
    
   <!-- VIDEOS -->
   <div id="mediaVideos">
@@ -47,8 +51,8 @@
         <article class="media">
           <h3>Videos</h3>
           <div><?php echo do_shortcode("[embedyt][/embedyt]"); ?></div>
-<!--
         </article>
+<!--
         <div class="btn-container">
           <a href="#" class="fgtm-btn">See the Channel<span></span></a>
         </div>

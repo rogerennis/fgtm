@@ -38,7 +38,7 @@
    </div>
    
    <div class="home-live-service-container">
-      <a href="http://www.google.com" target="_blank" class="home-live-service-btn"><div>Watch the live service</div><span></span></a>
+      <a href="<?php echo get_template_directory_uri(); ?>/media#mediaService" target="_self" class="home-live-service-btn"><div>Watch the live service</div><span></span></a>
    </div>
    <!-- /END HEADER -->
 
