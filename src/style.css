@@ -206,6 +206,17 @@ input[type="search"] {
   transition: all 0.4s ease;
 }
 
+.fgtm-line-btn {
+  background: #fff;
+  border: 2px solid #404041;
+  color: #00ab88;
+  padding: 1.1rem 2rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
 /**
  * partials/wordpress
  * ---
@@ -2022,13 +2033,15 @@ input[type="search"] {
   border: 1px solid #d5d6d8;
   background: #fff;
   margin-bottom: 2rem;
-  padding: 10rem 1rem 0rem 1rem;
+  padding: 6rem 1rem 0rem 1rem;
+  border-radius: 4px;
 }
 .about-ministries .wrapper .ministries .ministry:last-child {
   margin-bottom: 0rem;
 }
 .about-ministries .wrapper .ministries .ministry h4 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
 }
 .about-ministries .wrapper .ministries .ministry p {
   margin-bottom: 2rem;
@@ -2038,9 +2051,8 @@ input[type="search"] {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 1rem 0 1rem 0;
-  text-transform: uppercase;
-  font-family: "Geogrotesque-Medium";
+  padding: 0.6rem 0.7rem;
+  margin-bottom: 1.3rem;
 }
 
 /**

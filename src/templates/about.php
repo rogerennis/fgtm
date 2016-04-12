@@ -148,43 +148,45 @@
                <div class="ministry">
                   <h4>Christine's Corner</h4>
                   <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
-                  <a href="#">go ></a>
+                  <a class="fgtm-line-btn" href="#">go</a>
                </div>
                
                <div class="ministry">
-                  <h4>Worship</h4>
+                  <h4>Worship Team</h4>
                   <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
-                  <a href="#">go ></a>
+                  <a class="fgtm-line-btn" href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk">Join the team</a>
                </div>
                
+               <!-- TODO add Ladies Programs page -- Women's Bible Study section: Tuesday 7pm -->
                <div class="ministry">
-                  <h4>Ladies Program</h4>
+                  <h4>Ladies Programs</h4>
                   <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
-                  <a href="#">go ></a>
+                  <a class="fgtm-line-btn" href="<?php echo get_template_directory_uri(); ?>/ladies-programs">See what's here for you!</a>
                </div>
                
+               <!-- TODO add Hospitality page -- Hospitality / Kitchen section: Join the Team button  & Ushers section: Join the Team button -->
                <div class="ministry">
-                  <h4>Hospitality & Ushers</h4>
+                  <h4>Hospitality</h4>
                   <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
-                  <a href="#">go ></a>
+                  <a class="fgtm-line-btn" href="<?php echo get_template_directory_uri(); ?>/hospitality">See where you can help!</a>
                </div>
                
+               <!-- TODO add Bible Study page -- check requirements for sections -->
                <div class="ministry">
                   <h4>Bible Study</h4>
                   <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
-                  <a href="#">go ></a>
+                  <a class="fgtm-line-btn" href="<?php echo get_template_directory_uri(); ?>/bible-study">See class times!</a>
                </div>
                
                <div class="ministry">
-                  <h4>Prayer</h4>
-                  <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
-                  <a href="#">go ></a>
+                  <h4>Wednesday Night Prayer</h4>
+                  <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. 7:30pm.</p>
                </div>
                
                <div class="ministry">
                   <h4>Youth</h4>
                   <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
-                  <a href="#">go ></a>
+                  <a class="fgtm-line-btn" href="<?php echo get_template_directory_uri(); ?>/youth">Explore Youth</a>
                </div>
             </article>
          </div>

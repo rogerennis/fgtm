@@ -72,7 +72,7 @@
 @mixin green-btn {
    background: $fgtm-green;
    border: 0;
-   color: #fff;
+   color: $white;
    padding: 1.1rem 2rem;
    text-transform: uppercase;
    @include border-radius(6px);
@@ -82,7 +82,7 @@
 @mixin green-btn-with-hover {
    background: $fgtm-green-three;
    border: 0;
-   color: #fff;
+   color: $white;
    padding: 1.1rem 2rem;
    text-transform: uppercase;
    @include border-radius(6px);
@@ -90,5 +90,30 @@
    
    &:hover {
       background: $fgtm-green;
+   }
+}
+
+@mixin green-line-btn {
+   background: $white;
+   border: 2px solid $fgtm-black;
+   color: $fgtm-green;
+   padding: 1.1rem 2rem;
+   text-transform: uppercase;
+   @include border-radius(6px);
+   transition: all $anim-duration ease;
+}
+
+@mixin green-line-btn-with-hover {
+   background: $white;
+   border: 2px solid $fgtm-black;
+   color: $fgtm-green;
+   padding: 1.1rem 2rem;
+   text-transform: uppercase;
+   @include border-radius(6px);
+   transition: all $anim-duration ease;
+   
+   &:hover {
+      background: $fgtm-green;
+      color: $white
    }
 }

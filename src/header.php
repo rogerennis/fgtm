@@ -15,35 +15,34 @@
 
 		<?php wp_head(); ?>
 		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
-
+      // conditionizr.com
+      // configure environment tests
+      conditionizr.config({
+          assets: '<?php echo get_template_directory_uri(); ?>',
+          tests: {}
+      });
+    </script>
 	</head>
 	<body <?php body_class(); ?>>
 
         <!-- nav -->
         <div id="nav-container">
-            <nav role="navigation">
-                <!-- LOGO -->
+        <nav role="navigation">
+          <!-- LOGO -->
     			<div class="logo">
     				<a href="<?php echo home_url(); ?>">
-                        <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/fgtm_logo.svg" alt="Logo" class="logo-img">
+              <!-- svg logo -->
+              <img src="<?php echo get_template_directory_uri(); ?>/img/fgtm_logo.svg" alt="Logo" class="logo-img">
     				</a>
     			</div>
     			<!-- /LOGO -->
-    			<label class="menu-copy" aria-label="Menu" >Menu</label>
+<!--     			<label class="menu-copy" aria-label="Menu" >Menu</label> -->
     			<div class="outer-menu">
-        			<input class="checkbox-toggle" type="checkbox" />
+            <input class="checkbox-toggle" type="checkbox" />
         			<div class="hamburger">
-                        <div></div>
-                    </div>
-    		        <?php fgtm_nav(); ?>
+                <div></div>
+              </div>
+    		      <?php fgtm_nav(); ?>
     			</div>
     		</nav>
         </div>

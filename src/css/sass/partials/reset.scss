@@ -118,3 +118,7 @@ input[type="search"] {
 .fgtm-btn {
    @include green-btn;
 }
+
+.fgtm-line-btn {
+   @include green-line-btn;
+}
