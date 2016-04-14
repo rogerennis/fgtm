@@ -4,33 +4,34 @@
  * New here Page
  */
  
- 
  // What we Believe
 .newHere-believe-container {
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient( rgba(252, 252, 252, 0.1), rgba(252, 252, 252, 0.1)), url('img/whatWeBelieve.jpg') no-repeat center center; 
+  background: linear-gradient( rgba(252, 252, 252, 0), rgba(252, 252, 252, 0)), url('img/whatWeBelieve.jpg') no-repeat center center;
   @include background-size(1030%);
   
-  .believe {
-     flex-grow: 1;
-     flex-shrink: 1;
-     flex-basis: auto;
-     text-align: center;
-     color: $fgtm-black;
-     
-     > h3 {
+  .wrapper {
+    .believe {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      text-align: center;
+      color: $fgtm-black;
+       
+      > h3 {
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 3rem;
-      }
-      
+       }
+        
       > p {
-         margin-bottom: 1rem;
-         line-height: 1.593;
+        margin-bottom: 1rem;
+        line-height: 1.593;
       }
-   }
+    }
+  }
 }
 
 
@@ -43,135 +44,465 @@
   @include background-size(cover);
   
   .wrapper {
-     .service-times {
-         flex-grow: 1;
-         flex-shrink: 1;
-         flex-basis: auto;
-         text-align: center;
-         color: $fgtm-black;
+    .service-times {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      text-align: center;
+      color: $fgtm-black;
         
-         > h3 {
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 3rem;
-         }
-         
-         .time-container {
-            border: 1px solid $fgtm-black-five;
-            padding: 1.4em 0 1.4em 0;
-            margin: 0rem 1.1rem 0rem 1.1rem;
-            @include border-radius(90px);
-            
-            .time-content {
-               > .clock {
-                  width: 20vw;
-                  height: 11vh;
-               }
-               
-               > .first-time,
-               > .second-time,
-               > .third-time {
-                  padding: 1.4em 0 1.4em 0;
-                  
-                  p:nth-child(1) {
-                     text-transform: uppercase;
-                     font-family: $font-medium;
-                     font-size: 1.433em;
-                  }
-                  
-                  p:nth-child(2) {
-                     text-transform: uppercase;
-                     font-family: $font-regular;
-                     color: $fgtm-black-three;
-                     font-size: 1.063em;
-                  }
-               }
-            }
-         }
+      > h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
       }
-   }
+         
+      .time-container {
+        border: 1px solid $fgtm-black-five;
+        padding: 1.4em 0 1.4em 0;
+        margin: 0rem 1.1rem 0rem 1.1rem;
+        @include border-radius(90px);
+            
+        .time-content {
+          display: flex;
+          flex-direction: column;
+          
+          > .clock {
+            width: 20vw;
+            height: 11vh;
+          }
+               
+          > .first-time,
+          > .second-time,
+          > .third-time {
+            padding: 1.4em 0 1.4em 0;
+                    
+            p:nth-child(1) {
+              text-transform: uppercase;
+              font-family: $font-medium;
+              font-size: 1.433em;
+            }
+            
+            p:nth-child(2) {
+              text-transform: uppercase;
+              font-family: $font-regular;
+              color: $fgtm-black-three;
+              font-size: 1.063em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Experience Youth
 .newHere-youth {
-   padding: 5em 0;
-   display: flex;
-   flex-direction: column;
-   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/experienceYouth.jpg') center center no-repeat; 
-   @include background-size(1220%);
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/experienceYouth.jpg') center center no-repeat; 
+  @include background-size(1220%);
    
-   .wrapper {
-      .youth {
-         flex-grow: 1;
-         flex-shrink: 1;
-         flex-basis: auto;
-         text-align: center;
-         color: $white;
+  .wrapper {
+    .youth-container {
+      flex: 1 1 auto;
+      text-align: center;
+      color: $white;
          
-         > h3 {
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 1.5rem;
-         }
-         
-         .nursery,
-         .children,
-         .jr-youth,
-         .young-adults {
-            width: 100%;
-            height: 65vh;
-            background: $white;
-            color: $fgtm-black;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            padding: 7rem 1.5rem 0 1.5rem;
-            font-size: 2.5em;
-         }
+      > h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1.5rem;
       }
       
-      .btn-container {
-         text-align: center;
-         
-         .fgtm-btn {
-            margin-top: 1rem;
-            display: block;
-            font-size: 1.063em;
-         }
+      p {
+        margin-bottom: 4rem;
       }
-   }
+      
+      .youth {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+        .nursery,
+        .children,
+        .jr-youth,
+        .young-adults {
+          @include border-radius(4px);
+          flex: 1 0 100%;
+          background: $white;
+          color: $fgtm-black;
+          padding: 7rem 1.5rem;
+          font-size: 1.8em;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+      
+    .btn-container {
+      text-align: center;
+         
+      .fgtm-btn {
+        margin-top: 1rem;
+        display: block;
+      }
+    }
+  }
 }
 
 // CTA
 .newHere-cta {
-   padding: 5em 0;
-   display: flex;
-   flex-direction: column;
-   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('img/checkoutEvent.jpeg') center center no-repeat; 
-   @include background-size(710%);
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('img/checkoutEvent.jpeg') center center no-repeat; 
+  @include background-size(710%);
    
-   .wrapper {
-      .cta {
-         flex-grow: 1;
-         flex-shrink: 1;
-         flex-basis: auto;
-         text-align: center;
-         color: $white;
+  .wrapper {
+    .cta {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      text-align: center;
+      color: $white;
          
-         > h3 {
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 1.5rem;
-         }
+      > h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+    }
+      
+    .btn-container {
+      text-align: center;
+         
+      .fgtm-btn {
+        margin-top: 1.5rem;
+        display: block;
+      }
+    }
+  }
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen
+  and (min-width: 414px) {
+  
+  // What we Believe
+  .newHere-believe-container {
+    .wrapper {
+      padding: 0 3rem;
+    }
+  }
+}
+
+
+@media only screen
+  and (min-width: 568px) {
+     
+  // What we Believe
+  .newHere-believe-container {
+    .wrapper {
+      padding: 0 4rem;
+    }
+  }
+  
+}
+  
+   
+@media only screen
+  and (min-width: 600px) {
+  
+  // What we Believe
+  .newHere-believe-container {
+    .wrapper {
+      padding: 0 5rem;
+      
+      .believe {
+        > h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+      }
+    }
+  }
+  
+  // Service Times
+  .newHere-service-times {
+    .wrapper {
+      .service-times {
+        h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+        
+        .time-container {
+          padding: 1em 0;
+          margin: 0;
+              
+          .time-content {
+            display: flex;
+            flex-direction: row;
+            
+            figure {
+              margin-right: 25px;
+            }
+            
+            > .first-time,
+            > .second-time,
+            > .third-time {
+              padding: 2.4em 1.5rem 1.4em;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Experience Youth
+  .newHere-youth {
+    .wrapper {
+      .youth-container {
+        > h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+        
+        p {
+          padding: 0 5rem;
+        }
+        
+        .youth {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          
+          .nursery,
+          .children,
+          .jr-youth,
+          .young-adults {
+            flex: 1 1 48%;
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            
+            &:first-child {
+              margin-top: 0rem;
+            }
+          }
+          
+          .children,
+          .young-adults {
+            margin-left: 1rem;
+          }
+        }
+      }
+        
+      .btn-container {
+        text-align: center;
+           
+        .fgtm-btn {
+          display: inline-flex;
+        }
+      }
+    }
+  }
+  
+  // CTA
+  .newHere-cta {
+    @include background-size(350%);
+     
+    .wrapper {
+      .cta {
+        flex: 1 1 auto;
+        text-align: center;
+        color: $white;
+        
+        > h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+        
+        p {
+          font-size: 1.388em;
+          padding: 0 5rem;
+        }
+      }
+        
+      .btn-container {
+        text-align: center;
+           
+        .fgtm-btn {
+          display: inline-flex;
+        }
+      }
+    }
+  }
+}
+
+
+/***********************************************
+* TABLET
+***********************************************/
+
+/* Portrait */
+@media only screen
+  and (min-width: 768px) {
+  
+  // What we Believe
+  .newHere-believe-container {
+    padding: 7em 0;
+    
+    .wrapper {
+      .believe {
+        > p {
+          font-size: 1.388em;
+        }
+      }
+    }
+  }
+  
+  // Service Times
+  .newHere-service-times {
+    padding: 7em 0;
+    
+    .wrapper {
+      .service-times {
+        .time-container {
+          padding: 1em 1em 1em 0;
+          
+          .time-content {
+            font-size: 110%;
+            
+            > .first-time,
+            > .second-time,
+            > .third-time {
+              padding: 2.2em 1.5rem 1.4em;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Experience Youth
+  .newHere-youth {
+    padding: 7em 0;
+    
+    .wrapper {
+      .youth-container {
+        p {
+          font-size: 1.388em;
+        }
+        
+        .youth {
+          .nursery,
+          .children,
+          .jr-youth,
+          .young-adults {
+            flex: 1 1 48%;
+            
+            &:first-child {
+              margin-top: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // CTA
+  .newHere-cta {
+    padding: 7em 0;
+    @include background-size(290%);
+  }
+}
+
+/***********************************************
+* DESKTOP
+***********************************************/
+
+@media only screen
+  and (min-width: 1024px) {
+  
+  // Service Times
+  .newHere-service-times {
+    .wrapper {
+      .service-times {
+        .time-container {
+          .time-content {
+            font-size: 115%;
+            
+            > .first-time,
+            > .second-time,
+            > .third-time {
+              padding: 2.0em 1.5rem 1.4em;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Experience Youth
+  .newHere-youth {
+    .wrapper {
+      .youth-container {
+        .youth {
+          .nursery,
+          .children,
+          .jr-youth,
+          .young-adults {
+            flex: 1 0 23%;
+          }
+          
+          .children,
+          .jr-youth,
+          .young-adults {
+            margin-left: 1rem;
+          }
+        }
+      }
+        
+      .btn-container {
+        text-align: center;
+           
+        .fgtm-btn {
+          display: inline-flex;
+          
+          &:hover {
+            background: $fgtm-hover;
+          }
+        }
+      }
+    }
+  }
+  
+  // CTA
+  .newHere-cta {
+     @include background-size(110%);
+     
+    .wrapper {
+      .cta {
+        > h3 {
+          font-size: 2.121em;
+        }
       }
       
       .btn-container {
-         text-align: center;
-         
-         .fgtm-btn {
-            margin-top: 1rem;
-            display: block;
-            font-size: 1.063em;
-         }
+        text-align: center;
+           
+        .fgtm-btn {
+          display: inline-flex;
+          
+          &:hover {
+            background: $fgtm-hover;
+          }
+        }
       }
-   }
+    }
+  }
 }

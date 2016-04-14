@@ -99,23 +99,9 @@
                text-align: center;
                
                .fgtm-btn {
-                  margin-top: 1rem;
-                  display: block;
-                  font-size: 1.063em;
-                  position: relative;
-                  
-/*
-                  &:after {
-                     content: '';
-                     position: absolute;
-                     background: url("img/arrow-right.svg") no-repeat;
-                     @include background-size(contain);
-                     width: 20px;
-                     height: 20px;
-                     margin-left: 12px;
-                  }
-*/
-               }
+                margin-top: 1.5rem;
+                display: block;
+              }
             }
          }
          
@@ -147,9 +133,8 @@
       text-align: center;
       
       .fgtm-btn {
-         margin-top: 1rem;
-         display: block;
-         font-size: 1.063em;
+        margin-top: 1.5rem;
+        display: block;
       }
    }
 }
@@ -159,11 +144,10 @@
 ***********************************************/
 
 @media only screen
-   and (min-device-width: 600px) {
+   and (min-width: 600px) {
       
       //  Events & Service Times
       .home-events {
-         
          .event,
          .times {
             h3 {
@@ -228,7 +212,7 @@
 
 
 @media only screen
-   and (min-device-width: 736px) {
+   and (min-width: 736px) {
       
       //  Events & Service Times
       .home-events {
@@ -268,7 +252,7 @@
 
 
 @media only screen
-   and (min-device-width: 900px) {
+   and (min-width: 900px) {
        
        // Events & Service Times
        .home-events {
@@ -341,7 +325,6 @@
                   .btn-container {
                      .fgtm-btn {
                         background: $fgtm-green;
-                        transition: all $anim-duration ease;
                         
                         &:hover {
                            background: $fgtm-hover;

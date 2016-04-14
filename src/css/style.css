@@ -189,6 +189,9 @@ input[type="search"] {
   border-radius: 6px;
   transition: all 0.4s ease;
 }
+.fgtm-btn:hover {
+  background: #01715a;
+}
 
 .fgtm-line-btn {
   background: #fff;
@@ -201,6 +204,10 @@ input[type="search"] {
   -ms-border-radius: 6px;
   border-radius: 6px;
   transition: all 0.4s ease;
+}
+.fgtm-line-btn:hover {
+  background: #00ab88;
+  color: #fff;
 }
 
 /**
@@ -300,6 +307,7 @@ input[type="search"] {
   right: 0;
   left: 0;
   z-index: 1030;
+  border-bottom: 1px solid #00ab88;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1163,21 +1171,8 @@ input[type="search"] {
 }
 .home-youth .wrapper main .nursery .btn-container .fgtm-btn,
 .home-youth .wrapper main .youth .btn-container .fgtm-btn {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: block;
-  font-size: 1.063em;
-  position: relative;
-  /*
-                    &:after {
-                       content: '';
-                       position: absolute;
-                       background: url("img/arrow-right.svg") no-repeat;
-                       @include background-size(contain);
-                       width: 20px;
-                       height: 20px;
-                       margin-left: 12px;
-                    }
-  */
 }
 .home-youth .wrapper main .youth {
   margin-bottom: 0em;
@@ -1200,15 +1195,14 @@ input[type="search"] {
   text-align: center;
 }
 .home-sermon .btn-container .fgtm-btn {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: block;
-  font-size: 1.063em;
 }
 
 /***********************************************
 * CONTINUE MOBILE
 ***********************************************/
-@media only screen and (min-device-width: 600px) {
+@media only screen and (min-width: 600px) {
   .home-events .event h3,
   .home-events .times h3 {
     font-size: 2.166em;
@@ -1251,7 +1245,7 @@ input[type="search"] {
 /***********************************************
 * DESKTOP
 ***********************************************/
-@media only screen and (min-device-width: 900px) {
+@media only screen and (min-width: 900px) {
   .home-events {
     flex-direction: row;
   }
@@ -1305,7 +1299,6 @@ input[type="search"] {
   .home-youth .wrapper main .nursery .btn-container .fgtm-btn,
   .home-youth .wrapper main .youth .btn-container .fgtm-btn {
     background: #00ab88;
-    transition: all 0.4s ease;
   }
   .home-youth .wrapper main .nursery .btn-container .fgtm-btn:hover,
   .home-youth .wrapper main .youth .btn-container .fgtm-btn:hover {
@@ -1330,6 +1323,7 @@ input[type="search"] {
  */
 .page-header-container {
   display: flex;
+  flex-direction: row;
   margin-top: 83px;
 }
 .page-header-container header.header {
@@ -1338,40 +1332,52 @@ input[type="search"] {
   justify-content: center;
 }
 .page-header-container header.header .page-header {
-  height: 45vh;
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.page-header-container header.header .page-header .img-overlay {
-  background-color: rgba(0, 0, 0, 0.3);
-  flex: 1 1 auto;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-.page-header-container header.header .heading {
-  position: absolute;
+  padding: 3.5rem 1.5rem 4rem 1.5rem;
   text-align: center;
-  left: 0;
-  top: 170px;
-  width: 100%;
+}
+.page-header-container header.header .page-header .heading {
   opacity: 1;
   transition: all 0.2s ease 0.2s;
-  height: 0;
   color: #fff;
 }
-.page-header-container header.header .heading h1 {
+.page-header-container header.header .page-header .heading h1 {
   font-size: 2.666em;
   line-height: 1.593;
   text-transform: uppercase;
 }
-.page-header-container header.header .heading p {
-  margin: 0 1.5em;
+.page-header-container header.header .page-header .heading p {
+  font-size: 1.2em;
 }
 
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+@media only screen and (min-width: 768px) {
+  .page-header-container header.header .page-header {
+    padding: 5.5rem 1.5rem 6rem 1.5rem;
+  }
+  .page-header-container header.header .page-header .heading h1 {
+    font-size: 3.3em;
+  }
+  .page-header-container header.header .page-header .heading p {
+    font-size: 1.5em;
+  }
+}
+/***********************************************
+* DESKTOP
+***********************************************/
+@media only screen and (min-width: 1024px) {
+  .page-header-container header.header .page-header {
+    padding: 7.5rem 1.5rem 8rem 1.5rem;
+  }
+}
 /**
  * partials/Templates/New here
  * ---
@@ -1381,25 +1387,25 @@ input[type="search"] {
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(252, 252, 252, 0.1), rgba(252, 252, 252, 0.1)), url("img/whatWeBelieve.jpg") no-repeat center center;
+  background: linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 0)), url("img/whatWeBelieve.jpg") no-repeat center center;
   -webkit-background-size: 1030%;
   -moz-background-size: 1030%;
   -o-background-size: 1030%;
   background-size: 1030%;
 }
-.newHere-believe-container .believe {
+.newHere-believe-container .wrapper .believe {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
   text-align: center;
   color: #404041;
 }
-.newHere-believe-container .believe > h3 {
+.newHere-believe-container .wrapper .believe > h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 3rem;
 }
-.newHere-believe-container .believe > p {
+.newHere-believe-container .wrapper .believe > p {
   margin-bottom: 1rem;
   line-height: 1.593;
 }
@@ -1434,6 +1440,10 @@ input[type="search"] {
   -moz-border-radius: 90px;
   -ms-border-radius: 90px;
   border-radius: 90px;
+}
+.newHere-service-times .wrapper .service-times .time-container .time-content {
+  display: flex;
+  flex-direction: column;
 }
 .newHere-service-times .wrapper .service-times .time-container .time-content > .clock {
   width: 20vw;
@@ -1470,30 +1480,45 @@ input[type="search"] {
   -o-background-size: 1220%;
   background-size: 1220%;
 }
-.newHere-youth .wrapper .youth {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
+.newHere-youth .wrapper .youth-container {
+  flex: 1 1 auto;
   text-align: center;
   color: #fff;
 }
-.newHere-youth .wrapper .youth > h3 {
+.newHere-youth .wrapper .youth-container > h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.newHere-youth .wrapper .youth .nursery,
-.newHere-youth .wrapper .youth .children,
-.newHere-youth .wrapper .youth .jr-youth,
-.newHere-youth .wrapper .youth .young-adults {
-  width: 100%;
-  height: 65vh;
+.newHere-youth .wrapper .youth-container p {
+  margin-bottom: 4rem;
+}
+.newHere-youth .wrapper .youth-container .youth {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.newHere-youth .wrapper .youth-container .youth .nursery,
+.newHere-youth .wrapper .youth-container .youth .children,
+.newHere-youth .wrapper .youth-container .youth .jr-youth,
+.newHere-youth .wrapper .youth-container .youth .young-adults {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  flex: 1 0 100%;
   background: #fff;
   color: #404041;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 7rem 1.5rem 0 1.5rem;
-  font-size: 2.5em;
+  padding: 7rem 1.5rem;
+  font-size: 1.8em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.newHere-youth .wrapper .youth-container .youth .nursery:first-child,
+.newHere-youth .wrapper .youth-container .youth .children:first-child,
+.newHere-youth .wrapper .youth-container .youth .jr-youth:first-child,
+.newHere-youth .wrapper .youth-container .youth .young-adults:first-child {
+  margin-top: 0;
 }
 .newHere-youth .wrapper .btn-container {
   text-align: center;
@@ -1501,14 +1526,13 @@ input[type="search"] {
 .newHere-youth .wrapper .btn-container .fgtm-btn {
   margin-top: 1rem;
   display: block;
-  font-size: 1.063em;
 }
 
 .newHere-cta {
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("img/checkoutEvent.jpeg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("img/checkoutEvent.jpeg") center center no-repeat;
   -webkit-background-size: 710%;
   -moz-background-size: 710%;
   -o-background-size: 710%;
@@ -1530,11 +1554,219 @@ input[type="search"] {
   text-align: center;
 }
 .newHere-cta .wrapper .btn-container .fgtm-btn {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: block;
-  font-size: 1.063em;
 }
 
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen and (min-width: 414px) {
+  .newHere-believe-container .wrapper {
+    padding: 0 3rem;
+  }
+}
+@media only screen and (min-width: 568px) {
+  .newHere-believe-container .wrapper {
+    padding: 0 4rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .newHere-believe-container .wrapper {
+    padding: 0 5rem;
+  }
+  .newHere-believe-container .wrapper .believe > h3 {
+    font-size: 2.166em;
+  }
+
+  .newHere-service-times .wrapper .service-times h3 {
+    font-size: 2.166em;
+  }
+  .newHere-service-times .wrapper .service-times .time-container {
+    padding: 1em 0;
+    margin: 0;
+  }
+  .newHere-service-times .wrapper .service-times .time-container .time-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .newHere-service-times .wrapper .service-times .time-container .time-content figure {
+    margin-right: 25px;
+  }
+  .newHere-service-times .wrapper .service-times .time-container .time-content > .first-time,
+  .newHere-service-times .wrapper .service-times .time-container .time-content > .second-time,
+  .newHere-service-times .wrapper .service-times .time-container .time-content > .third-time {
+    padding: 2.4em 1.5rem 1.4em;
+  }
+
+  .newHere-youth .wrapper .youth-container > h3 {
+    font-size: 2.166em;
+  }
+  .newHere-youth .wrapper .youth-container p {
+    padding: 0 5rem;
+  }
+  .newHere-youth .wrapper .youth-container .youth {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .newHere-youth .wrapper .youth-container .youth .nursery,
+  .newHere-youth .wrapper .youth-container .youth .children,
+  .newHere-youth .wrapper .youth-container .youth .jr-youth,
+  .newHere-youth .wrapper .youth-container .youth .young-adults {
+    flex: 1 1 48%;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .newHere-youth .wrapper .youth-container .youth .nursery:first-child,
+  .newHere-youth .wrapper .youth-container .youth .children:first-child,
+  .newHere-youth .wrapper .youth-container .youth .jr-youth:first-child,
+  .newHere-youth .wrapper .youth-container .youth .young-adults:first-child {
+    margin-top: 0rem;
+  }
+  .newHere-youth .wrapper .youth-container .youth .children,
+  .newHere-youth .wrapper .youth-container .youth .young-adults {
+    margin-left: 1rem;
+  }
+  .newHere-youth .wrapper .btn-container {
+    text-align: center;
+  }
+  .newHere-youth .wrapper .btn-container .fgtm-btn {
+    display: inline-flex;
+  }
+
+  .newHere-cta {
+    -webkit-background-size: 350%;
+    -moz-background-size: 350%;
+    -o-background-size: 350%;
+    background-size: 350%;
+  }
+  .newHere-cta .wrapper .cta {
+    flex: 1 1 auto;
+    text-align: center;
+    color: #fff;
+  }
+  .newHere-cta .wrapper .cta > h3 {
+    font-size: 2.166em;
+  }
+  .newHere-cta .wrapper .cta p {
+    font-size: 1.388em;
+    padding: 0 5rem;
+  }
+  .newHere-cta .wrapper .btn-container {
+    text-align: center;
+  }
+  .newHere-cta .wrapper .btn-container .fgtm-btn {
+    display: inline-flex;
+  }
+}
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+@media only screen and (min-width: 768px) {
+  .newHere-believe-container {
+    padding: 7em 0;
+  }
+  .newHere-believe-container .wrapper .believe > p {
+    font-size: 1.388em;
+  }
+
+  .newHere-service-times {
+    padding: 7em 0;
+  }
+  .newHere-service-times .wrapper .service-times .time-container {
+    padding: 1em 1em 1em 0;
+  }
+  .newHere-service-times .wrapper .service-times .time-container .time-content {
+    font-size: 110%;
+  }
+  .newHere-service-times .wrapper .service-times .time-container .time-content > .first-time,
+  .newHere-service-times .wrapper .service-times .time-container .time-content > .second-time,
+  .newHere-service-times .wrapper .service-times .time-container .time-content > .third-time {
+    padding: 2.2em 1.5rem 1.4em;
+  }
+
+  .newHere-youth {
+    padding: 7em 0;
+  }
+  .newHere-youth .wrapper .youth-container p {
+    font-size: 1.388em;
+  }
+  .newHere-youth .wrapper .youth-container .youth .nursery,
+  .newHere-youth .wrapper .youth-container .youth .children,
+  .newHere-youth .wrapper .youth-container .youth .jr-youth,
+  .newHere-youth .wrapper .youth-container .youth .young-adults {
+    flex: 1 1 48%;
+  }
+  .newHere-youth .wrapper .youth-container .youth .nursery:first-child,
+  .newHere-youth .wrapper .youth-container .youth .children:first-child,
+  .newHere-youth .wrapper .youth-container .youth .jr-youth:first-child,
+  .newHere-youth .wrapper .youth-container .youth .young-adults:first-child {
+    margin-top: 0rem;
+  }
+
+  .newHere-cta {
+    padding: 7em 0;
+    -webkit-background-size: 290%;
+    -moz-background-size: 290%;
+    -o-background-size: 290%;
+    background-size: 290%;
+  }
+}
+/***********************************************
+* DESKTOP
+***********************************************/
+@media only screen and (min-width: 1024px) {
+  .newHere-service-times .wrapper .service-times .time-container .time-content {
+    font-size: 115%;
+  }
+  .newHere-service-times .wrapper .service-times .time-container .time-content > .first-time,
+  .newHere-service-times .wrapper .service-times .time-container .time-content > .second-time,
+  .newHere-service-times .wrapper .service-times .time-container .time-content > .third-time {
+    padding: 2.0em 1.5rem 1.4em;
+  }
+
+  .newHere-youth .wrapper .youth-container .youth .nursery,
+  .newHere-youth .wrapper .youth-container .youth .children,
+  .newHere-youth .wrapper .youth-container .youth .jr-youth,
+  .newHere-youth .wrapper .youth-container .youth .young-adults {
+    flex: 1 0 23%;
+  }
+  .newHere-youth .wrapper .youth-container .youth .children,
+  .newHere-youth .wrapper .youth-container .youth .jr-youth,
+  .newHere-youth .wrapper .youth-container .youth .young-adults {
+    margin-left: 1rem;
+  }
+  .newHere-youth .wrapper .btn-container {
+    text-align: center;
+  }
+  .newHere-youth .wrapper .btn-container .fgtm-btn {
+    display: inline-flex;
+  }
+  .newHere-youth .wrapper .btn-container .fgtm-btn:hover {
+    background: #01715a;
+  }
+
+  .newHere-cta {
+    -webkit-background-size: 110%;
+    -moz-background-size: 110%;
+    -o-background-size: 110%;
+    background-size: 110%;
+  }
+  .newHere-cta .wrapper .cta > h3 {
+    font-size: 2.121em;
+  }
+  .newHere-cta .wrapper .btn-container {
+    text-align: center;
+  }
+  .newHere-cta .wrapper .btn-container .fgtm-btn {
+    display: inline-flex;
+  }
+  .newHere-cta .wrapper .btn-container .fgtm-btn:hover {
+    background: #01715a;
+  }
+}
 /**
  * partials/Templates/About
  * ---
@@ -1699,6 +1931,16 @@ input[type="search"] {
   margin-bottom: 1.3rem;
 }
 
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+/***********************************************
+* DESKTOP
+***********************************************/
 /**
  * partials/Templates/Calendar
  * ---

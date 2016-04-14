@@ -79,17 +79,9 @@
    transition: all $anim-duration ease;
 }
 
-@mixin green-btn-with-hover {
-   background: $fgtm-green-three;
-   border: 0;
-   color: $white;
-   padding: 1.1rem 2rem;
-   text-transform: uppercase;
-   @include border-radius(6px);
-   transition: all $anim-duration ease;
-   
+@mixin green-btn-hover {
    &:hover {
-      background: $fgtm-green;
+      background: $fgtm-hover;
    }
 }
 
@@ -103,15 +95,7 @@
    transition: all $anim-duration ease;
 }
 
-@mixin green-line-btn-with-hover {
-   background: $white;
-   border: 2px solid $fgtm-black;
-   color: $fgtm-green;
-   padding: 1.1rem 2rem;
-   text-transform: uppercase;
-   @include border-radius(6px);
-   transition: all $anim-duration ease;
-   
+@mixin green-line-btn-hover {
    &:hover {
       background: $fgtm-green;
       color: $white

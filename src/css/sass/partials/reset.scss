@@ -117,8 +117,10 @@ input[type="search"] {
 
 .fgtm-btn {
    @include green-btn;
+   @include green-btn-hover;
 }
 
 .fgtm-line-btn {
    @include green-line-btn;
+   @include green-line-btn-hover;
 }
