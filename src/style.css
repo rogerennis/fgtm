@@ -211,7 +211,7 @@ input[type="search"] {
 
 .fgtm-line-btn {
   background: #fff;
-  border: 2px solid #404041;
+  border: 2px solid #00ab88;
   color: #00ab88;
   padding: 1.1rem 2rem;
   text-transform: uppercase;
@@ -321,7 +321,7 @@ input[type="search"] {
   right: 0;
   left: 0;
   z-index: 1030;
-  border-bottom: 1px solid #00ab88;
+  border-bottom: 1px solid #d5d6d8;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -622,17 +622,17 @@ input[type="search"] {
 /* Portrait */
 @media only screen and (min-width: 768px) {
   #nav-container {
-    padding-bottom: 10px;
+    padding: 10px 36px 9px;
   }
   #nav-container nav .logo {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
   }
   #nav-container nav .menu-copy {
     top: 19px;
   }
   #nav-container nav .outer-menu {
-    width: 10vw;
+    width: 60px;
   }
   #nav-container nav .outer-menu .checkbox-toggle:checked ~ .fgtm-menu > div {
     -webkit-transform: scale(1.6);
@@ -644,10 +644,10 @@ input[type="search"] {
 ***********************************************/
 @media only screen and (min-width: 1024px) {
   #nav-container {
-    padding: 20px 55px 0px 60px;
+    padding: 10px 60px 0px;
   }
   #nav-container nav .logo {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   #nav-container nav .menu-copy {
     display: none;
@@ -725,9 +725,9 @@ input[type="search"] {
     font-family: "Geogrotesque-Regular";
   }
   #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li {
-    padding: 0em 0.7em 1.36em 0.7em;
+    padding: 0em 0.7em 0.84em 0.7em;
     margin: -2px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: inline-block;
     -webkit-transition: border-bottom 0.4s ease;
     transition: border-bottom 0.4s ease;
@@ -954,7 +954,7 @@ input[type="search"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 83px;
+  margin-top: 76px;
 }
 .header-container header.header {
   -webkit-box-flex: 1;
@@ -1149,7 +1149,7 @@ input[type="search"] {
     height: 74.91vh;
   }
   .header-container header.header .full-logo {
-    top: 320px;
+    top: 295px;
   }
   .header-container header.header .full-logo .full-logo-img {
     max-width: 100%;
@@ -1568,7 +1568,7 @@ input[type="search"] {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 83px;
+  margin-top: 75px;
 }
 .page-header-container header.header {
   -webkit-box-flex: 1;
@@ -1623,9 +1623,6 @@ input[type="search"] {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
-  .page-header-container header.header .page-header {
-    padding: 5.5rem 1.5rem 6rem 1.5rem;
-  }
   .page-header-container header.header .page-header .heading h1 {
     font-size: 3.3em;
   }
@@ -1638,7 +1635,7 @@ input[type="search"] {
 ***********************************************/
 @media only screen and (min-width: 1024px) {
   .page-header-container header.header .page-header {
-    padding: 7.5rem 1.5rem 8rem 1.5rem;
+    padding: 5.5rem 1.5rem 6rem 1.5rem;
   }
 }
 /**
@@ -1663,15 +1660,9 @@ input[type="search"] {
 }
 .newHere-believe-container .wrapper .believe {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   text-align: center;
   color: #404041;
 }
@@ -1831,7 +1822,7 @@ input[type="search"] {
   text-align: center;
 }
 .newHere-youth .wrapper .btn-container .fgtm-btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: block;
 }
 
@@ -1950,11 +1941,11 @@ input[type="search"] {
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
   .newHere-youth .wrapper .youth-container .youth .young-adults {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 48%;
-    -ms-flex: 1 1 48%;
-    flex: 1 1 48%;
+    -webkit-flex: 1 1 45%;
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%;
     margin-top: 0rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .newHere-youth .wrapper .youth-container .youth .nursery:first-child,
   .newHere-youth .wrapper .youth-container .youth .children:first-child,
@@ -1964,7 +1955,7 @@ input[type="search"] {
   }
   .newHere-youth .wrapper .youth-container .youth .children,
   .newHere-youth .wrapper .youth-container .youth .young-adults {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .newHere-youth .wrapper .btn-container {
     text-align: center;
@@ -2042,9 +2033,9 @@ input[type="search"] {
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
   .newHere-youth .wrapper .youth-container .youth .young-adults {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 48%;
-    -ms-flex: 1 1 48%;
-    flex: 1 1 48%;
+    -webkit-flex: 1 1 45%;
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%;
   }
   .newHere-youth .wrapper .youth-container .youth .nursery:first-child,
   .newHere-youth .wrapper .youth-container .youth .children:first-child,
@@ -2076,14 +2067,15 @@ input[type="search"] {
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
   .newHere-youth .wrapper .youth-container .youth .young-adults {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 0 23%;
-    -ms-flex: 1 0 23%;
-    flex: 1 0 23%;
+    -webkit-flex: 1 0 22%;
+    -ms-flex: 1 0 22%;
+    flex: 1 0 22%;
+    margin-bottom: 0;
   }
   .newHere-youth .wrapper .youth-container .youth .children,
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
   .newHere-youth .wrapper .youth-container .youth .young-adults {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .newHere-youth .wrapper .btn-container {
     text-align: center;
@@ -2133,19 +2125,12 @@ input[type="search"] {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-size: cover;
 }
 .about-mission .wrapper .mission {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   text-align: center;
   color: #404041;
 }
@@ -2170,30 +2155,24 @@ input[type="search"] {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: -webkit-linear-gradient(rgba(252, 252, 252, 0.1), rgba(252, 252, 252, 0.1)), url("img/whatWeBelieve.jpg") no-repeat center center;
-  background: linear-gradient(rgba(252, 252, 252, 0.1), rgba(252, 252, 252, 0.1)), url("img/whatWeBelieve.jpg") no-repeat center center;
+  background: -webkit-linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 0)), url("img/whatWeBelieve.jpg") no-repeat center center;
+  background: linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 0)), url("img/whatWeBelieve.jpg") no-repeat center center;
   background-size: 907%;
 }
-.about-believe-container .believe {
+.about-believe-container .wrapper .believe {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   text-align: center;
   color: #404041;
 }
-.about-believe-container .believe > h3 {
+.about-believe-container .wrapper .believe > h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 3rem;
 }
-.about-believe-container .believe > p {
+.about-believe-container .wrapper .believe > p {
   margin-bottom: 1rem;
   line-height: 1.593;
 }
@@ -2211,75 +2190,85 @@ input[type="search"] {
   flex-direction: column;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("img/rockywall.png") left top;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("img/rockywall.png") left top;
+ /********* CURRENTLY NOT IN USE  *******
+   
+ // Ministry Leadership
+.about-ministry-leadership {
+  padding: 3em 0 0em 0;
+   
+  .ministry-leadership-container {
+    flex: 1 1 auto;
+    text-align: left;
+    color: $fgtm-black;
+      
+    .ministry-leadership {
+      margin-bottom: 3rem;
+       
+      &:last-child {
+        margin-bottom: 0rem;
+      }
+      
+      > figure {
+        margin: 0 0 1rem 0;
+      }
+      
+      > h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      
+      .title {
+        font-size: 0.818em;
+      }
+      
+      > h4 {
+        padding: 0rem 0 0.5rem 0;
+      }
+    }
+  }
+}
+
+********* CURRENTLY NOT IN USE  *******/
+}
+.about-leadership .wrapper > h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .about-leadership .wrapper .leadership-container {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  text-align: center;
   color: #404041;
 }
 .about-leadership .wrapper .leadership-container .leadership {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   margin-bottom: 3rem;
 }
 .about-leadership .wrapper .leadership-container .leadership > figure {
   margin: 0 0 1rem 0;
-}
-.about-leadership .wrapper .leadership-container .leadership > h3 {
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 3rem;
+  border: 5px solid #fff;
 }
 .about-leadership .wrapper .leadership-container .leadership .title {
   font-size: 0.818em;
+  margin-bottom: 0.3rem;
 }
 .about-leadership .wrapper .leadership-container .leadership > h4 {
-  padding: 0rem 0 0.5rem 0;
-}
-
-.about-ministry-leadership {
-  padding: 3em 0 0em 0;
-}
-.about-ministry-leadership .ministry-leadership-container {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-  text-align: left;
-  color: #404041;
-}
-.about-ministry-leadership .ministry-leadership-container .ministry-leadership {
-  margin-bottom: 3rem;
-}
-.about-ministry-leadership .ministry-leadership-container .ministry-leadership:last-child {
-  margin-bottom: 0rem;
-}
-.about-ministry-leadership .ministry-leadership-container .ministry-leadership > figure {
-  margin: 0 0 1rem 0;
-}
-.about-ministry-leadership .ministry-leadership-container .ministry-leadership > h3 {
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-.about-ministry-leadership .ministry-leadership-container .ministry-leadership .title {
-  font-size: 0.818em;
-}
-.about-ministry-leadership .ministry-leadership-container .ministry-leadership > h4 {
-  padding: 0rem 0 0.5rem 0;
+  padding: 0rem 0 1.1rem 0;
 }
 
 .about-ministries {
@@ -2294,62 +2283,217 @@ input[type="search"] {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.about-ministries .wrapper .ministries {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-  text-align: left;
-  color: #404041;
-}
-.about-ministries .wrapper .ministries > h3 {
+.about-ministries .wrapper > h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 3rem;
 }
+.about-ministries .wrapper .ministries {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
 .about-ministries .wrapper .ministries .ministry {
-  width: 100%;
-  border: 1px solid #d5d6d8;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   background: #fff;
-  margin-bottom: 2rem;
-  padding: 6rem 1rem 0rem 1rem;
+  padding-bottom: 0rem;
+  margin-bottom: 0;
+  border: 1px solid #d5d6d8;
   border-radius: 4px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .about-ministries .wrapper .ministries .ministry:last-child {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
-.about-ministries .wrapper .ministries .ministry h4 {
-  margin-bottom: 1.8rem;
-  text-transform: uppercase;
+.about-ministries .wrapper .ministries .ministry a {
+  display: block;
+  padding: 2rem 2rem;
+  font-size: 1.386em;
 }
-.about-ministries .wrapper .ministries .ministry p {
-  margin-bottom: 2rem;
-}
-.about-ministries .wrapper .ministries .ministry > a {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0.6rem 0.7rem;
-  margin-bottom: 1.3rem;
+.about-ministries .wrapper .ministries .ministry a span {
+  display: block;
+  font-size: 0.545em;
+  margin-top: 1.3rem;
 }
 
 /***********************************************
 * CONTINUE MOBILE
 ***********************************************/
+@media only screen and (min-width: 414px) {
+  .about-mission .wrapper {
+    padding: 0 3rem;
+  }
+
+  .about-believe-container .wrapper {
+    padding: 0 3rem;
+  }
+}
+@media only screen and (min-width: 568px) {
+  .about-mission .wrapper {
+    padding: 0 4rem;
+  }
+
+  .about-believe-container .wrapper {
+    padding: 0 4rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .about-mission .wrapper {
+    padding: 0 5rem;
+  }
+  .about-mission .wrapper .mission > h3 {
+    font-size: 2.166em;
+  }
+
+  .about-believe-container .wrapper {
+    padding: 0 5rem;
+  }
+  .about-believe-container .wrapper .believe > h3 {
+    font-size: 2.166em;
+  }
+
+  .about-leadership .wrapper > h3 {
+    font-size: 2.166em;
+  }
+  .about-leadership .wrapper .leadership-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .about-leadership .wrapper .leadership-container .leadership {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 45%;
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%;
+  }
+  .about-leadership .wrapper .leadership-container .leadership:nth-child(2), .about-leadership .wrapper .leadership-container .leadership:nth-child(4), .about-leadership .wrapper .leadership-container .leadership:nth-child(6) {
+    margin-left: 2em;
+  }
+
+  .about-ministries .wrapper > h3 {
+    font-size: 2.166em;
+  }
+  .about-ministries .wrapper .ministries {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .about-ministries .wrapper .ministries .ministry {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 45%;
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%;
+  }
+  .about-ministries .wrapper .ministries .ministry:nth-child(2), .about-ministries .wrapper .ministries .ministry:nth-child(4), .about-ministries .wrapper .ministries .ministry:nth-child(6) {
+    margin-left: 2em;
+  }
+  .about-ministries .wrapper .ministries .ministry a {
+    font-size: 1.2em;
+  }
+  .about-ministries .wrapper .ministries .ministry a span {
+    font-size: 0.645em;
+  }
+}
 /***********************************************
 * TABLET
 ***********************************************/
 /* Portrait */
+@media only screen and (min-width: 768px) {
+  .about-mission {
+    padding: 7em 0;
+  }
+  .about-mission .wrapper .mission > p {
+    font-size: 1.388em;
+  }
+
+  .about-believe-container {
+    padding: 7em 0;
+  }
+  .about-believe-container .wrapper .believe > p {
+    font-size: 1.388em;
+  }
+
+  .about-leadership {
+    padding: 7em 0;
+  }
+  .about-leadership .wrapper .leadership-container .leadership .title {
+    font-size: 1.188em;
+  }
+  .about-leadership .wrapper .leadership-container .leadership > h4 {
+    padding: 0rem 0 1.1rem 0;
+    font-size: 1.752em;
+  }
+  .about-leadership .wrapper .leadership-container .leadership > p {
+    font-size: 1.388em;
+    line-height: 1.593;
+  }
+
+  .about-ministries .wrapper .ministries .ministry {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 45%;
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%;
+  }
+}
 /***********************************************
 * DESKTOP
 ***********************************************/
+@media only screen and (min-width: 1024px) {
+  .about-leadership .wrapper .leadership-container .leadership:nth-child(2), .about-leadership .wrapper .leadership-container .leadership:nth-child(3), .about-leadership .wrapper .leadership-container .leadership:nth-child(5), .about-leadership .wrapper .leadership-container .leadership:nth-child(6) {
+    margin-left: 2em;
+  }
+  .about-leadership .wrapper .leadership-container .leadership:nth-child(4) {
+    margin-left: 0em;
+  }
+  .about-leadership .wrapper .leadership-container .leadership .title {
+    font-size: 1.188em;
+  }
+  .about-leadership .wrapper .leadership-container .leadership > h4 {
+    padding: 0rem 0 1.1rem 0;
+    font-size: 1.752em;
+  }
+  .about-leadership .wrapper .leadership-container .leadership > p {
+    font-size: 1.388em;
+    line-height: 1.593;
+  }
+
+  .about-ministries .wrapper .ministries .ministry:hover {
+    border-color: #00ab88;
+  }
+}
 /**
  * partials/Templates/Calendar
  * ---
@@ -2368,6 +2512,11 @@ input[type="search"] {
   flex-direction: column;
 }
 
+/**
+ * partials/Templates/Media
+ * ---
+ * Media Page
+ */
 /**
  * partials/Templates/Giving
  * ---
@@ -2469,6 +2618,16 @@ input[type="search"] {
   position: relative;
 }
 
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+/***********************************************
+* DESKTOP
+***********************************************/
 /**
  * partials/Templates/Contact
  * ---
@@ -2580,3 +2739,14 @@ input[type="search"] {
   margin: 0px;
   padding: 0;
 }
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+/***********************************************
+* DESKTOP
+***********************************************/

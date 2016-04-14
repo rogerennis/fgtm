@@ -6,190 +6,189 @@
  
  // Mission
 .about-mission {
-   padding: 5em 0;
-   display: flex;
-   flex-direction: column;
-//    background: url('img/hero-image.jpg') no-repeat center center; 
-   @include background-size(cover);
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
    
-   .wrapper {
-      .mission {
-         flex-grow: 1;
-         flex-shrink: 1;
-         flex-basis: auto;
-         text-align: center;
-         color: $fgtm-black;
+  .wrapper {
+    .mission {
+      flex: 1 1 auto;
+      text-align: center;
+      color: $fgtm-black;
         
-         > h3 {
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 3rem;
-         }
-         
-         > p {
-            margin-bottom: 1rem;
-            line-height: 1.593;
-         }
+      > h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
       }
-   }
+         
+      > p {
+        margin-bottom: 1rem;
+        line-height: 1.593;
+      }
+    }
+  }
 }
 
 // What we Believe
 .about-believe-container {
-   padding: 5em 0;
-   display: flex;
-   flex-direction: column;
-   background: linear-gradient( rgba(252, 252, 252, 0.1), rgba(252, 252, 252, 0.1)), url('img/whatWeBelieve.jpg') no-repeat center center; 
-   @include background-size(907%);
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(252, 252, 252, 0), rgba(252, 252, 252, 0)), url('img/whatWeBelieve.jpg') no-repeat center center; 
+  @include background-size(907%);
   
-   .believe {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: auto;
+  .wrapper {
+    .believe {
+      flex: 1 1 auto;
       text-align: center;
       color: $fgtm-black;
-     
+       
       > h3 {
-         text-transform: uppercase;
-         text-align: center;
-         margin-bottom: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
       }
-      
+        
       > p {
-         margin-bottom: 1rem;
-         line-height: 1.593;
+        margin-bottom: 1rem;
+        line-height: 1.593;
       }
-   }
+    }
+  }
 }
 
 // Leadership
 .about-leadership {
-   padding: 5em 0;
-   display: flex;
-   flex-direction: column;
-   background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/rockywall.png') left top; 
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/rockywall.png') left top; 
   
-   .wrapper {
-      .leadership-container {
-         flex-grow: 1;
-         flex-shrink: 1;
-         flex-basis: auto;
-         text-align: left;
-         color: $fgtm-black;
-         
-         .leadership {
-            margin-bottom: 3rem;
-            
-            > figure {
-               margin: 0 0 1rem 0;
-            }
-            
-            > h3 {
-               text-transform: uppercase;
-               text-align: center;
-               margin-bottom: 3rem;
-            }
-            
-            .title {
-               font-size: 0.818em;
-            }
-            
-            > h4 {
-               padding: 0rem 0 0.5rem 0;
-            }
-         }
+  .wrapper {
+    > h3 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .leadership-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      text-align: center;
+      color: $fgtm-black;
+       
+      .leadership {
+        flex: 1 1 auto;
+        margin-bottom: 3rem;
+          
+        > figure {
+          margin: 0 0 1rem 0;
+          border: 5px solid $white;
+        }
+        
+        .title {
+          font-size: 0.818em;
+          margin-bottom: 0.3rem;
+        }
+        
+        > h4 {
+          padding: 0rem 0 1.1rem 0;
+        }
       }
-   }
-}
-
-// Ministry Leadership
-.about-ministry-leadership {
-   padding: 3em 0 0em 0;
+    }
+  }
    
-   .ministry-leadership-container {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: auto;
+   /********* CURRENTLY NOT IN USE  *******
+     
+   // Ministry Leadership
+  .about-ministry-leadership {
+    padding: 3em 0 0em 0;
+     
+    .ministry-leadership-container {
+      flex: 1 1 auto;
       text-align: left;
       color: $fgtm-black;
-      
+        
       .ministry-leadership {
-         margin-bottom: 3rem;
+        margin-bottom: 3rem;
          
-         &:last-child {
-            margin-bottom: 0rem;
-         }
-         
-         > figure {
-            margin: 0 0 1rem 0;
-         }
-         
-         > h3 {
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 3rem;
-         }
-         
-         .title {
-            font-size: 0.818em;
-         }
-         
-         > h4 {
-            padding: 0rem 0 0.5rem 0;
-         }
+        &:last-child {
+          margin-bottom: 0rem;
+        }
+        
+        > figure {
+          margin: 0 0 1rem 0;
+        }
+        
+        > h3 {
+          text-transform: uppercase;
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+        
+        .title {
+          font-size: 0.818em;
+        }
+        
+        > h4 {
+          padding: 0rem 0 0.5rem 0;
+        }
       }
-   }
+    }
+  }
+  
+  ********* CURRENTLY NOT IN USE  *******/
 }
 
 // Ministries
 .about-ministries {
-   padding: 5em 0 ;
-   display: flex;
-   flex-direction: column;
+  padding: 5em 0 ;
+  display: flex;
+  flex-direction: column;
    
-   .wrapper {
-      .ministries {
-         flex-grow: 1;
-         flex-shrink: 1;
-         flex-basis: auto;
-         text-align: left;
-         color: $fgtm-black;
-         
-         > h3 {
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 3rem;
-         }
-         
-         .ministry {
-            width: 100%;
-            border: 1px solid $fgtm-black-five;
-            background: $white;
-            margin-bottom: 2rem;
-            padding: 6rem 1rem 0rem 1rem;
-            @include border-radius(4px);
-            
-            &:last-child {
-               margin-bottom: 0rem;
-            }
-            
-            h4 {
-               margin-bottom: 1.8rem;
-               text-transform: uppercase;
-            }
-            
-            p {
-               margin-bottom: 2rem
-            }
-            
-            > a {
-               display: inline-flex;
-               padding: 0.6rem 0.7rem;
-               margin-bottom: 1.3rem;
-            }
-         }
+  .wrapper {
+    > h3 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .ministries {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      
+      .ministry {
+        flex: 1 1 auto;
+        background: $white;
+        padding-bottom: 0rem;
+        margin-bottom: 0;
+        border: 1px solid $fgtm-black-five;
+        @include border-radius(4px);
+        transition: all $anim-duration ease;
+        margin-bottom: 2rem;
+        text-align: center;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        a {
+          display: block;
+          padding: 2rem 2rem;
+          font-size: 1.386em;
+          
+          span {
+            display: block;
+            font-size: 0.545em;
+            margin-top: 1.3rem;
+          }
+        }
       }
-   }
+    }
+  }
 }
 
 
@@ -199,21 +198,127 @@
 @media only screen
   and (min-width: 414px) {
   
+  // Mission
+  .about-mission {
+    .wrapper {
+      padding: 0 3rem;
+    }
+  }
   
+  // What we Believe
+  .about-believe-container {
+    .wrapper {
+      padding: 0 3rem;
+    }
+  }
 }
 
 
 @media only screen
   and (min-width: 568px) {
      
+  // Mission
+  .about-mission {
+    .wrapper {
+      padding: 0 4rem;
+    }
+  }
   
+  // What we Believe
+  .about-believe-container {
+    .wrapper {
+      padding: 0 4rem;
+    }
+  }
 }
   
    
 @media only screen
   and (min-width: 600px) {
   
+  // Mission
+  .about-mission {
+    .wrapper {
+      padding: 0 5rem;
+      
+      .mission {
+        > h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+      }
+    }
+  }
   
+  // What we Believe
+  .about-believe-container {
+    .wrapper {
+      padding: 0 5rem;
+      
+      .believe {
+        > h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+      }
+    }
+  }
+  
+  // Leadership
+  .about-leadership {
+    .wrapper {
+      > h3 {
+        font-size: 2.166em; // 1.796em + 1/4 scale
+      }
+      
+      .leadership-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+         
+        .leadership {
+          flex: 1 1 45%;
+          
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(6) {
+            margin-left: 2em;
+          }
+        }
+      }
+    }
+  }
+  
+  // Ministries
+  .about-ministries {
+    .wrapper {
+      > h3 {
+        font-size: 2.166em; // 1.796em + 1/4 scale
+      }
+      
+      .ministries {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        .ministry {
+          flex: 1 1 45%;
+          
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(6) {
+            margin-left: 2em;
+          }
+          
+          a {
+            font-size: 1.2em;
+            
+            span {
+              font-size: 0.645em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -225,7 +330,68 @@
 @media only screen
   and (min-width: 768px) {
   
+  // Mission
+  .about-mission {
+    padding: 7em 0;
+    
+    .wrapper {
+      .mission {
+        > p {
+          font-size: 1.388em;
+        }
+      }
+    }
+  }
   
+  // What we Believe
+  .about-believe-container {
+    padding: 7em 0;
+    
+    .wrapper {
+      .believe {
+        > p {
+          font-size: 1.388em;
+        }
+      }
+    }
+  }
+  
+  // Leadership
+  .about-leadership {
+    padding: 7em 0;
+    
+    .wrapper {
+      .leadership-container {
+        .leadership {
+          
+          .title {
+            font-size: 1.188em; // 0.818em + 1/4 scale = 0.37
+          }
+          
+          > h4 {
+            padding: 0rem 0 1.1rem 0;
+            font-size: 1.752em; // h4 + 1/4 scale = 0.37
+          }
+          
+          > p {
+            font-size: 1.388em;
+            line-height: 1.593;
+          }
+        }
+      }
+    }
+  }
+  
+  // Ministries
+  .about-ministries {
+    .wrapper {
+      .ministries {
+        .ministry {
+          flex: 1 1 45%;
+        }
+      }
+    }
+  }
 }
 
 /***********************************************
@@ -235,5 +401,50 @@
 @media only screen
   and (min-width: 1024px) {
   
+  // Leadership
+  .about-leadership {
+    .wrapper {
+      .leadership-container {
+        .leadership {
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(5),
+          &:nth-child(6) {
+            margin-left: 2em;
+          }
+          
+          &:nth-child(4) {
+            margin-left: 0em;
+          }
+          
+          .title {
+            font-size: 1.188em; // 0.818em + 1/4 scale = 0.37
+          }
+          
+          > h4 {
+            padding: 0rem 0 1.1rem 0;
+            font-size: 1.752em; // h4 + 1/4 scale = 0.37
+          }
+          
+          > p {
+            font-size: 1.388em;
+            line-height: 1.593;
+          }
+        }
+      }
+    }
+  }
   
+  // Ministries
+  .about-ministries {
+    .wrapper {
+      .ministries {
+        .ministry {
+          &:hover {
+            border-color: $fgtm-green;
+          }
+        }
+      }
+    }
+  }
 }

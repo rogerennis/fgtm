@@ -14,9 +14,7 @@
   
   .wrapper {
     .believe {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: auto;
+      flex: 1 1 auto;
       text-align: center;
       color: $fgtm-black;
        
@@ -33,7 +31,6 @@
     }
   }
 }
-
 
 // Service Times
 .newHere-service-times {
@@ -149,7 +146,7 @@
       text-align: center;
          
       .fgtm-btn {
-        margin-top: 1rem;
+        margin-top: 2rem;
         display: block;
       }
     }
@@ -286,9 +283,9 @@
           .children,
           .jr-youth,
           .young-adults {
-            flex: 1 1 48%;
+            flex: 1 1 45%;
             margin-top: 0rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             
             &:first-child {
               margin-top: 0rem;
@@ -297,7 +294,7 @@
           
           .children,
           .young-adults {
-            margin-left: 1rem;
+            margin-left: 2rem;
           }
         }
       }
@@ -403,7 +400,7 @@
           .children,
           .jr-youth,
           .young-adults {
-            flex: 1 1 48%;
+            flex: 1 1 45%;
             
             &:first-child {
               margin-top: 0rem;
@@ -456,13 +453,14 @@
           .children,
           .jr-youth,
           .young-adults {
-            flex: 1 0 23%;
+            flex: 1 0 22%;
+            margin-bottom: 0;
           }
           
           .children,
           .jr-youth,
           .young-adults {
-            margin-left: 1rem;
+            margin-left: 2rem;
           }
         }
       }

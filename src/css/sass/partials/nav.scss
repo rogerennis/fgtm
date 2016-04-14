@@ -14,14 +14,14 @@
     right: 0;
     left: 0;
     z-index: 1030;
-    border-bottom: 1px solid $fgtm-green;
+    border-bottom: 1px solid $fgtm-black-five;
     
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     
     &:after {
-        clear: both;
+      clear: both;
     }
     
     nav {
@@ -257,20 +257,20 @@
   and (min-width: 768px) {
       
   #nav-container {
-    padding-bottom: 10px;
+    padding: 10px 36px 9px;
     
     nav {
       .logo {
-        width: 65px;
-        height: 65px;
+          width: 55px;
+          height: 55px;
       }
-       
+        
       .menu-copy {
         top: 19px;
       }
        
       .outer-menu {
-        width: 10vw;
+        width: $hamburger-menu-size;
        
         .checkbox-toggle {
           &:checked {
@@ -296,11 +296,11 @@
     and (min-width: 1024px) {
         
       #nav-container {
-         padding: 20px 55px 0px 60px;
+         padding: 10px 60px 0px;
          
          nav {
             .logo {
-              margin-bottom: 15px;
+              margin-bottom: 10px;
             }
             
             .menu-copy {
@@ -364,9 +364,9 @@
                            font-family: $font-regular;
                                  
                            > li {
-                              padding: 0em 0.7em 1.36em 0.7em;
+                              padding: 0em 0.7em 0.84em 0.7em;
                               margin: -2px;
-                              font-size: 1.2em;
+                              font-size: 1.1em;
                               display: inline-block;
                               transition: border-bottom $anim-duration ease;
                               

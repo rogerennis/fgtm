@@ -7,20 +7,7 @@
 
 <?php get_header(); ?>
 
-   <!-- HEADER -->
-   <div class="header-container">
-      <header class="header" role="banner">
-         <div class="intro-page-image">
-            <img src="http://lorempixel.com/1600/650/"/>
-            
-            <div>
-               <h1>Media</h1>
-               <p>Making the Jesus to all.</p>
-            </div>
-         </div>
-      </header>
-   </div>
-   <!-- /END HEADER -->
+   <?php include('includes/page_header.php'); ?>
    
    <!-- LIVE SERVICE -->
    <div id="mediaService">
