@@ -2044,12 +2044,6 @@ input[type="search"] {
 * DESKTOP
 ***********************************************/
 @media only screen and (min-width: 1024px) {
-  .about-leadership .wrapper .leadership-container .leadership:nth-child(2), .about-leadership .wrapper .leadership-container .leadership:nth-child(3), .about-leadership .wrapper .leadership-container .leadership:nth-child(5), .about-leadership .wrapper .leadership-container .leadership:nth-child(6) {
-    margin-left: 2em;
-  }
-  .about-leadership .wrapper .leadership-container .leadership:nth-child(4) {
-    margin-left: 0em;
-  }
   .about-leadership .wrapper .leadership-container .leadership .title {
     font-size: 1.188em;
   }
