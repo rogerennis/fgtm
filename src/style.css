@@ -1688,7 +1688,7 @@ input[type="search"] {
   -ms-flex-direction: column;
   flex-direction: column;
   background: url("img/exclusive_paper.png") left top;
-  background-size: cover;
+  background-size: 400px;
 }
 .newHere-service-times .wrapper .service-times {
   -webkit-box-flex: 1;
@@ -1762,9 +1762,9 @@ input[type="search"] {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/experienceYouth.jpg") center center no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/experienceYouth.jpg") center center no-repeat;
-  background-size: 1220%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("img/experienceYouth.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("img/experienceYouth.jpg") center center no-repeat;
+  background-size: 880%;
 }
 .newHere-youth .wrapper .youth-container {
   -webkit-box-flex: 1;
@@ -1883,7 +1883,7 @@ input[type="search"] {
 }
 @media only screen and (min-width: 600px) {
   .newHere-believe-container .wrapper {
-    padding: 0 5rem;
+    padding: 0 8.5rem;
   }
   .newHere-believe-container .wrapper .believe > h3 {
     font-size: 2.166em;
@@ -1916,6 +1916,9 @@ input[type="search"] {
     padding: 2.4em 1.5rem 1.4em;
   }
 
+  .newHere-youth {
+    background-size: 730%;
+  }
   .newHere-youth .wrapper .youth-container > h3 {
     font-size: 2.166em;
   }
@@ -2003,8 +2006,11 @@ input[type="search"] {
   .newHere-believe-container {
     padding: 7em 0;
   }
+  .newHere-believe-container .wrapper {
+    padding: 0 10rem;
+  }
   .newHere-believe-container .wrapper .believe > p {
-    font-size: 1.388em;
+    font-size: 1.13em;
   }
 
   .newHere-service-times {
@@ -2024,6 +2030,7 @@ input[type="search"] {
 
   .newHere-youth {
     padding: 7em 0;
+    background-size: 350%;
   }
   .newHere-youth .wrapper .youth-container p {
     font-size: 1.388em;
@@ -2062,6 +2069,9 @@ input[type="search"] {
     padding: 2.0em 1.5rem 1.4em;
   }
 
+  .newHere-youth {
+    background-size: 150%;
+  }
   .newHere-youth .wrapper .youth-container .youth .nursery,
   .newHere-youth .wrapper .youth-container .youth .children,
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
@@ -2436,14 +2446,14 @@ input[type="search"] {
     padding: 7em 0;
   }
   .about-mission .wrapper .mission > p {
-    font-size: 1.388em;
+    font-size: 1.13em;
   }
 
   .about-believe-container {
     padding: 7em 0;
   }
   .about-believe-container .wrapper .believe > p {
-    font-size: 1.388em;
+    font-size: 1.13em;
   }
 
   .about-leadership {
@@ -2457,7 +2467,7 @@ input[type="search"] {
     font-size: 1.752em;
   }
   .about-leadership .wrapper .leadership-container .leadership > p {
-    font-size: 1.388em;
+    font-size: 1.13em;
     line-height: 1.593;
   }
 

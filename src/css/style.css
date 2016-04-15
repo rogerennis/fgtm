@@ -1410,10 +1410,10 @@ input[type="search"] {
   display: flex;
   flex-direction: column;
   background: url("img/exclusive_paper.png") left top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 400px;
+  -moz-background-size: 400px;
+  -o-background-size: 400px;
+  background-size: 400px;
 }
 .newHere-service-times .wrapper .service-times {
   flex-grow: 1;
@@ -1469,11 +1469,11 @@ input[type="search"] {
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/experienceYouth.jpg") center center no-repeat;
-  -webkit-background-size: 1220%;
-  -moz-background-size: 1220%;
-  -o-background-size: 1220%;
-  background-size: 1220%;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("img/experienceYouth.jpg") center center no-repeat;
+  -webkit-background-size: 880%;
+  -moz-background-size: 880%;
+  -o-background-size: 880%;
+  background-size: 880%;
 }
 .newHere-youth .wrapper .youth-container {
   flex: 1 1 auto;
@@ -1568,7 +1568,7 @@ input[type="search"] {
 }
 @media only screen and (min-width: 600px) {
   .newHere-believe-container .wrapper {
-    padding: 0 5rem;
+    padding: 0 8.5rem;
   }
   .newHere-believe-container .wrapper .believe > h3 {
     font-size: 2.166em;
@@ -1594,6 +1594,12 @@ input[type="search"] {
     padding: 2.4em 1.5rem 1.4em;
   }
 
+  .newHere-youth {
+    -webkit-background-size: 730%;
+    -moz-background-size: 730%;
+    -o-background-size: 730%;
+    background-size: 730%;
+  }
   .newHere-youth .wrapper .youth-container > h3 {
     font-size: 2.166em;
   }
@@ -1663,8 +1669,11 @@ input[type="search"] {
   .newHere-believe-container {
     padding: 7em 0;
   }
+  .newHere-believe-container .wrapper {
+    padding: 0 10rem;
+  }
   .newHere-believe-container .wrapper .believe > p {
-    font-size: 1.388em;
+    font-size: 1.13em;
   }
 
   .newHere-service-times {
@@ -1684,6 +1693,10 @@ input[type="search"] {
 
   .newHere-youth {
     padding: 7em 0;
+    -webkit-background-size: 350%;
+    -moz-background-size: 350%;
+    -o-background-size: 350%;
+    background-size: 350%;
   }
   .newHere-youth .wrapper .youth-container p {
     font-size: 1.388em;
@@ -1722,6 +1735,12 @@ input[type="search"] {
     padding: 2.0em 1.5rem 1.4em;
   }
 
+  .newHere-youth {
+    -webkit-background-size: 150%;
+    -moz-background-size: 150%;
+    -o-background-size: 150%;
+    background-size: 150%;
+  }
   .newHere-youth .wrapper .youth-container .youth .nursery,
   .newHere-youth .wrapper .youth-container .youth .children,
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
@@ -2011,14 +2030,14 @@ input[type="search"] {
     padding: 7em 0;
   }
   .about-mission .wrapper .mission > p {
-    font-size: 1.388em;
+    font-size: 1.13em;
   }
 
   .about-believe-container {
     padding: 7em 0;
   }
   .about-believe-container .wrapper .believe > p {
-    font-size: 1.388em;
+    font-size: 1.13em;
   }
 
   .about-leadership {
@@ -2032,7 +2051,7 @@ input[type="search"] {
     font-size: 1.752em;
   }
   .about-leadership .wrapper .leadership-container .leadership > p {
-    font-size: 1.388em;
+    font-size: 1.13em;
     line-height: 1.593;
   }
 

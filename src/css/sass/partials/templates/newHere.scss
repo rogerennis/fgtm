@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   background: url('img/exclusive_paper.png') left top; 
-  @include background-size(cover);
+  @include background-size(400px);
   
   .wrapper {
     .service-times {
@@ -98,8 +98,8 @@
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/experienceYouth.jpg') center center no-repeat; 
-  @include background-size(1220%);
+  background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url('img/experienceYouth.jpg') center center no-repeat; 
+  @include background-size(880%);
    
   .wrapper {
     .youth-container {
@@ -221,7 +221,7 @@
   // What we Believe
   .newHere-believe-container {
     .wrapper {
-      padding: 0 5rem;
+      padding: 0 8.5rem;
       
       .believe {
         > h3 {
@@ -264,6 +264,8 @@
   
   // Experience Youth
   .newHere-youth {
+     @include background-size(730%);
+    
     .wrapper {
       .youth-container {
         > h3 {
@@ -354,9 +356,11 @@
     padding: 7em 0;
     
     .wrapper {
+      padding: 0 10rem;
+      
       .believe {
         > p {
-          font-size: 1.388em;
+          font-size: 1.13em;
         }
       }
     }
@@ -388,6 +392,7 @@
   // Experience Youth
   .newHere-youth {
     padding: 7em 0;
+    @include background-size(350%);
     
     .wrapper {
       .youth-container {
@@ -446,6 +451,8 @@
   
   // Experience Youth
   .newHere-youth {
+    @include background-size(150%);
+    
     .wrapper {
       .youth-container {
         .youth {
