@@ -363,7 +363,6 @@
     .wrapper {
       .leadership-container {
         .leadership {
-          
           .title {
             font-size: 1.188em; // 0.818em + 1/4 scale = 0.37
           }
@@ -400,29 +399,6 @@
 
 @media only screen
   and (min-width: 1024px) {
-  
-  // Leadership
-  .about-leadership {
-    .wrapper {
-      .leadership-container {
-        .leadership {
-          .title {
-            font-size: 1.188em; // 0.818em + 1/4 scale = 0.37
-          }
-          
-          > h4 {
-            padding: 0rem 0 1.1rem 0;
-            font-size: 1.752em; // h4 + 1/4 scale = 0.37
-          }
-          
-          > p {
-            font-size: 1.388em;
-            line-height: 1.593;
-          }
-        }
-      }
-    }
-  }
   
   // Ministries
   .about-ministries {

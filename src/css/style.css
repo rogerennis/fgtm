@@ -2044,18 +2044,6 @@ input[type="search"] {
 * DESKTOP
 ***********************************************/
 @media only screen and (min-width: 1024px) {
-  .about-leadership .wrapper .leadership-container .leadership .title {
-    font-size: 1.188em;
-  }
-  .about-leadership .wrapper .leadership-container .leadership > h4 {
-    padding: 0rem 0 1.1rem 0;
-    font-size: 1.752em;
-  }
-  .about-leadership .wrapper .leadership-container .leadership > p {
-    font-size: 1.388em;
-    line-height: 1.593;
-  }
-
   .about-ministries .wrapper .ministries .ministry:hover {
     border-color: #00ab88;
   }
