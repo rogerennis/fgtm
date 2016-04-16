@@ -2083,6 +2083,105 @@ input[type="search"] {
  * ---
  * Media Page
  */
+.media-service {
+  background: #00ab88;
+  transition: all 0.2s ease 0.2s;
+  padding: 2.5em 2em;
+}
+.media-service h3 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.media-service a {
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15em;
+}
+.media-service a.media-live-service-btn {
+  padding: 0.5em 2em 0 2em;
+  transition: all 0.2s ease 0.2s;
+}
+.media-service a > div {
+  transition: all 0.2s ease 0.2s;
+  text-align: center;
+}
+.media-service a > div:hover {
+  transform: none;
+}
+.media-service .ustream-container {
+  padding-bottom: 56.25%;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.media-service .ustream-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.media-service h4 {
+  color: #fff;
+  text-align: center;
+}
+
+.media-videos {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background: #E6E6E6;
+}
+.media-videos .wrapper .media {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  color: #404041;
+}
+.media-videos .wrapper .media > h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.media-videos .wrapper .btn-container {
+  text-align: center;
+}
+.media-videos .wrapper .btn-container .fgtm-btn {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.063em;
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen and (min-width: 414px) {
+  .media-service h4 {
+    color: #fff;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .media-service {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .media-service h4 {
+    color: #fff;
+    text-align: center;
+  }
+}
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+/***********************************************
+* DESKTOP
+***********************************************/
 /**
  * partials/Templates/Giving
  * ---

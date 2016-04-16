@@ -3,3 +3,153 @@
  * ---
  * Media Page
  */
+ 
+ // Live Service
+.media-service {
+  background: $fgtm-green;
+  transition: all $anim-duration-all ease $anim-duration-all;
+  padding: 2.5em 2em;
+   
+  h3 {
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+   
+  a {
+    color: $white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15em;
+      
+    &.media-live-service-btn {
+      padding: 0.5em 2em 0 2em;
+      transition: all $anim-duration-all ease $anim-duration-all;
+    }
+      
+    > div {
+      transition: all $anim-duration-all ease $anim-duration-all;
+      text-align: center;
+       
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+  
+  .ustream-container {
+    padding-bottom: 56.25%;
+    position: relative;
+    display: block;
+    width: 100%;
+    
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  h4 {
+    color: $white;
+    text-align: center;
+  }
+}
+
+// Videos
+.media-videos {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column; 
+  background: $body-section;
+   
+  .wrapper {
+    .media {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      text-align: center;
+      color: $fgtm-black;
+     
+      > h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+    }
+    
+    .btn-container {
+      text-align: center;
+       
+      .fgtm-btn {
+        margin-top: 1rem;
+        display: block;
+        font-size: 1.063em;
+      }
+    }
+  }
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen
+  and (min-width: 414px) {
+     
+  // Live Service
+  .media-service {
+    h4 {
+      color: $white;
+      text-align: center;
+//       padding: 0 4rem;
+    }
+  }
+}
+
+
+@media only screen
+  and (min-width: 568px) {
+  
+  
+}
+  
+   
+@media only screen
+  and (min-width: 600px) {
+  
+  // Live Service
+  .media-service {
+    padding-left: 4em;
+    padding-right: 4em;
+    
+    h4 {
+      color: $white;
+      text-align: center;
+    }
+  }
+}
+
+
+/***********************************************
+* TABLET
+***********************************************/
+
+/* Portrait */
+@media only screen
+  and (min-width: 768px) {
+  
+  
+}
+
+/***********************************************
+* DESKTOP
+***********************************************/
+
+@media only screen
+  and (min-width: 1024px) {
+     
+  
+}
