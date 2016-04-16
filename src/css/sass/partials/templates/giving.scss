@@ -9,14 +9,12 @@
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient( rgba(230, 231, 232, 0.8), rgba(230, 231, 232, 0.8)), url('img/giving2.jpg') no-repeat center center; 
+  background: linear-gradient( rgba(230, 231, 232, 0.9), rgba(230, 231, 232, 0.85)), url('img/giving2.jpg') no-repeat center center; 
   @include background-size(cover);
   
   .wrapper {
     .paypal {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: auto;
+      flex-grow: 1 1 auto;
       text-align: center;
       color: $fgtm-black;
       
@@ -56,14 +54,12 @@
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient( rgba(93, 118, 3, 0.74), rgba(77, 98, 3, 0.74)), url('img/giving2.jpg') no-repeat center center; 
+  background: linear-gradient( rgba(93, 118, 3, 0.9), rgba(77, 98, 3, 0.85)), url('img/giving2.jpg') no-repeat center center; 
   @include background-size(cover);
   
   .wrapper {
     .donate {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: auto;
+      flex-grow: 1 1 auto;
       text-align: center;
       color: $white;
       
@@ -94,21 +90,118 @@
 @media only screen
   and (min-width: 414px) {
   
+  // Paypal
+  .giving-paypal {
+    .wrapper {
+      .paypal {
+        .paypal-logo {
+          width: 30%;
+        }
+        
+        p {
+          padding: 0 1.5rem;
+        }
+      }
+    }
+  }
   
+  // Donate
+  .giving-donate {
+    .wrapper {
+      .donate {
+        p {
+          padding: 0 1.5rem;
+        }
+      }
+    }
+  }
 }
 
 
 @media only screen
   and (min-width: 568px) {
      
+  // Paypal
+  .giving-paypal {
+    .wrapper {
+      .paypal {
+        .paypal-logo {
+          width: 25%;
+        }
+        
+        p {
+          padding: 0 2.5rem;
+        }
+      }
+    }
+  }
   
+  // Donate
+  .giving-donate {
+    .wrapper {
+      .donate {
+        p {
+          padding: 0 2.5rem;
+        }
+      }
+    }
+  }
 }
   
    
 @media only screen
   and (min-width: 600px) {
   
+  // Paypal
+  .giving-paypal {
+    .wrapper {
+      .paypal {
+        > h3 {
+           font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+        
+        .paypal-logo {
+          width: 17%;
+        }
+        
+        p {
+          padding: 0 4.5rem;
+        }
+        
+        form {
+          input {
+            display: block;
+            width: 32%;
+            
+            &.fgtm-btn {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
   
+  // Donate
+  .giving-donate {
+    .wrapper {
+      .donate {
+        > h3 {
+           font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+        
+        p {
+          padding: 0 4.5rem;
+        }
+        
+        .btn-container {
+          .fgtm-btn {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -120,7 +213,37 @@
 @media only screen
   and (min-width: 768px) {
   
+  // Paypal
+  .giving-paypal {
+    .wrapper {
+      .paypal {
+        p {
+          padding: 0 7.5rem;
+        }
+        
+        .paypal-logo {
+          width: 13%;
+        }
+        
+        form {
+          input {
+            width: 28%;
+          }
+        }
+      }
+    }
+  }
   
+  // Donate
+  .giving-donate {
+    .wrapper {
+      .donate {
+        p {
+          padding: 0 7.5rem;
+        }
+      }
+    }
+  }
 }
 
 /***********************************************
@@ -130,5 +253,35 @@
 @media only screen
   and (min-width: 1024px) {
   
+  // Paypal
+  .giving-paypal {
+    .wrapper {
+      .paypal {
+        p {
+          padding: 0 14.5rem;
+        }
+        
+        .paypal-logo {
+          width: 11%;
+        }
+        
+        form {
+          input {
+            width: 22%;
+          }
+        }
+      }
+    }
+  }
   
+  // Donate
+  .giving-donate {
+    .wrapper {
+      .donate {
+        p {
+          padding: 0 14.5rem;
+        }
+      }
+    }
+  }
 }
