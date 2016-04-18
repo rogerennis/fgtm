@@ -123,7 +123,7 @@
         
         <article class="ministries">
           <h4 class="ministry">
-            <a href="#">Christine's Corner
+            <a href="<?php echo get_template_directory_uri(); ?>/christines-corner">Christine's Corner
               <span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</span>
             </a>
           </h4>
@@ -140,7 +140,7 @@
             </a>
           </h4><!-- TODO add Ladies Programs page -- Women's Bible Study section: Tuesday 7pm -->
           <h4 class="ministry">
-            <a href="<?php echo get_template_directory_uri(); ?>/hospitality">Hospitality
+            <a href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk">Hospitality
               <span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</span>
             </a>
           </h4><!-- TODO add Hospitality page -- Hospitality / Kitchen section: Join the Team button  & Ushers section: Join the Team button -->

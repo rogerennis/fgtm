@@ -2174,6 +2174,16 @@ input[type="search"] {
     color: #fff;
     text-align: center;
   }
+
+  .media-videos .wrapper .media > h3 {
+    font-size: 2.166em;
+  }
+  .media-videos .wrapper .btn-container {
+    text-align: center;
+  }
+  .media-videos .wrapper .btn-container .fgtm-btn {
+    display: inline-block;
+  }
 }
 /***********************************************
 * TABLET
@@ -2352,42 +2362,44 @@ input[type="search"] {
  * ---
  * Contact Page
  */
-.contact-address {
-  padding: 5em 0 3em 0;
+.contact-wrapper {
   display: flex;
   flex-direction: column;
 }
-.contact-address .say-hi {
+.contact-wrapper .contact-address {
+  padding: 5em 0 3em 0;
+  flex: 1 1 auto;
+}
+.contact-wrapper .contact-address .say-hi {
   margin-bottom: 3rem;
   text-align: center;
 }
-.contact-address .say-hi h3 {
+.contact-wrapper .contact-address .say-hi h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 3rem;
 }
-.contact-address .address {
+.contact-wrapper .contact-address .address {
   text-align: center;
-  align-content: center;
 }
-.contact-address .address h4 {
+.contact-wrapper .contact-address .address h4 {
   margin-bottom: 1rem;
 }
-.contact-address .address h4:last-child {
+.contact-wrapper .contact-address .address h4:last-child {
   margin-bottom: 0rem;
 }
-.contact-address .address address {
+.contact-wrapper .contact-address .address address {
   margin-bottom: 1rem;
 }
-.contact-address .address a.tel {
+.contact-wrapper .contact-address .address a.tel {
   display: inline-flex;
   margin-bottom: 3rem;
 }
-
-.contact-ask {
+.contact-wrapper .contact-ask {
   padding-bottom: 5em;
+  flex: 1 1 auto;
 }
-.contact-ask fieldset {
+.contact-wrapper .contact-ask fieldset {
   padding: 2rem 1rem;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -2396,24 +2408,25 @@ input[type="search"] {
   background: #fff;
   border: 1px solid #d5d6d8;
 }
-.contact-ask fieldset h3 {
+.contact-wrapper .contact-ask fieldset h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 2rem;
 }
-.contact-ask fieldset .just-contact-form-wrap p {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p {
   font-size: 0.818em;
   margin-bottom: 0.9rem;
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_name,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_email,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_url,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_subject,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_message,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_captcha {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_name,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_email,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_url,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_subject,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_message,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_captcha {
   width: 100%;
   border: 1px solid #d5d6d8;
-  padding: 0.6rem 0.3rem;
+  padding: 0.6rem 0.7rem;
   margin-top: 0.2rem;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -2423,14 +2436,16 @@ input[type="search"] {
   -moz-appearance: none;
   appearance: none;
   background: transparent;
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_message {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_message {
   height: 5rem;
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) {
   font-size: 1.063em;
 }
-.contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) .just-contact-form-submit {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) .just-contact-form-submit {
   background: #00ab88;
   border: 0;
   color: #fff;
@@ -2442,8 +2457,9 @@ input[type="search"] {
   -ms-border-radius: 6px;
   border-radius: 6px;
   font-family: "Geogrotesque-Light";
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap .just-contact-form-result {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap .just-contact-form-result {
   background: #aa1e25;
   padding: 1rem 0rem;
   text-align: center;
@@ -2451,8 +2467,9 @@ input[type="search"] {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   border-radius: 6px;
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap .just-contact-form-result p {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap .just-contact-form-result p {
   color: #fff;
   font-size: 1.063em;
   margin: 0px;
@@ -2462,12 +2479,85 @@ input[type="search"] {
 /***********************************************
 * CONTINUE MOBILE
 ***********************************************/
+@media only screen and (min-width: 600px) {
+  .contact-wrapper .contact-address .say-hi h3 {
+    font-size: 2.166em;
+  }
+  .contact-wrapper .contact-address .say-hi p {
+    padding: 0 4rem;
+  }
+  .contact-wrapper .contact-ask {
+    padding: 0 5rem 5em 5rem;
+  }
+  .contact-wrapper .contact-ask fieldset h3 {
+    font-size: 2.166em;
+  }
+}
 /***********************************************
 * TABLET
 ***********************************************/
 /* Portrait */
+@media only screen and (min-width: 768px) {
+  .contact-wrapper #contactAddress .contact-address .say-hi p {
+    padding: 0 6rem;
+  }
+}
 /***********************************************
 * DESKTOP
 ***********************************************/
+@media only screen and (min-width: 1024px) {
+  .contact-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .contact-wrapper #contactAddress {
+    width: 60%;
+  }
+  .contact-wrapper #contactAddress .contact-address {
+    padding: 5em 4rem 3em 0rem;
+    align-self: stretch;
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .contact-wrapper #contactAddress .contact-address .say-hi {
+    text-align: left;
+  }
+  .contact-wrapper #contactAddress .contact-address .say-hi h3 {
+    text-align: left;
+  }
+  .contact-wrapper #contactAddress .contact-address .say-hi p {
+    padding: 0;
+  }
+  .contact-wrapper #contactAddress .contact-address .address {
+    text-align: left;
+  }
+  .contact-wrapper #contactAsk {
+    z-index: 2;
+  }
+  .contact-wrapper #contactAsk .contact-ask {
+    padding: 5rem 0rem 0rem 0rem;
+    align-self: stretch;
+    flex: 2 1 100%;
+    width: 100%;
+  }
+  .contact-wrapper #contactAsk .contact-ask fieldset {
+    padding: 2rem 2rem;
+  }
+  .contact-wrapper #contactAsk .contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) .just-contact-form-submit:hover {
+    background: #01715a;
+  }
+
+  .contact-map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -50px;
+  }
+  .contact-map > div {
+    align-self: stretch;
+    flex: 1 1 250px;
+    z-index: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

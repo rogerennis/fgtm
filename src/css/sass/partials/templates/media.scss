@@ -130,6 +130,25 @@
       text-align: center;
     }
   }
+  
+  // Videos
+  .media-videos {
+    .wrapper {
+      .media {
+        > h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+      }
+      
+      .btn-container {
+        text-align: center;
+         
+        .fgtm-btn {
+          display: inline-block;
+        }
+      }
+    }
+  }
 }
 
 

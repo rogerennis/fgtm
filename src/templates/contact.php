@@ -10,6 +10,7 @@
   <?php include('includes/page_header.php'); ?>
    
   <div class="wrapper">
+    <div class="contact-wrapper">
     <!-- ADDRESS -->
     <div id="contactAddress">
       <section class="contact-address">
@@ -43,11 +44,12 @@
       </section>
     </div>
   	<!-- /FORM -->
+    </div>
   </div>
    
   <!-- MAP -->
   <div id="contactMap">
-    <section>
+    <section class="contact-map">
       <div>
         <?php echo do_shortcode("[huge_it_maps id='2']"); ?>
       </div>

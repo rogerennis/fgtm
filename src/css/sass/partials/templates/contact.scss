@@ -4,116 +4,124 @@
  * Contact Page
  */
  
- //Address
-.contact-address {
-  padding: 5em 0 3em 0;
+.contact-wrapper {
   display: flex;
   flex-direction: column;
-   
-  .say-hi {
-    margin-bottom: 3rem;
-    text-align: center;
-    
-    h3 {
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-  }
   
-  .address {
-    text-align: center;
-    align-content: center;
-    
-    h4 {
-      margin-bottom: 1rem;
+  //Address
+  .contact-address {
+    padding: 5em 0 3em 0;
+    flex: 1 1 auto;
+     
+    .say-hi {
+      margin-bottom: 3rem;
+      text-align: center;
       
-      &:last-child {
-        margin-bottom: 0rem;
-      }
-    }
-    
-    address {
-      margin-bottom: 1rem;
-    }
-    
-    a {
-      &.tel {
-        display: inline-flex;
+      h3 {
+        text-transform: uppercase;
+        text-align: center;
         margin-bottom: 3rem;
       }
     }
-  }
-}
-
-
-//Form
-.contact-ask {
-  padding-bottom: 5em;
-  
-  fieldset {
-    padding: 2rem 1rem;
-    @include border-radius(6px);
-    background: $white;
-    border: 1px solid $fgtm-black-five;
     
-    h3 {
-      text-transform: uppercase;
+    .address {
       text-align: center;
-      margin-bottom: 2rem;
+      
+      h4 {
+        margin-bottom: 1rem;
+        
+        &:last-child {
+          margin-bottom: 0rem;
+        }
+      }
+      
+      address {
+        margin-bottom: 1rem;
+      }
+      
+      a {
+        &.tel {
+          display: inline-flex;
+          margin-bottom: 3rem;
+        }
+      }
     }
+  }
+  
+  //Form
+  .contact-ask {
+    padding-bottom: 5em;
+    flex: 1 1 auto;
     
-    .just-contact-form-wrap {
-      p {
-        font-size: 0.818em;
-        margin-bottom: 0.9rem;
-        
-        .just_contact_form_name,
-        .just_contact_form_email,
-        .just_contact_form_url,
-        .just_contact_form_subject,
-        .just_contact_form_message,
-        .just_contact_form_captcha {
-          width: 100%;
-          border: 1px solid $fgtm-black-five;
-          padding: 0.6rem 0.3rem;
-          margin-top: 0.2rem;
-          @include border-radius(6px);
-          @include appearance(none);
-          background: transparent;
-        }
-        
-        .just_contact_form_message {
-          height: 5rem;
-        }
-      }
+    fieldset {
+      padding: 2rem 1rem;
+      @include border-radius(6px);
+      background: $white;
+      border: 1px solid $fgtm-black-five;
       
-      p:nth-child(n+7) {
-        font-size: 1.063em;
-        
-        .just-contact-form-submit {
-          background: $fgtm-green;
-          border: 0;
-          color: $white;
-          padding: 1.1rem 0rem;
-          text-transform: uppercase;
-          width: 100%;
-          @include border-radius(6px);
-          font-family: $font-light;
-        }
-      }
-      
-      .just-contact-form-result {
-        background: $fgtm-red;
-        padding: 1rem 0rem;
+      h3 {
+        text-transform: uppercase;
         text-align: center;
-        @include border-radius(6px);
-        
+        margin-bottom: 2rem;
+      }
+      
+      .just-contact-form-wrap {
         p {
-          color: $white;
+          font-size: 0.818em;
+          margin-bottom: 0.9rem;
+          transition: all $anim-duration ease;
+          
+          .just_contact_form_name,
+          .just_contact_form_email,
+          .just_contact_form_url,
+          .just_contact_form_subject,
+          .just_contact_form_message,
+          .just_contact_form_captcha {
+            width: 100%;
+            border: 1px solid $fgtm-black-five;
+            padding: 0.6rem 0.7rem;
+            margin-top: 0.2rem;
+            @include border-radius(6px);
+            @include appearance(none);
+            background: transparent;
+            transition: all $anim-duration ease;
+          }
+          
+          .just_contact_form_message {
+            height: 5rem;
+            transition: all $anim-duration ease;
+          }
+        }
+        
+        p:nth-child(n+7) {
           font-size: 1.063em;
-          margin: 0px;
-          padding: 0;
+          
+          .just-contact-form-submit {
+            background: $fgtm-green;
+            border: 0;
+            color: $white;
+            padding: 1.1rem 0rem;
+            text-transform: uppercase;
+            width: 100%;
+            @include border-radius(6px);
+            font-family: $font-light;
+            transition: all $anim-duration ease;
+          }
+        }
+        
+        .just-contact-form-result {
+          background: $fgtm-red;
+          padding: 1rem 0rem;
+          text-align: center;
+          @include border-radius(6px);
+          transition: all $anim-duration ease;
+          
+          p {
+            color: $white;
+            font-size: 1.063em;
+            margin: 0px;
+            padding: 0;
+          }
         }
       }
     }
@@ -140,7 +148,32 @@
 @media only screen
   and (min-width: 600px) {
   
-  
+  .contact-wrapper {
+    //Address
+    .contact-address {
+      .say-hi {
+        h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+        
+        p {
+          padding: 0 4rem;
+        }
+      }
+    }
+    
+    
+    //Form
+    .contact-ask {
+      padding: 0 5rem 5em 5rem;
+      
+      fieldset {
+        h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
+        }
+      }
+    }
+  }
 }
 
 
@@ -152,7 +185,18 @@
 @media only screen
   and (min-width: 768px) {
   
-  
+  .contact-wrapper {
+    //Address
+    #contactAddress {
+      .contact-address {
+        .say-hi {
+          p {
+            padding: 0 6rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 /***********************************************
@@ -162,5 +206,75 @@
 @media only screen
   and (min-width: 1024px) {
   
+  .contact-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    
+    //Address
+    #contactAddress {
+      width: 60%;
+      
+      .contact-address {
+        padding: 5em 4rem 3em 0rem;
+        align-self: stretch;
+        flex: 1 1 100%;
+        width: 100%;
+         
+        .say-hi {
+          text-align: left;
+          
+          h3 {
+            text-align: left;
+          }
+          
+          p {
+            padding: 0;
+          }
+        }
+        
+        .address {
+          text-align: left;
+        }
+      }
+    }
+    
+    //Form
+    #contactAsk {
+      z-index: 2;
+      
+      .contact-ask {
+        padding: 5rem 0rem 0rem 0rem;
+        align-self: stretch;
+        flex: 2 1 100%;
+        width: 100%;
+        
+        fieldset {
+          padding: 2rem 2rem;
+          
+          .just-contact-form-wrap {
+            p:nth-child(n+7) {
+              .just-contact-form-submit {
+                &:hover {
+                  background: $fgtm-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   
+  .contact-map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -50px;
+    
+    > div {
+      align-self: stretch;
+      flex: 1 1 250px;
+      z-index: 0;
+    }
+  }
 }

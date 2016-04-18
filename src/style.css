@@ -2627,6 +2627,16 @@ input[type="search"] {
     color: #fff;
     text-align: center;
   }
+
+  .media-videos .wrapper .media > h3 {
+    font-size: 2.166em;
+  }
+  .media-videos .wrapper .btn-container {
+    text-align: center;
+  }
+  .media-videos .wrapper .btn-container .fgtm-btn {
+    display: inline-block;
+  }
 }
 /***********************************************
 * TABLET
@@ -2821,8 +2831,7 @@ input[type="search"] {
  * ---
  * Contact Page
  */
-.contact-address {
-  padding: 5em 0 3em 0;
+.contact-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2833,79 +2842,92 @@ input[type="search"] {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.contact-address .say-hi {
+.contact-wrapper .contact-address {
+  padding: 5em 0 3em 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.contact-wrapper .contact-address .say-hi {
   margin-bottom: 3rem;
   text-align: center;
 }
-.contact-address .say-hi h3 {
+.contact-wrapper .contact-address .say-hi h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 3rem;
 }
-.contact-address .address {
+.contact-wrapper .contact-address .address {
   text-align: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
 }
-.contact-address .address h4 {
+.contact-wrapper .contact-address .address h4 {
   margin-bottom: 1rem;
 }
-.contact-address .address h4:last-child {
+.contact-wrapper .contact-address .address h4:last-child {
   margin-bottom: 0rem;
 }
-.contact-address .address address {
+.contact-wrapper .contact-address .address address {
   margin-bottom: 1rem;
 }
-.contact-address .address a.tel {
+.contact-wrapper .contact-address .address a.tel {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 3rem;
 }
-
-.contact-ask {
+.contact-wrapper .contact-ask {
   padding-bottom: 5em;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-.contact-ask fieldset {
+.contact-wrapper .contact-ask fieldset {
   padding: 2rem 1rem;
   border-radius: 6px;
   background: #fff;
   border: 1px solid #d5d6d8;
 }
-.contact-ask fieldset h3 {
+.contact-wrapper .contact-ask fieldset h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 2rem;
 }
-.contact-ask fieldset .just-contact-form-wrap p {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p {
   font-size: 0.818em;
   margin-bottom: 0.9rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_name,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_email,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_url,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_subject,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_message,
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_captcha {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_name,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_email,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_url,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_subject,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_message,
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_captcha {
   width: 100%;
   border: 1px solid #d5d6d8;
-  padding: 0.6rem 0.3rem;
+  padding: 0.6rem 0.7rem;
   margin-top: 0.2rem;
   border-radius: 6px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: transparent;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap p .just_contact_form_message {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p .just_contact_form_message {
   height: 5rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) {
   font-size: 1.063em;
 }
-.contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) .just-contact-form-submit {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) .just-contact-form-submit {
   background: #00ab88;
   border: 0;
   color: #fff;
@@ -2914,14 +2936,18 @@ input[type="search"] {
   width: 100%;
   border-radius: 6px;
   font-family: "Geogrotesque-Light";
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap .just-contact-form-result {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap .just-contact-form-result {
   background: #aa1e25;
   padding: 1rem 0rem;
   text-align: center;
   border-radius: 6px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-.contact-ask fieldset .just-contact-form-wrap .just-contact-form-result p {
+.contact-wrapper .contact-ask fieldset .just-contact-form-wrap .just-contact-form-result p {
   color: #fff;
   font-size: 1.063em;
   margin: 0px;
@@ -2931,10 +2957,115 @@ input[type="search"] {
 /***********************************************
 * CONTINUE MOBILE
 ***********************************************/
+@media only screen and (min-width: 600px) {
+  .contact-wrapper .contact-address .say-hi h3 {
+    font-size: 2.166em;
+  }
+  .contact-wrapper .contact-address .say-hi p {
+    padding: 0 4rem;
+  }
+  .contact-wrapper .contact-ask {
+    padding: 0 5rem 5em 5rem;
+  }
+  .contact-wrapper .contact-ask fieldset h3 {
+    font-size: 2.166em;
+  }
+}
 /***********************************************
 * TABLET
 ***********************************************/
 /* Portrait */
+@media only screen and (min-width: 768px) {
+  .contact-wrapper #contactAddress .contact-address .say-hi p {
+    padding: 0 6rem;
+  }
+}
 /***********************************************
 * DESKTOP
 ***********************************************/
+@media only screen and (min-width: 1024px) {
+  .contact-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .contact-wrapper #contactAddress {
+    width: 60%;
+  }
+  .contact-wrapper #contactAddress .contact-address {
+    padding: 5em 4rem 3em 0rem;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .contact-wrapper #contactAddress .contact-address .say-hi {
+    text-align: left;
+  }
+  .contact-wrapper #contactAddress .contact-address .say-hi h3 {
+    text-align: left;
+  }
+  .contact-wrapper #contactAddress .contact-address .say-hi p {
+    padding: 0;
+  }
+  .contact-wrapper #contactAddress .contact-address .address {
+    text-align: left;
+  }
+  .contact-wrapper #contactAsk {
+    z-index: 2;
+  }
+  .contact-wrapper #contactAsk .contact-ask {
+    padding: 5rem 0rem 0rem 0rem;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-box-flex: 2;
+    -webkit-flex: 2 1 100%;
+    -ms-flex: 2 1 100%;
+    flex: 2 1 100%;
+    width: 100%;
+  }
+  .contact-wrapper #contactAsk .contact-ask fieldset {
+    padding: 2rem 2rem;
+  }
+  .contact-wrapper #contactAsk .contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) .just-contact-form-submit:hover {
+    background: #01715a;
+  }
+
+  .contact-map {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: -50px;
+  }
+  .contact-map > div {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 250px;
+    -ms-flex: 1 1 250px;
+    flex: 1 1 250px;
+    z-index: 0;
+  }
+}
