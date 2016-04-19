@@ -44,7 +44,7 @@
     <section class="media-videos">
       <div class="wrapper">
         <article class="media">
-          <h3>Videos</h3>
+          <h3>Video Archives</h3>
           <div>
             <!--
             <?php echo do_shortcode("[embedyt] http://www.youtube.com/embed?layout=gallery&listType=playlist&list=UUD-7VHa4bAnfIqOs2bWvwmw[/embedyt]"); ?>
