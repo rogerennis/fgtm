@@ -1,0 +1,150 @@
+/**
+ * partials/Templates/404
+ * ---
+ * 404 Page
+ */
+ 
+.four-o-four-container {
+  margin-top: 75px;
+  padding: 1.5em 0 4em 0;
+  background: $fgtm-green;
+  color: $white;
+  
+  section {
+    .wrapper {
+      .four-o-four {
+        h1 {
+          text-transform: uppercase;
+          text-align: center;
+          margin-bottom: 2rem;
+          color: $white;
+          font-size: 4em;
+        }
+        
+        .message {
+          border-bottom: 1px solid $white;
+          border-top: 1px solid $white;
+          padding: 2em 0;
+          
+          h2 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 3em;
+          }
+          
+          h4 {
+            text-align: center;
+            font-size: 1.012em;
+          }
+        }
+        
+        .cta {
+          text-align: center;
+          
+          .verse {
+            padding: 2rem 0 4rem 0;
+            text-transform: uppercase;
+          }
+          
+          .btn-copy {
+            margin-bottom: 1rem;
+          }
+          
+          .fgtm-404-btn {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen
+  and (min-width: 414px) {
+     
+  
+}
+
+
+@media only screen
+  and (min-width: 568px) {
+  
+  
+}
+  
+   
+@media only screen
+  and (min-width: 600px) {
+  
+  .four-o-four-container {
+    section {
+      .wrapper {
+        .four-o-four {
+          padding: 0 7rem;
+          
+          .cta {
+            .fgtm-404-btn {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/***********************************************
+* TABLET
+***********************************************/
+
+/* Portrait */
+@media only screen
+  and (min-width: 768px) {
+  
+  .four-o-four-container {
+    section {
+      .wrapper {
+        .four-o-four {
+          padding: 0 9rem;
+          
+          h1 {
+            font-size: 6em;
+          }
+          
+          .message {
+            h2 {
+              font-size: 3.5em;
+            }
+            
+            h4 {
+              text-align: center;
+              font-size: 1.063em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/***********************************************
+* DESKTOP
+***********************************************/
+
+@media only screen
+  and (min-width: 1024px) {
+     
+  .four-o-four-container {
+    section {
+      .wrapper {
+        .four-o-four {
+          padding: 0 18rem;
+        }
+      }
+    }
+  }
+}

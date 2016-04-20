@@ -101,3 +101,12 @@
       color: $white
    }
 }
+
+@mixin red-btn {
+   background: $fgtm-red;
+   color: $white;
+   padding: 1.1rem 2rem;
+   text-transform: uppercase;
+   @include border-radius(6px);
+   transition: all $anim-duration ease;
+}

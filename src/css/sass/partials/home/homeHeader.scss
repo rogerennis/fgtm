@@ -7,7 +7,8 @@
 // Header container
 .header-container {
    display: flex;
-   margin-top: 76px;
+   flex-direction: column;
+   margin-top: 75px;
    
    header {
       &.header {

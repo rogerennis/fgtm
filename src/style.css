@@ -224,6 +224,16 @@ input[type="search"] {
   color: #fff;
 }
 
+.fgtm-404-btn {
+  background: #aa1e25;
+  color: #fff;
+  padding: 1.1rem 2rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
 /**
  * partials/wordpress
  * ---
@@ -349,8 +359,8 @@ input[type="search"] {
   flex-grow: 1;
 }
 #nav-container nav .logo {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   display: inline-block;
   margin-right: auto;
 }
@@ -366,7 +376,7 @@ input[type="search"] {
   position: relative;
   display: inline-block;
   top: 0vh;
-  width: 60px;
+  width: 55px;
   left: 0;
   z-index: 1;
   margin-top: 0px;
@@ -377,8 +387,8 @@ input[type="search"] {
   left: 0;
   z-index: 2;
   cursor: pointer;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   opacity: 0;
 }
 #nav-container nav .outer-menu .checkbox-toggle:checked + .hamburger > div {
@@ -413,8 +423,8 @@ input[type="search"] {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   padding: 1em 0em 1.0em 1.0em;
   background: transparent;
   border-radius: 0 0.12em 0.12em 0;
@@ -464,7 +474,7 @@ input[type="search"] {
   content: '';
   position: absolute;
   z-index: 1;
-  top: -15px;
+  top: -13.75px;
   left: 0;
   width: 100%;
   height: 3px;
@@ -473,7 +483,7 @@ input[type="search"] {
   transition: all 0.4s ease;
 }
 #nav-container nav .outer-menu .hamburger > div:after {
-  top: 15px;
+  top: 13.75px;
 }
 #nav-container nav .outer-menu .fgtm-menu {
   position: fixed;
@@ -632,7 +642,7 @@ input[type="search"] {
     top: 19px;
   }
   #nav-container nav .outer-menu {
-    width: 60px;
+    width: 55px;
   }
   #nav-container nav .outer-menu .checkbox-toggle:checked ~ .fgtm-menu > div {
     -webkit-transform: scale(1.6);
@@ -954,7 +964,12 @@ input[type="search"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 76px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 75px;
 }
 .header-container header.header {
   -webkit-box-flex: 1;
@@ -3077,5 +3092,89 @@ input[type="search"] {
     -ms-flex: 1 1 250px;
     flex: 1 1 250px;
     z-index: 0;
+  }
+}
+/**
+ * partials/Templates/404
+ * ---
+ * 404 Page
+ */
+.four-o-four-container {
+  margin-top: 75px;
+  padding: 1.5em 0 4em 0;
+  background: #00ab88;
+  color: #fff;
+}
+.four-o-four-container section .wrapper .four-o-four h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-size: 4em;
+}
+.four-o-four-container section .wrapper .four-o-four .message {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  padding: 2em 0;
+}
+.four-o-four-container section .wrapper .four-o-four .message h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3em;
+}
+.four-o-four-container section .wrapper .four-o-four .message h4 {
+  text-align: center;
+  font-size: 1.012em;
+}
+.four-o-four-container section .wrapper .four-o-four .cta {
+  text-align: center;
+}
+.four-o-four-container section .wrapper .four-o-four .cta .verse {
+  padding: 2rem 0 4rem 0;
+  text-transform: uppercase;
+}
+.four-o-four-container section .wrapper .four-o-four .cta .btn-copy {
+  margin-bottom: 1rem;
+}
+.four-o-four-container section .wrapper .four-o-four .cta .fgtm-404-btn {
+  display: block;
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen and (min-width: 600px) {
+  .four-o-four-container section .wrapper .four-o-four {
+    padding: 0 7rem;
+  }
+  .four-o-four-container section .wrapper .four-o-four .cta .fgtm-404-btn {
+    display: inline-block;
+  }
+}
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+@media only screen and (min-width: 768px) {
+  .four-o-four-container section .wrapper .four-o-four {
+    padding: 0 9rem;
+  }
+  .four-o-four-container section .wrapper .four-o-four h1 {
+    font-size: 6em;
+  }
+  .four-o-four-container section .wrapper .four-o-four .message h2 {
+    font-size: 3.5em;
+  }
+  .four-o-four-container section .wrapper .four-o-four .message h4 {
+    text-align: center;
+    font-size: 1.063em;
+  }
+}
+/***********************************************
+* DESKTOP
+***********************************************/
+@media only screen and (min-width: 1024px) {
+  .four-o-four-container section .wrapper .four-o-four {
+    padding: 0 18rem;
   }
 }
