@@ -37,9 +37,17 @@
       </header>
    </div>
    
+   <?php
+        
+    $d = getdate(date("U"));
+    $day = "$d[weekday]";
+    if ($day == "Sunday") :
+      
+   ?>
    <div class="home-live-service-container">
-      <a href="http://www.google.com" target="_blank" class="home-live-service-btn"><div>Watch the live service</div><span></span></a>
+      <a href="<?php echo get_template_directory_uri(); ?>/media#mediaService" target="_self" class="home-live-service-btn"><div>Watch the live service</div><span></span></a>
    </div>
+   <?php endif ?>
    <!-- /END HEADER -->
 
 
@@ -57,7 +65,7 @@
                   
                   <?php
                   $args = array(
-                     'post_type' => 'events',
+                     'post_type' => 'events-home',
                      'orderby' => 'menu_order',
                      'posts_per_page' => 3 // -1 gets all events
                   );

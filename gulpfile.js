@@ -13,6 +13,8 @@ var gulp = require( "gulp" ),
 		"src/js/lib/conditionizr-4.3.0.min.js",
 		/** jQuery */
 		"src/bower_components/jquery/dist/jquery.js",
+		/** Flexslider */
+		"src/bower_components/flexslider/jquery.flexslider-min.js",
 		/** Page scripts */
 		"src/js/scripts.js"
 	],
@@ -29,6 +31,8 @@ var gulp = require( "gulp" ),
 			"src/css/banner.css",
 			/** Normalize */
 			"src/bower_components/normalize.css/normalize.css",
+			/** Flexslider */
+		  "src/bower_components/flexslider/flexslider.css",
 			/** Theme style */
 			"src/css/style.css"
 		]
@@ -89,6 +93,7 @@ gulp.task( "styles", [ "sass" ], function() {
 
 	var stream = gulp.src( cssminSrc[ env ] )
 		.pipe( $.concat( "style.css" ))
+		.pipe( $.concat( "flexslider.css" ))
 		.pipe( $.autoprefixer( "last 2 version" ) );
 
 	if ( env === "production" ) {
