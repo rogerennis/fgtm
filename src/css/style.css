@@ -534,11 +534,7 @@ input[type="search"] {
 /* Portrait */
 @media only screen and (min-width: 768px) {
   #nav-container {
-    padding: 10px 36px 9px;
-  }
-  #nav-container nav .logo {
-    width: 55px;
-    height: 55px;
+    padding: 11px 36px 9px;
   }
   #nav-container nav .menu-copy {
     top: 19px;
@@ -1216,6 +1212,9 @@ input[type="search"] {
 * CONTINUE MOBILE
 ***********************************************/
 @media only screen and (min-width: 600px) {
+  .home-events {
+    padding: 7em 0;
+  }
   .home-events .event h3,
   .home-events .times h3 {
     font-size: 2.166em;
@@ -1231,6 +1230,9 @@ input[type="search"] {
     margin-left: 2rem;
   }
 
+  .home-youth {
+    padding: 7em 0;
+  }
   .home-youth .wrapper main .nursery h3,
   .home-youth .wrapper main .youth h3 {
     font-size: 2.166em;
@@ -1360,6 +1362,7 @@ input[type="search"] {
   font-size: 2.666em;
   line-height: 1.593;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 .page-header-container header.header .page-header .heading p {
   font-size: 1.2em;

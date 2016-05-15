@@ -144,93 +144,74 @@
 ***********************************************/
 
 @media only screen
-   and (min-width: 600px) {
+  and (min-width: 600px) {
       
-      //  Events & Service Times
-      .home-events {
-         .event,
-         .times {
-            h3 {
-               font-size: 2.166em; // 1.796em + 1/4 scale
-            }
-         }
-         
-         .times {
-            .services {
-               display: flex;
-               
-               .service {
-                  width: 50%;
-                 
-                  &:last-child {
-                     margin-top: 0;
-                     margin-left: 2rem;
-                  }
-               }
-            }
-         }
+  //  Events & Service Times
+  .home-events {
+    padding: 7em 0;
+    
+    .event,
+    .times {
+      h3 {
+          font-size: 2.166em; // 1.796em + 1/4 scale
       }
-      
-      // Youth
-      .home-youth {
-         .wrapper {
-            main {
-               .nursery,
-               .youth {
-                  h3 {
-                     font-size: 2.166em; // 1.796em + 1/4 scale
-                  }
-                  
-                  .btn-container {
-                     text-align: center;
-                     
-                     .fgtm-btn {
-                        display: inline-block;
-                     }
-                  }
-               }
-            }
-         }
-      }
-      
-      // Sermon
-      .home-sermon {
-         .sermons {
-            h3 {
-               font-size: 2.166em; // 1.796em + 1/4 scale
-            }
-         }
+    }
+   
+    .times {
+      .services {
+        display: flex;
          
-         .btn-container {
+        .service {
+          width: 50%;
+           
+          &:last-child {
+            margin-top: 0;
+            margin-left: 2rem;
+          }
+        }
+      }
+    }
+  }
+  
+  // Youth
+  .home-youth {
+    padding: 7em 0;
+    
+    .wrapper {
+      main {
+        .nursery,
+        .youth {
+          h3 {
+            font-size: 2.166em; // 1.796em + 1/4 scale
+          }
+          
+          .btn-container {
+            text-align: center;
+             
             .fgtm-btn {
-               display: inline-block;
+              display: inline-block;
             }
-         }
+          }
+        }
       }
-      
-   }
-
-
-@media only screen
-   and (min-width: 736px) {
-      
-      //  Events & Service Times
-      .home-events {
-         
+    }
+  }
+  
+  // Sermon
+  .home-sermon {
+    .sermons {
+      h3 {
+        font-size: 2.166em; // 1.796em + 1/4 scale
       }
-      
-      // Youth
-      .home-youth {
-         
+    }
+   
+    .btn-container {
+      .fgtm-btn {
+        display: inline-block;
       }
-      
-      // Sermon
-      .home-sermon {
-         
-      }
-      
-   }
- 
+    }
+  }
+}
  
  /***********************************************
 * TABLET
