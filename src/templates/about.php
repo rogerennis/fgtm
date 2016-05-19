@@ -88,28 +88,6 @@
             <p>Born in Jamaica she has been in canada for Forty years. she is a wife, mother of four children and one grandchild. Since 1997 she has dedicated her life to the ministry of Jesus Christ. Her personal testimonies of God’s miracle and healing power is an encouragement to all. She is a preacher and a speaker, and is passionate about the Ladies Ministry. She has been with Faith Gospel Tabernacle Ministries for ten years.</p>
           </article>
         </div>
-            
-        <!-- Ministry Leadership -->
-        <!--
-        <div class="about-ministry-leadership">
-          <h3>Ministry Leadership</h3>
-          <div class="ministry-leadership-container">
-            <article class="ministry-leadership">
-              <figure><img src="#" /></figure>
-              <p>title</p>
-              <h4>Name 1</h4>
-              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
-            </article>
-             
-            <article class="ministry-leadership">
-              <figure><img src="#" /></figure>
-              <p>title</p>
-              <h4>Name 2</h4>
-              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
-            </article>
-          </div>
-        </div>
-        -->
       </div>
     </section>
   </div>
@@ -140,7 +118,7 @@
             </a>
           </h4><!-- TODO add Ladies Programs page -- Women's Bible Study section: Tuesday 7pm -->
           <h4 class="ministry">
-            <a href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk">Hospitality
+            <a href="<?php echo get_template_directory_uri(); ?>/hospitality">Hospitality
               <span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</span>
             </a>
           </h4><!-- TODO add Hospitality page -- Hospitality / Kitchen section: Join the Team button  & Ushers section: Join the Team button -->
@@ -152,13 +130,13 @@
           </h4><!-- TODO add Bible Study page -- check requirements for sections -->
           
           <h4 class="ministry">
-            <a href="<?php echo get_template_directory_uri(); ?>/#">Wednesday Night Prayer
+            <a>Wednesday Night Prayer
               <span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. 7:30pm</span>
             </a>
           </h4>
           
           <h4 class="ministry">
-            <a href="<?php echo get_template_directory_uri(); ?>/youth">Youth
+            <a href="<?php echo get_template_directory_uri(); ?>/fgtm-youth">Youth
               <span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</span>
             </a>
           </h4>

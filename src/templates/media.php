@@ -20,8 +20,7 @@
         
       ?>
         <div class="ustream-container">
-          <iframe width="100%" height="100%" 
-  	 allowfullscreen webkitallowfullscreen src="http://www.ustream.tv/embed/4664505?html5ui&showtitle=false" frameborder="0">
+          <iframe width="100%" height="100%" allowfullscreen webkitallowfullscreen src="http://www.ustream.tv/embed/4664505?html5ui&showtitle=false" frameborder="0">
           </iframe>
         </div>
       <?php else : ?>
