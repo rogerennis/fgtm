@@ -93,7 +93,7 @@ gulp.task( "styles", [ "sass" ], function() {
 
 	var stream = gulp.src( cssminSrc[ env ] )
 		.pipe( $.concat( "style.css" ))
-		.pipe( $.concat( "flexslider.css" ))
+/* 		.pipe( $.concat( "flexslider.css" )) */
 		.pipe( $.autoprefixer( "last 2 version" ) );
 
 	if ( env === "production" ) {

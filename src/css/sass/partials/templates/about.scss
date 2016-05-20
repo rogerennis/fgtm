@@ -63,7 +63,8 @@
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/rockywall.png') left top; 
+  background: linear-gradient( rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.1));
+  //, url('img/exclusive_paper.png') left top
   
   .wrapper {
     > h3 {
@@ -85,7 +86,6 @@
           
         > figure {
           margin: 0 0 1rem 0;
-          border: 5px solid $white;
         }
         
         .title {
@@ -332,8 +332,6 @@
   
   // Mission
   .about-mission {
-    padding: 7em 0;
-    
     .wrapper {
       .mission {
         > p {
@@ -345,8 +343,6 @@
   
   // What we Believe
   .about-believe-container {
-    padding: 7em 0;
-    
     .wrapper {
       .believe {
         > p {
@@ -358,8 +354,6 @@
   
   // Leadership
   .about-leadership {
-    padding: 7em 0;
-    
     .wrapper {
       .leadership-container {
         .leadership {

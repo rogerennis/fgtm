@@ -2021,9 +2021,6 @@ input[type="search"] {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
-  .newHere-believe-container {
-    padding: 7em 0;
-  }
   .newHere-believe-container .wrapper {
     padding: 0 10rem;
   }
@@ -2031,9 +2028,6 @@ input[type="search"] {
     font-size: 1.13em;
   }
 
-  .newHere-service-times {
-    padding: 7em 0;
-  }
   .newHere-service-times .wrapper .service-times .time-container {
     padding: 1em 1em 1em 0;
   }
@@ -2047,7 +2041,6 @@ input[type="search"] {
   }
 
   .newHere-youth {
-    padding: 7em 0;
     background-size: 350%;
   }
   .newHere-youth .wrapper .youth-container p {
@@ -2070,7 +2063,6 @@ input[type="search"] {
   }
 
   .newHere-cta {
-    padding: 7em 0;
     background-size: 290%;
   }
 }
@@ -2460,9 +2452,6 @@ input[type="search"] {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
-  .about-mission {
-    padding: 7em 0;
-  }
   .about-mission .wrapper .mission > p {
     font-size: 1.13em;
   }
@@ -2474,9 +2463,6 @@ input[type="search"] {
     font-size: 1.13em;
   }
 
-  .about-leadership {
-    padding: 7em 0;
-  }
   .about-leadership .wrapper .leadership-container .leadership .title {
     font-size: 1.188em;
   }
@@ -2689,8 +2675,8 @@ input[type="search"] {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: -webkit-linear-gradient(rgba(230, 231, 232, 0.9), rgba(230, 231, 232, 0.85)), url("img/giving2.jpg") no-repeat center center;
-  background: linear-gradient(rgba(230, 231, 232, 0.9), rgba(230, 231, 232, 0.85)), url("img/giving2.jpg") no-repeat center center;
+  background: -webkit-linear-gradient(rgba(230, 231, 232, 0.9), rgba(230, 231, 232, 0.85)), url("img/hero-image.jpg") no-repeat center center;
+  background: linear-gradient(rgba(230, 231, 232, 0.9), rgba(230, 231, 232, 0.85)), url("img/hero-image.jpg") no-repeat center center;
   background-size: cover;
 }
 .giving-paypal .wrapper .paypal {

@@ -632,11 +632,7 @@ input[type="search"] {
 /* Portrait */
 @media only screen and (min-width: 768px) {
   #nav-container {
-    padding: 10px 36px 9px;
-  }
-  #nav-container nav .logo {
-    width: 55px;
-    height: 55px;
+    padding: 11px 36px 9px;
   }
   #nav-container nav .menu-copy {
     top: 19px;
@@ -1440,6 +1436,9 @@ input[type="search"] {
 * CONTINUE MOBILE
 ***********************************************/
 @media only screen and (min-width: 600px) {
+  .home-events {
+    padding: 7em 0;
+  }
   .home-events .event h3,
   .home-events .times h3 {
     font-size: 2.166em;
@@ -1458,6 +1457,9 @@ input[type="search"] {
     margin-left: 2rem;
   }
 
+  .home-youth {
+    padding: 7em 0;
+  }
   .home-youth .wrapper main .nursery h3,
   .home-youth .wrapper main .youth h3 {
     font-size: 2.166em;
@@ -1625,6 +1627,7 @@ input[type="search"] {
   font-size: 2.666em;
   line-height: 1.593;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 .page-header-container header.header .page-header .heading p {
   font-size: 1.2em;
@@ -2018,9 +2021,6 @@ input[type="search"] {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
-  .newHere-believe-container {
-    padding: 7em 0;
-  }
   .newHere-believe-container .wrapper {
     padding: 0 10rem;
   }
@@ -2028,9 +2028,6 @@ input[type="search"] {
     font-size: 1.13em;
   }
 
-  .newHere-service-times {
-    padding: 7em 0;
-  }
   .newHere-service-times .wrapper .service-times .time-container {
     padding: 1em 1em 1em 0;
   }
@@ -2044,7 +2041,6 @@ input[type="search"] {
   }
 
   .newHere-youth {
-    padding: 7em 0;
     background-size: 350%;
   }
   .newHere-youth .wrapper .youth-container p {
@@ -2067,7 +2063,6 @@ input[type="search"] {
   }
 
   .newHere-cta {
-    padding: 7em 0;
     background-size: 290%;
   }
 }
@@ -2213,8 +2208,8 @@ input[type="search"] {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("img/rockywall.png") left top;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("img/rockywall.png") left top;
+  background: -webkit-linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.1));
+  background: linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.1));
  /********* CURRENTLY NOT IN USE  *******
    
  // Ministry Leadership
@@ -2286,7 +2281,6 @@ input[type="search"] {
 }
 .about-leadership .wrapper .leadership-container .leadership > figure {
   margin: 0 0 1rem 0;
-  border: 5px solid #fff;
 }
 .about-leadership .wrapper .leadership-container .leadership .title {
   font-size: 0.818em;
@@ -2457,23 +2451,14 @@ input[type="search"] {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
-  .about-mission {
-    padding: 7em 0;
-  }
   .about-mission .wrapper .mission > p {
     font-size: 1.13em;
   }
 
-  .about-believe-container {
-    padding: 7em 0;
-  }
   .about-believe-container .wrapper .believe > p {
     font-size: 1.13em;
   }
 
-  .about-leadership {
-    padding: 7em 0;
-  }
   .about-leadership .wrapper .leadership-container .leadership .title {
     font-size: 1.188em;
   }
@@ -2686,8 +2671,8 @@ input[type="search"] {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: -webkit-linear-gradient(rgba(230, 231, 232, 0.9), rgba(230, 231, 232, 0.85)), url("img/giving2.jpg") no-repeat center center;
-  background: linear-gradient(rgba(230, 231, 232, 0.9), rgba(230, 231, 232, 0.85)), url("img/giving2.jpg") no-repeat center center;
+  background: -webkit-linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.9));
+  background: linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.9));
   background-size: cover;
 }
 .giving-paypal .wrapper .paypal {
