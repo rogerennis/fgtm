@@ -12,15 +12,15 @@
     <!-- /post thumbnail -->
 
     <!-- post title -->
-    <h2>
+    <h3>
       <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-    </h2>
+    </h3>
     <!-- /post title -->
 
     <!-- post details -->
     <span class="date">
       <time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-        <?php the_date(); ?> <!-- <?php the_time(); ?> -->
+        Posted on <?php the_date(); ?> <!-- <?php the_time(); ?> -->
       </time>
     </span>
     <!-- <span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span> -->
@@ -29,7 +29,7 @@
 
     <?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 
-    <div class="story-tags"><?php the_tags(); ?><div>
+    <div class="story-tags"><?php the_tags(); ?></div>
     <?php edit_post_link(); ?>
 
   </article>

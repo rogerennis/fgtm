@@ -2669,5 +2669,185 @@ input[type="search"] {
     padding: 0 18rem;
   }
 }
+/**
+* partials/Templates/Christine's Corner
+* ---
+* Christine's Corner
+*/
+.about-the-author {
+  padding: 1.5em 0 3rem;
+  margin: 0 0 3rem 0;
+  border-bottom: 1px solid #d5d6d8;
+  display: flex;
+  flex-direction: column;
+}
+.about-the-author .wrapper .author-content {
+  flex: 1 1 auto;
+}
+.about-the-author .wrapper .author-content figure {
+  margin: 0 0 2rem 0;
+}
+.about-the-author .wrapper .author-content > div h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-the-author .wrapper .author-content > div > p {
+  text-align: center;
+}
+
+.author-posts {
+  display: flex;
+  flex-direction: column;
+}
+.author-posts > .wrapper .post,
+.author-posts > .wrapper .status-publish {
+  flex: 1 1 auto;
+  text-align: center;
+  margin-bottom: 3.5em;
+}
+.author-posts > .wrapper .post a figure,
+.author-posts > .wrapper .status-publish a figure {
+  margin: 0 0 2rem 0;
+}
+.author-posts > .wrapper .post h3,
+.author-posts > .wrapper .status-publish h3 {
+  font-family: "Geogrotesque-Light";
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+.author-posts > .wrapper .post .date,
+.author-posts > .wrapper .status-publish .date {
+  display: inline-flex;
+  color: #8b8d90;
+  margin-bottom: 2rem;
+}
+.author-posts > .wrapper .post > p.post-para,
+.author-posts > .wrapper .status-publish > p.post-para {
+  padding-bottom: 1em;
+}
+.author-posts > .wrapper .post > p.post-para a,
+.author-posts > .wrapper .status-publish > p.post-para a {
+  color: #8b8d90;
+}
+.author-posts > .wrapper .post .story-tags,
+.author-posts > .wrapper .status-publish .story-tags {
+  color: #8b8d90;
+  padding: 0 0 0.5em 0;
+  text-transform: uppercase;
+}
+.author-posts > .wrapper .post .story-tags a,
+.author-posts > .wrapper .status-publish .story-tags a {
+  color: #00ab88;
+  text-transform: lowercase;
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen and (min-width: 568px) {
+  .about-the-author {
+    padding-top: 5em;
+    padding-bottom: 3em;
+  }
+  .about-the-author .wrapper .author-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-the-author .wrapper .author-content figure {
+    margin: 0 1em 0 0;
+    flex: 1 1 45%;
+  }
+  .about-the-author .wrapper .author-content > div {
+    flex: 1 1 55%;
+  }
+  .about-the-author .wrapper .author-content > div h3 {
+    text-align: left;
+  }
+  .about-the-author .wrapper .author-content > div > p {
+    text-align: left;
+  }
+
+  .author-posts {
+    display: flex;
+    flex-direction: column;
+  }
+  .author-posts > .wrapper {
+    padding: 0 2rem;
+  }
+  .author-posts > .wrapper .post a figure,
+  .author-posts > .wrapper .status-publish a figure {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .about-the-author > .wrapper .author-content figure {
+    flex: 1 1 45%;
+  }
+  .about-the-author > .wrapper .author-content > div {
+    flex: 1 1 55%;
+  }
+  .about-the-author > .wrapper .author-content > div h3 {
+    font-size: 2.166em;
+  }
+
+  .author-posts > .wrapper {
+    padding: 0 4rem;
+  }
+  .author-posts > .wrapper .post a figure,
+  .author-posts > .wrapper .status-publish a figure {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+}
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+@media only screen and (min-width: 768px) {
+  .about-the-author > .wrapper .author-content figure {
+    flex: 1 1 35%;
+  }
+  .about-the-author > .wrapper .author-content > div {
+    flex: 1 1 65%;
+  }
+
+  .author-posts > .wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1.2rem;
+  }
+  .author-posts > .wrapper .post,
+  .author-posts > .wrapper .status-publish {
+    flex: 1 1 auto;
+    text-align: left;
+  }
+  .author-posts > .wrapper .post:nth-child(odd),
+  .author-posts > .wrapper .status-publish:nth-child(odd) {
+    margin-right: 1.5rem;
+  }
+  .author-posts > .wrapper .post a figure,
+  .author-posts > .wrapper .status-publish a figure {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .author-posts > .wrapper .post h3,
+  .author-posts > .wrapper .status-publish h3 {
+    text-align: left;
+  }
+}
+/***********************************************
+* DESKTOP
+***********************************************/
+@media only screen and (min-width: 1024px) {
+  .about-the-author > .wrapper .author-content figure {
+    flex: 1 1 28%;
+  }
+  .about-the-author > .wrapper .author-content > div {
+    flex: 1 1 72%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

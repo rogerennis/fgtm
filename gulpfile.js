@@ -14,7 +14,7 @@ var gulp = require( "gulp" ),
 		/** jQuery */
 		"src/bower_components/jquery/dist/jquery.js",
 		/** Flexslider */
-		"src/bower_components/flexslider/jquery.flexslider-min.js",
+/* 		"src/bower_components/flexslider/jquery.flexslider-min.js", */
 		/** Page scripts */
 		"src/js/scripts.js"
 	],
@@ -93,7 +93,7 @@ gulp.task( "styles", [ "sass" ], function() {
 
 	var stream = gulp.src( cssminSrc[ env ] )
 		.pipe( $.concat( "style.css" ))
-		.pipe( $.concat( "flexslider.css" ))
+/* 		.pipe( $.concat( "flexslider.css" )) */
 		.pipe( $.autoprefixer( "last 2 version" ) );
 
 	if ( env === "production" ) {

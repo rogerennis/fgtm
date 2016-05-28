@@ -35,24 +35,28 @@
   </div>
   <!-- /END HEADER -->
 
-	<!-- wrapper -->
-	<div class="wrapper">
-    <main role="main">
-      
-      <div id="aboutTheAuthor">
-        <section class="about-the-author">
-          <figure><img src="#" /></figure>
-          <p>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </section>
+  <div id="aboutTheAuthor">
+    <section class="about-the-author">
+      <div class="wrapper">
+        <article class="author-content">
+          <figure><img src="<?php echo get_template_directory_uri(); ?>/img/leadership/john_christine_williamson.JPG" alt="Christine Williamson" /></figure>
+          <div>
+            <h3>Christine Williamson</h3>
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          </div>
+        </article>
       </div>
-      
-      <div id="authorPosts">
-        <section class="author-posts">
-          <?php get_template_part('loop'); ?>
-        </section>
+    </section>
+  </div>
+  
+  <div id="authorPosts">
+    <section class="author-posts">
+      <div class="wrapper">
+        <?php get_template_part('loop'); ?>
       </div>
-      <?php get_template_part('pagination'); ?>
-    </main>
+    </section>
+  </div>
+  <?php get_template_part('pagination'); ?>
   </div>
 
 <?php get_footer(); ?>

@@ -326,7 +326,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
     $output = get_the_excerpt();
     $output = apply_filters('wptexturize', $output);
     $output = apply_filters('convert_chars', $output);
-    $output = '<p>' . $output . '</p>';
+    $output = '<p class="post-para">' . $output . '</p>';
     echo $output;
 }
 
@@ -334,7 +334,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="continue-reading" href="' . get_permalink($post->ID) . '">' . __('continue reading', 'html5blank') . '</a>';
+    return '...<a class="continue-reading" href="' . get_permalink($post->ID) . '">' . __('(continue reading)', 'fgtm') . '</a>';
 }
 
 // Remove Admin bar
