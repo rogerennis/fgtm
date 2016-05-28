@@ -3327,14 +3327,6 @@ input[type="search"] {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .author-posts > .wrapper {
-    padding: 0 2rem;
-  }
-  .author-posts > .wrapper .post a figure,
-  .author-posts > .wrapper .status-publish a figure {
-    margin-right: 2rem;
-    margin-left: 2rem;
-  }
 }
 @media only screen and (min-width: 600px) {
   .about-the-author > .wrapper .author-content figure {
@@ -3351,15 +3343,6 @@ input[type="search"] {
   }
   .about-the-author > .wrapper .author-content > div h3 {
     font-size: 2.166em;
-  }
-
-  .author-posts > .wrapper {
-    padding: 0 4rem;
-  }
-  .author-posts > .wrapper .post a figure,
-  .author-posts > .wrapper .status-publish a figure {
-    margin-right: 3rem;
-    margin-left: 3rem;
   }
 }
 /***********************************************
