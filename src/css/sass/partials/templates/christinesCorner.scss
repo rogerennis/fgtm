@@ -45,7 +45,7 @@
     .status-publish {
       flex: 1 1 auto;
       text-align: center;
-      margin-bottom: 3.5em;
+      margin-bottom: 3.5rem;
       
       a {
         figure {
@@ -57,7 +57,7 @@
         font-family: $font-light;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 0.3em;
+        margin-bottom: 0.3rem;
       }
       
       .date {
@@ -67,7 +67,7 @@
       }
       
       > p.post-para {
-        padding-bottom: 1em;
+        padding-bottom: 2rem;
         
         a {
           color: $fgtm-black-four;
@@ -76,11 +76,10 @@
       
       .story-tags {
         color: $fgtm-black-four;
-        padding: 0 0 0.5em 0;
-        text-transform: uppercase;
+        padding: 0 0 0.5rem 0;
         
         a {
-          color: $fgtm-green;
+          color: $fgtm-black;
           text-transform: lowercase;
         }
       }
@@ -105,8 +104,8 @@
   
   // aboutTheAuthor
   .about-the-author {
-    padding-top: 5em;
-    padding-bottom: 3em;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     
     .wrapper {
       .author-content {
@@ -114,7 +113,7 @@
         flex-direction: row;
     
         figure {
-          margin: 0 1em 0 0;
+          margin: 0 1rem 0 0;
           flex: 1 1 45%;
         }
         

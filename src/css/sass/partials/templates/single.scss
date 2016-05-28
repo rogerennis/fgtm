@@ -1,0 +1,103 @@
+/**
+* partials/Templates/Single
+* ---
+* Single (of a post)
+*/
+
+main.single {
+  article.post {
+    padding: 4.4rem 0 3rem 0;
+    
+    > a {
+      figure {
+        margin: 0 0 3rem 0;
+        max-height: 6rem;
+        overflow-y: hidden;
+      }
+    }
+    
+    .wrapper {
+      h1 {
+        text-transform: uppercase;
+        margin-bottom: 0.3rem;
+      }
+      
+      .date {
+        display: inline-flex;
+        color: $fgtm-black-four;
+        margin-bottom: 2rem;
+      }
+      
+      > p {
+        padding-bottom: 2rem;
+      }
+      
+      > .post-tags {
+        color: $fgtm-black-four;
+        padding: 0 0 0.5rem 0;
+        
+        a {
+          color: $fgtm-black;
+          text-transform: lowercase;
+        }
+      }
+      
+      p.post-category {
+        color: $fgtm-green;
+      }
+    }
+  }
+}
+
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen
+  and (min-width: 414px) {
+  
+  
+}
+
+
+@media only screen
+  and (min-width: 568px) {
+  
+  
+}
+  
+  
+@media only screen
+  and (min-width: 600px) {
+  
+  main.single {
+    article.post {
+      .wrapper {
+        padding-right: 4rem;
+        padding-left: 4rem;
+      }
+    }
+  }
+}
+
+
+/***********************************************
+* TABLET
+***********************************************/
+
+/* Portrait */
+@media only screen
+  and (min-width: 768px) {
+  
+  
+}
+
+/***********************************************
+* DESKTOP
+***********************************************/
+
+@media only screen
+  and (min-width: 1024px) {
+  
+  
+}
