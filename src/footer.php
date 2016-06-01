@@ -52,7 +52,7 @@
 					&copy;
 					<?php echo date('Y'); ?>
 					Copyright <?php bloginfo('name'); ?> <br><br>
-					<a href="//www.rogerennis.com" title="Roger Ennis"> Designed &amp; Developed: Roger Ennis</a>
+					<a href="//www.rogerennis.com" title="Roger Ennis"> Designed &amp; Developed: RENNER MEDIA INC</a>
 				</p>
 				<!-- /copyright -->
 

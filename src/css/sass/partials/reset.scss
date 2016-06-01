@@ -5,6 +5,11 @@
  * NOTE: also `normalize.css` is used
  */
 
+/*
+3/4 Scale = 1.11
+1/2 Scale  = 0.74
+1/4 Scale = 0.37
+*/
 
 // Global box-sizing
 *,
@@ -60,24 +65,24 @@ h4 {
 
 p {
    font-size: 1.063em;
-   line-height: 1.223;
+   line-height: 1.593; //1.223 + 0.37
 }
 
 h5 {
    font-size: 0.818em;
-   line-height: 1.223;
+   line-height: 1.593; //1.223 + 0.37
 }
 
 h6 {
    font-size: 0.629em;
-   line-height: 1.223;
+   line-height: 1.593; //1.223 + 0.37
 }
 
 ul {
    list-style: none;
    padding: 0;
    font-size: 1.063em;
-   line-height: 1.223;
+   line-height: 1.593; //1.223 + 0.37
 }
 
 

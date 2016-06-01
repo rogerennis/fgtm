@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * styles.scss
  * ---
@@ -63,24 +64,17 @@
   font-weight: normal;
   font-style: normal;
 }
-/*
-@font-face {
-  font-family: "Font-Name";
-  src: url("fonts/font-name.eot");
-  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"),
-    url("fonts/font-name.woff") format("woff"),
-    url("fonts/font-name.ttf") format("truetype"),
-    url("fonts/font-name.svg#font-name") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-*/
 /**
  * partials/reset
  * ---
  * Reset file
  * NOTE: also `normalize.css` is used
  */
+/*
+3/4 Scale = 1.11
+1/2 Scale  = 0.74
+1/4 Scale = 0.37
+*/
 *,
 *:after,
 *:before {
@@ -132,24 +126,24 @@ h4 {
 
 p {
   font-size: 1.063em;
-  line-height: 1.223;
+  line-height: 1.593;
 }
 
 h5 {
   font-size: 0.818em;
-  line-height: 1.223;
+  line-height: 1.593;
 }
 
 h6 {
   font-size: 0.629em;
-  line-height: 1.223;
+  line-height: 1.593;
 }
 
 ul {
   list-style: none;
   padding: 0;
   font-size: 1.063em;
-  line-height: 1.223;
+  line-height: 1.593;
 }
 
 img {
@@ -2884,5 +2878,243 @@ main.single article.post .wrapper p.post-category {
 /***********************************************
 * DESKTOP
 ***********************************************/
+/**
+* partials/Templates/youth
+* ---
+* Youth
+*/
+.youth-nursery,
+.youth-childrens-ministry {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.youth-nursery .wrapper .nursery,
+.youth-nursery .wrapper .childrens-ministry,
+.youth-childrens-ministry .wrapper .nursery,
+.youth-childrens-ministry .wrapper .childrens-ministry {
+  text-align: center;
+}
+.youth-nursery .wrapper .nursery figure,
+.youth-nursery .wrapper .childrens-ministry figure,
+.youth-childrens-ministry .wrapper .nursery figure,
+.youth-childrens-ministry .wrapper .childrens-ministry figure {
+  margin: 0 0 3rem 0;
+}
+.youth-nursery .wrapper .nursery h3,
+.youth-nursery .wrapper .childrens-ministry h3,
+.youth-childrens-ministry .wrapper .nursery h3,
+.youth-childrens-ministry .wrapper .childrens-ministry h3 {
+  text-transform: uppercase;
+  margin-bottom: 2.71rem;
+}
+.youth-nursery .wrapper .nursery p,
+.youth-nursery .wrapper .childrens-ministry p,
+.youth-childrens-ministry .wrapper .nursery p,
+.youth-childrens-ministry .wrapper .childrens-ministry p {
+  margin-bottom: 2.355rem;
+}
+.youth-nursery .wrapper .nursery h4,
+.youth-nursery .wrapper .childrens-ministry h4,
+.youth-childrens-ministry .wrapper .nursery h4,
+.youth-childrens-ministry .wrapper .childrens-ministry h4 {
+  text-transform: uppercase;
+  padding-bottom: 1.18rem;
+}
+.youth-nursery .wrapper .nursery ul.date-age-location,
+.youth-nursery .wrapper .childrens-ministry ul.date-age-location,
+.youth-childrens-ministry .wrapper .nursery ul.date-age-location,
+.youth-childrens-ministry .wrapper .childrens-ministry ul.date-age-location {
+  margin: 0;
+}
+
+.youth-childrens-ministry {
+  background: #E6E6E6;
+}
+
+.youth-adults {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  background: #404041;
+  color: #fff;
+}
+.youth-adults .wrapper .adults {
+  text-align: center;
+}
+.youth-adults .wrapper .adults h3 {
+  text-transform: uppercase;
+  margin-bottom: 2.71rem;
+}
+.youth-adults .wrapper .adults h4 {
+  text-transform: uppercase;
+  padding-bottom: 1.18rem;
+}
+.youth-adults .wrapper .adults p {
+  margin-bottom: 2.355rem;
+}
+.youth-adults .wrapper .adults ul.date-age-location {
+  margin: 0;
+}
+
+.youth-junior-youth,
+.youth-youth {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.youth-junior-youth .wrapper .junior-youth,
+.youth-junior-youth .wrapper .youth,
+.youth-youth .wrapper .junior-youth,
+.youth-youth .wrapper .youth {
+  text-align: center;
+}
+.youth-junior-youth .wrapper .junior-youth figure,
+.youth-junior-youth .wrapper .youth figure,
+.youth-youth .wrapper .junior-youth figure,
+.youth-youth .wrapper .youth figure {
+  margin: 0 0 3rem 0;
+}
+.youth-junior-youth .wrapper .junior-youth h3,
+.youth-junior-youth .wrapper .youth h3,
+.youth-youth .wrapper .junior-youth h3,
+.youth-youth .wrapper .youth h3 {
+  text-transform: uppercase;
+  margin-bottom: 2.71rem;
+}
+.youth-junior-youth .wrapper .junior-youth p,
+.youth-junior-youth .wrapper .youth p,
+.youth-youth .wrapper .junior-youth p,
+.youth-youth .wrapper .youth p {
+  margin-bottom: 2.355rem;
+}
+.youth-junior-youth .wrapper .junior-youth h4,
+.youth-junior-youth .wrapper .youth h4,
+.youth-youth .wrapper .junior-youth h4,
+.youth-youth .wrapper .youth h4 {
+  text-transform: uppercase;
+  padding-bottom: 1.18rem;
+}
+.youth-junior-youth .wrapper .junior-youth ul.date-age-location,
+.youth-junior-youth .wrapper .youth ul.date-age-location,
+.youth-youth .wrapper .junior-youth ul.date-age-location,
+.youth-youth .wrapper .youth ul.date-age-location {
+  margin: 0;
+}
+
+.youth-youth {
+  background: #E6E6E6;
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen and (min-width: 600px) {
+  .youth-nursery .wrapper .nursery p,
+  .youth-nursery .wrapper .childrens-ministry p,
+  .youth-childrens-ministry .wrapper .nursery p,
+  .youth-childrens-ministry .wrapper .childrens-ministry p {
+    padding: 0 3rem;
+  }
+  .youth-nursery .wrapper .nursery ul.date-age-location,
+  .youth-nursery .wrapper .childrens-ministry ul.date-age-location,
+  .youth-childrens-ministry .wrapper .nursery ul.date-age-location,
+  .youth-childrens-ministry .wrapper .childrens-ministry ul.date-age-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .youth-nursery .wrapper .nursery ul.date-age-location li,
+  .youth-nursery .wrapper .childrens-ministry ul.date-age-location li,
+  .youth-childrens-ministry .wrapper .nursery ul.date-age-location li,
+  .youth-childrens-ministry .wrapper .childrens-ministry ul.date-age-location li {
+    padding: 0 1rem;
+  }
+  .youth-nursery .wrapper .nursery ul.date-age-location li:nth-child(2),
+  .youth-nursery .wrapper .childrens-ministry ul.date-age-location li:nth-child(2),
+  .youth-childrens-ministry .wrapper .nursery ul.date-age-location li:nth-child(2),
+  .youth-childrens-ministry .wrapper .childrens-ministry ul.date-age-location li:nth-child(2) {
+    border-left: 1px solid #8b8d90;
+    border-right: 1px solid #8b8d90;
+  }
+
+  .youth-adults .wrapper .adults ul.date-age-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .youth-adults .wrapper .adults ul.date-age-location li {
+    padding: 0 1rem;
+  }
+  .youth-adults .wrapper .adults ul.date-age-location li:nth-child(2) {
+    border-left: 1px solid #d5d6d8;
+    border-right: 1px solid #d5d6d8;
+  }
+
+  .youth-junior-youth .wrapper .junior-youth p,
+  .youth-junior-youth .wrapper .youth p,
+  .youth-youth .wrapper .junior-youth p,
+  .youth-youth .wrapper .youth p {
+    padding: 0 3rem;
+  }
+  .youth-junior-youth .wrapper .junior-youth ul.date-age-location,
+  .youth-junior-youth .wrapper .youth ul.date-age-location,
+  .youth-youth .wrapper .junior-youth ul.date-age-location,
+  .youth-youth .wrapper .youth ul.date-age-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .youth-junior-youth .wrapper .junior-youth ul.date-age-location li,
+  .youth-junior-youth .wrapper .youth ul.date-age-location li,
+  .youth-youth .wrapper .junior-youth ul.date-age-location li,
+  .youth-youth .wrapper .youth ul.date-age-location li {
+    padding: 0 1rem;
+  }
+  .youth-junior-youth .wrapper .junior-youth ul.date-age-location li:nth-child(2),
+  .youth-junior-youth .wrapper .youth ul.date-age-location li:nth-child(2),
+  .youth-youth .wrapper .junior-youth ul.date-age-location li:nth-child(2),
+  .youth-youth .wrapper .youth ul.date-age-location li:nth-child(2) {
+    border-left: 1px solid #8b8d90;
+    border-right: 1px solid #8b8d90;
+  }
+}
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+@media only screen and (min-width: 768px) {
+  .youth-nursery .wrapper .nursery p,
+  .youth-nursery .wrapper .childrens-ministry p,
+  .youth-childrens-ministry .wrapper .nursery p,
+  .youth-childrens-ministry .wrapper .childrens-ministry p {
+    padding: 0 6rem;
+  }
+
+  .youth-junior-youth .wrapper .junior-youth p,
+  .youth-junior-youth .wrapper .youth p,
+  .youth-youth .wrapper .junior-youth p,
+  .youth-youth .wrapper .youth p {
+    padding: 0 6rem;
+  }
+}
+/***********************************************
+* DESKTOP
+***********************************************/
+@media only screen and (min-width: 1024px) {
+  .youth-nursery .wrapper .nursery p,
+  .youth-nursery .wrapper .childrens-ministry p,
+  .youth-childrens-ministry .wrapper .nursery p,
+  .youth-childrens-ministry .wrapper .childrens-ministry p {
+    padding: 0 9rem;
+  }
+
+  .youth-junior-youth .wrapper .junior-youth p,
+  .youth-junior-youth .wrapper .youth p,
+  .youth-youth .wrapper .junior-youth p,
+  .youth-youth .wrapper .youth p {
+    padding: 0 9rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
