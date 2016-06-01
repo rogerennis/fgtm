@@ -3753,3 +3753,84 @@ main.single article.post .wrapper p.post-category {
     padding: 0 9rem;
   }
 }
+/**
+* partials/Templates/ladies programs
+* ---
+* Ladies Programs
+*/
+.ladies-programs-bible {
+  padding: 5rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.ladies-programs-bible .wrapper .programs-bible {
+  text-align: center;
+}
+.ladies-programs-bible .wrapper .programs-bible figure {
+  margin: 0 0 3rem 0;
+}
+.ladies-programs-bible .wrapper .programs-bible h3 {
+  text-transform: uppercase;
+  margin-bottom: 2.71rem;
+}
+.ladies-programs-bible .wrapper .programs-bible p {
+  margin-bottom: 2.355rem;
+}
+.ladies-programs-bible .wrapper .programs-bible h4 {
+  text-transform: uppercase;
+  padding-bottom: 1.18rem;
+}
+.ladies-programs-bible .wrapper .programs-bible ul.date-age-location {
+  margin: 0;
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen and (min-width: 600px) {
+  .ladies-programs-bible .wrapper .programs-bible p {
+    padding: 0 3rem;
+  }
+  .ladies-programs-bible .wrapper .programs-bible ul.date-age-location {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .ladies-programs-bible .wrapper .programs-bible ul.date-age-location li {
+    padding: 0 1rem;
+  }
+}
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+@media only screen and (min-width: 768px) {
+  .ladies-programs-bible .wrapper .programs-bible p {
+    padding: 0 6rem;
+  }
+}
+/***********************************************
+* DESKTOP
+***********************************************/
+@media only screen and (min-width: 1024px) {
+  .ladies-programs-bible .wrapper .programs-bible p {
+    padding: 0 9rem;
+  }
+}

@@ -1,0 +1,123 @@
+/**
+* partials/Templates/ladies programs
+* ---
+* Ladies Programs
+*/
+
+//LADIES PROGRAMS
+.ladies-programs-bible {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  
+  .wrapper {
+    .programs-bible {
+      text-align: center;
+      
+      figure {
+        margin: 0 0 3rem 0;
+      }
+      
+      h3 {
+        text-transform: uppercase;
+        margin-bottom: 2.71rem;
+      }
+      
+      p {
+        margin-bottom: 2.355rem;
+      }
+      
+      h4 {
+        text-transform: uppercase;
+        padding-bottom: 1.18rem;
+      }
+      
+      ul.date-age-location {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen
+  and (min-width: 414px) {
+  
+  
+}
+
+
+@media only screen
+  and (min-width: 568px) {
+  
+  
+}
+  
+  
+@media only screen
+  and (min-width: 600px) {
+  
+  //LADIES PROGRAMS
+  .ladies-programs-bible {
+    .wrapper {
+      .programs-bible {
+        p {
+          padding: 0 3rem;
+        }
+        
+        ul.date-age-location {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          
+          li {
+            padding: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/***********************************************
+* TABLET
+***********************************************/
+
+/* Portrait */
+@media only screen
+  and (min-width: 768px) {
+  
+  //LADIES PROGRAMS
+  .ladies-programs-bible {
+    .wrapper {
+      .programs-bible {
+        p {
+          padding: 0 6rem;
+        }
+      }
+    }
+  }
+}
+
+/***********************************************
+* DESKTOP
+***********************************************/
+
+@media only screen
+  and (min-width: 1024px) {
+  
+  //LADIES PROGRAMS
+  .ladies-programs-bible {
+    .wrapper {
+      .programs-bible {
+        p {
+          padding: 0 9rem;
+        }
+      }
+    }
+  }
+}
