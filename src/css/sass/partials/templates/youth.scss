@@ -159,12 +159,12 @@
           padding: 0 3rem;
         }
         
-        ul.date-age-location {
+        > ul.date-age-location {
           display: flex;
           flex-direction: row;
           justify-content: center;
           
-          li {
+          > li {
             padding: 0 1rem;
             
             &:nth-child(2) {
@@ -181,12 +181,12 @@
   .youth-adults {
     .wrapper {
       .adults {
-        ul.date-age-location {
+        > ul.date-age-location {
           display: flex;
           flex-direction: row;
           justify-content: center;
           
-          li {
+          > li {
             padding: 0 1rem;
             
             &:nth-child(2) {
@@ -210,12 +210,12 @@
           padding: 0 3rem;
         }
         
-        ul.date-age-location {
+        > ul.date-age-location {
           display: flex;
           flex-direction: row;
           justify-content: center;
           
-          li {
+          > li {
             padding: 0 1rem;
             
             &:nth-child(2) {

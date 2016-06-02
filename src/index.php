@@ -34,6 +34,7 @@
      </header>
   </div>
   <!-- /END HEADER -->
+  <?php if ( function_exists( 'breadcrumb_trail' ) ) breadcrumb_trail(); ?>
 
   <div id="aboutTheAuthor">
     <section class="about-the-author">

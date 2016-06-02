@@ -62,6 +62,10 @@ if (function_exists('add_theme_support'))
     load_theme_textdomain('html5blank', get_template_directory() . '/languages');
 }
 
+function bct_theme_setup() {
+  add_theme_support( 'breadcrumb-trail' );
+}
+
 /*------------------------------------*\
     Functions
 \*------------------------------------*/
@@ -432,6 +436,7 @@ add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 add_action( 'widgets_init', 'fgtm_widgets_init' );
+add_action( 'after_setup_theme', 'bct_theme_setup' );
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds

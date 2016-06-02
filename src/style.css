@@ -725,17 +725,17 @@ input[type="search"] {
     font-family: "Geogrotesque-Regular";
   }
   #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li {
-    padding: 0em 0.7em 0.84em 0.7em;
+    padding: 0em 0.7em 0.54em 0.7em;
     margin: -2px;
     font-size: 1.1em;
     display: inline-block;
     -webkit-transition: border-bottom 0.4s ease;
     transition: border-bottom 0.4s ease;
   }
-  #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li.current-menu-item {
+  #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li.current-menu-item, #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li.current_page_parent {
     border-bottom: 9px solid #00ab88;
   }
-  #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li.current-menu-item > a {
+  #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li.current-menu-item > a, #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li.current_page_parent > a {
     color: #00ab88;
   }
   #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li:hover {
@@ -1625,6 +1625,47 @@ input[type="search"] {
 }
 .page-header-container header.header .page-header .heading p {
   font-size: 1.2em;
+}
+
+nav.breadcrumbs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+nav.breadcrumbs ul.trail-items li {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-indent: 0;
+  color: #8b8d90;
+}
+nav.breadcrumbs ul.trail-items li:after {
+  content: "\2192";
+  padding: 0 0.5em;
+}
+nav.breadcrumbs ul.trail-items li:last-of-type {
+  color: #00ab88;
+}
+nav.breadcrumbs ul.trail-items li:last-of-type::after {
+  display: none;
+}
+nav.breadcrumbs ul.trail-items li a {
+  color: #8b8d90;
 }
 
 /***********************************************
@@ -3623,10 +3664,10 @@ main.single article.post .wrapper p.post-category {
   .youth-childrens-ministry .wrapper .childrens-ministry p {
     padding: 0 3rem;
   }
-  .youth-nursery .wrapper .nursery ul.date-age-location,
-  .youth-nursery .wrapper .childrens-ministry ul.date-age-location,
-  .youth-childrens-ministry .wrapper .nursery ul.date-age-location,
-  .youth-childrens-ministry .wrapper .childrens-ministry ul.date-age-location {
+  .youth-nursery .wrapper .nursery > ul.date-age-location,
+  .youth-nursery .wrapper .childrens-ministry > ul.date-age-location,
+  .youth-childrens-ministry .wrapper .nursery > ul.date-age-location,
+  .youth-childrens-ministry .wrapper .childrens-ministry > ul.date-age-location {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3641,21 +3682,21 @@ main.single article.post .wrapper p.post-category {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .youth-nursery .wrapper .nursery ul.date-age-location li,
-  .youth-nursery .wrapper .childrens-ministry ul.date-age-location li,
-  .youth-childrens-ministry .wrapper .nursery ul.date-age-location li,
-  .youth-childrens-ministry .wrapper .childrens-ministry ul.date-age-location li {
+  .youth-nursery .wrapper .nursery > ul.date-age-location > li,
+  .youth-nursery .wrapper .childrens-ministry > ul.date-age-location > li,
+  .youth-childrens-ministry .wrapper .nursery > ul.date-age-location > li,
+  .youth-childrens-ministry .wrapper .childrens-ministry > ul.date-age-location > li {
     padding: 0 1rem;
   }
-  .youth-nursery .wrapper .nursery ul.date-age-location li:nth-child(2),
-  .youth-nursery .wrapper .childrens-ministry ul.date-age-location li:nth-child(2),
-  .youth-childrens-ministry .wrapper .nursery ul.date-age-location li:nth-child(2),
-  .youth-childrens-ministry .wrapper .childrens-ministry ul.date-age-location li:nth-child(2) {
+  .youth-nursery .wrapper .nursery > ul.date-age-location > li:nth-child(2),
+  .youth-nursery .wrapper .childrens-ministry > ul.date-age-location > li:nth-child(2),
+  .youth-childrens-ministry .wrapper .nursery > ul.date-age-location > li:nth-child(2),
+  .youth-childrens-ministry .wrapper .childrens-ministry > ul.date-age-location > li:nth-child(2) {
     border-left: 1px solid #8b8d90;
     border-right: 1px solid #8b8d90;
   }
 
-  .youth-adults .wrapper .adults ul.date-age-location {
+  .youth-adults .wrapper .adults > ul.date-age-location {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3670,10 +3711,10 @@ main.single article.post .wrapper p.post-category {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .youth-adults .wrapper .adults ul.date-age-location li {
+  .youth-adults .wrapper .adults > ul.date-age-location > li {
     padding: 0 1rem;
   }
-  .youth-adults .wrapper .adults ul.date-age-location li:nth-child(2) {
+  .youth-adults .wrapper .adults > ul.date-age-location > li:nth-child(2) {
     border-left: 1px solid #d5d6d8;
     border-right: 1px solid #d5d6d8;
   }
@@ -3684,10 +3725,10 @@ main.single article.post .wrapper p.post-category {
   .youth-youth .wrapper .youth p {
     padding: 0 3rem;
   }
-  .youth-junior-youth .wrapper .junior-youth ul.date-age-location,
-  .youth-junior-youth .wrapper .youth ul.date-age-location,
-  .youth-youth .wrapper .junior-youth ul.date-age-location,
-  .youth-youth .wrapper .youth ul.date-age-location {
+  .youth-junior-youth .wrapper .junior-youth > ul.date-age-location,
+  .youth-junior-youth .wrapper .youth > ul.date-age-location,
+  .youth-youth .wrapper .junior-youth > ul.date-age-location,
+  .youth-youth .wrapper .youth > ul.date-age-location {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3702,16 +3743,16 @@ main.single article.post .wrapper p.post-category {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .youth-junior-youth .wrapper .junior-youth ul.date-age-location li,
-  .youth-junior-youth .wrapper .youth ul.date-age-location li,
-  .youth-youth .wrapper .junior-youth ul.date-age-location li,
-  .youth-youth .wrapper .youth ul.date-age-location li {
+  .youth-junior-youth .wrapper .junior-youth > ul.date-age-location > li,
+  .youth-junior-youth .wrapper .youth > ul.date-age-location > li,
+  .youth-youth .wrapper .junior-youth > ul.date-age-location > li,
+  .youth-youth .wrapper .youth > ul.date-age-location > li {
     padding: 0 1rem;
   }
-  .youth-junior-youth .wrapper .junior-youth ul.date-age-location li:nth-child(2),
-  .youth-junior-youth .wrapper .youth ul.date-age-location li:nth-child(2),
-  .youth-youth .wrapper .junior-youth ul.date-age-location li:nth-child(2),
-  .youth-youth .wrapper .youth ul.date-age-location li:nth-child(2) {
+  .youth-junior-youth .wrapper .junior-youth > ul.date-age-location > li:nth-child(2),
+  .youth-junior-youth .wrapper .youth > ul.date-age-location > li:nth-child(2),
+  .youth-youth .wrapper .junior-youth > ul.date-age-location > li:nth-child(2),
+  .youth-youth .wrapper .youth > ul.date-age-location > li:nth-child(2) {
     border-left: 1px solid #8b8d90;
     border-right: 1px solid #8b8d90;
   }
@@ -3813,7 +3854,7 @@ main.single article.post .wrapper p.post-category {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .ladies-programs-bible .wrapper .programs-bible ul.date-age-location li {
+  .ladies-programs-bible .wrapper .programs-bible ul.date-age-location > li {
     padding: 0 1rem;
   }
 }

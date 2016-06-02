@@ -351,52 +351,53 @@
                         justify-content: flex-end;
                              
                         > ul {
-                           list-style: none;
-                           padding: 0 0em;
-                           margin: 0;
-                           display: inline-block;
-                           max-height: 100%;
-                           font-family: $font-regular;
-                                 
-                           > li {
-                              padding: 0em 0.7em 0.84em 0.7em;
+                          list-style: none;
+                          padding: 0 0em;
+                          margin: 0;
+                          display: inline-block;
+                          max-height: 100%;
+                          font-family: $font-regular;
+                          
+                            > li {
+                              padding: 0em 0.7em 0.54em 0.7em;
                               margin: -2px;
                               font-size: 1.1em;
                               display: inline-block;
                               transition: border-bottom $anim-duration ease;
                               
-                              &.current-menu-item {
-                                 border-bottom: 9px solid $fgtm-green;
+                              &.current-menu-item,
+                              &.current_page_parent {
+                                border-bottom: 9px solid $fgtm-green;
                                  
-                                 > a {
-                                    color: $fgtm-green;
-                                 }
+                                > a {
+                                  color: $fgtm-green;
+                                }
                               }
                               
                               &:hover {
-                                 border-bottom: 9px solid $fgtm-green;
+                                border-bottom: 9px solid $fgtm-green;
                               }
-                                     
+                              
                               > a {
-                                 position: relative;
-                                 display: inline;
-                                 cursor: pointer;
-                                 transition: color $anim-duration ease;
-                                 color: $fgtm-black;
+                                position: relative;
+                                display: inline;
+                                cursor: pointer;
+                                transition: color $anim-duration ease;
+                                color: $fgtm-black;
                                        
-                                 &:hover {
-                                    color: $fgtm-green;
-                                    border-bottom: 0;
-                                 }
+                                &:hover {
+                                  color: $fgtm-green;
+                                  border-bottom: 0;
+                                }
                               }
                                      
                               .sub-menu {
-                                 list-style: none;
-                                 display: none;
+                                list-style: none;
+                                display: none;
                                   
-                                 > li {
-                                    color: $white;
-                                 }
+                                > li {
+                                  color: $white;
+                                }
                               }
                            }
                         }
