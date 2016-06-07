@@ -4,7 +4,6 @@
  * Template Name: Blog
  */
  
- //global $thumbnail_url;
 ?>
 
 <?php get_header(); ?>

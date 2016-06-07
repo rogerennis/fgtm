@@ -3875,3 +3875,65 @@ main.single article.post .wrapper p.post-category {
     padding: 0 9rem;
   }
 }
+/**
+* partials/Templates/hospitality
+* ---
+* Hospitality
+*/
+.hospitality-usher {
+  padding: 5rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.hospitality-usher .wrapper .hospitality {
+  text-align: center;
+}
+.hospitality-usher .wrapper .hospitality figure {
+  margin: 0 0 3rem 0;
+}
+.hospitality-usher .wrapper .hospitality h3 {
+  text-transform: uppercase;
+  margin-bottom: 2.71rem;
+}
+.hospitality-usher .wrapper .hospitality p {
+  margin-bottom: 2.355rem;
+}
+.hospitality-usher .wrapper .hospitality a {
+  display: block;
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen and (min-width: 600px) {
+  .hospitality-usher .wrapper .hospitality p {
+    padding: 0 3rem;
+  }
+  .hospitality-usher .wrapper .hospitality a {
+    display: inline-block;
+  }
+}
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+@media only screen and (min-width: 768px) {
+  .hospitality-usher .wrapper .hospitality p {
+    padding: 0 6rem;
+  }
+}
+/***********************************************
+* DESKTOP
+***********************************************/
+@media only screen and (min-width: 1024px) {
+  .hospitality-usher .wrapper .hospitality p {
+    padding: 0 9rem;
+  }
+}
