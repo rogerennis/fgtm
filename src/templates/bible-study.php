@@ -15,26 +15,32 @@
       <div class="wrapper">
         <article class="bible-study">
           <figure>
-            <img src="#">
+            <img src="#" alt="">
           </figure>
           <h3>Bible Study</h3>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
           <h4>Classes</h4>
+          <!-- date -->
           <ul class="date-age-location">
-            <li>Every Tuesday at 7PM</li>
+            <li>Every Thursday at 7PM</li>
           </ul>
+          
+          <!-- classes -->
           <ul class="classes">
-            <li>Beginners
+            <li>
+              <div>Beginners</div>
               <ul>
                 <li>dfsdfsdfsdfsdf</li>
               </ul>
             </li>
-            <li>Advanced 01
+            <li>
+              <div>Advanced 01</div>
               <ul>
                 <li>dfsdfsdfsdf</li>
               </ul>
             </li>
-            <li>Advanced 02
+            <li>
+              <div>Advanced 02</div>
               <ul>
                 <li>asasdasdasdasd</li>
               </ul>

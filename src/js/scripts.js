@@ -67,6 +67,17 @@
                scrollTop: target.offset().top - 76
             }, 1000);
          });
+         
+         
+         //Bible study accordion
+         $(".classes > li > div").click(function () {
+           if(false == $(this).next().is(':visible')) {
+             $('.classes ul').slideUp(300);
+           }
+           $(this).next().slideToggle(300);
+         });
+         
+         $('.classes ul:eq(0)').show();
 	});
 
 } ( this, jQuery ));

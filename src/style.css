@@ -3937,3 +3937,119 @@ main.single article.post .wrapper p.post-category {
     padding: 0 9rem;
   }
 }
+/**
+* partials/Templates/bible
+* ---
+* Bible
+*/
+.bible-study-container {
+  padding: 5rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.bible-study-container .wrapper .bible-study {
+  text-align: center;
+}
+.bible-study-container .wrapper .bible-study figure {
+  margin: 0 0 3rem 0;
+}
+.bible-study-container .wrapper .bible-study h3 {
+  text-transform: uppercase;
+  margin-bottom: 2.71rem;
+}
+.bible-study-container .wrapper .bible-study p {
+  margin-bottom: 2.355rem;
+}
+.bible-study-container .wrapper .bible-study h4 {
+  text-transform: uppercase;
+  padding-bottom: 1.18rem;
+}
+.bible-study-container .wrapper .bible-study ul.date-age-location {
+  margin: 0 0 1rem 0;
+}
+.bible-study-container .wrapper .bible-study ul.classes {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.bible-study-container .wrapper .bible-study ul.classes li > div {
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #00ab88;
+  color: white;
+  padding: 0.7rem 0;
+  margin-bottom: 0.0rem;
+  border-bottom: 1px solid #d5d6d8;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.bible-study-container .wrapper .bible-study ul.classes li ul {
+  padding: 0;
+  display: none;
+}
+.bible-study-container .wrapper .bible-study ul.classes li ul li {
+  cursor: auto;
+  background: #d5d6d8;
+  color: #404041;
+  padding: 1rem;
+  border-bottom: 1px solid #00ab88;
+}
+
+/***********************************************
+* CONTINUE MOBILE
+***********************************************/
+@media only screen and (min-width: 600px) {
+  .bible-study-container .wrapper .bible-study p {
+    padding: 0 3rem;
+  }
+  .bible-study-container .wrapper .bible-study ul.date-age-location {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .bible-study-container .wrapper .bible-study ul.date-age-location > li {
+    padding: 0 1rem;
+  }
+  .bible-study-container .wrapper .bible-study ul.classes {
+    margin: 0 auto;
+    width: 350px;
+  }
+}
+/***********************************************
+* TABLET
+***********************************************/
+/* Portrait */
+@media only screen and (min-width: 768px) {
+  .bible-study-container .wrapper .bible-study p {
+    padding: 0 6rem;
+  }
+}
+/***********************************************
+* DESKTOP
+***********************************************/
+@media only screen and (min-width: 1024px) {
+  .bible-study-container .wrapper .bible-study p {
+    padding: 0 9rem;
+  }
+  .bible-study-container .wrapper .bible-study ul.classes li > div:hover {
+    background: #01715a;
+  }
+}
