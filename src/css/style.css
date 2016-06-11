@@ -1737,9 +1737,6 @@ nav.breadcrumbs ul.trail-items li a {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
-  .newHere-believe-container {
-    padding: 7em 0;
-  }
   .newHere-believe-container .wrapper {
     padding: 0 10rem;
   }
@@ -1747,9 +1744,6 @@ nav.breadcrumbs ul.trail-items li a {
     font-size: 1.13em;
   }
 
-  .newHere-service-times {
-    padding: 7em 0;
-  }
   .newHere-service-times .wrapper .service-times .time-container {
     padding: 1em 1em 1em 0;
   }
@@ -1763,7 +1757,6 @@ nav.breadcrumbs ul.trail-items li a {
   }
 
   .newHere-youth {
-    padding: 7em 0;
     -webkit-background-size: 350%;
     -moz-background-size: 350%;
     -o-background-size: 350%;
@@ -1786,7 +1779,6 @@ nav.breadcrumbs ul.trail-items li a {
   }
 
   .newHere-cta {
-    padding: 7em 0;
     -webkit-background-size: 290%;
     -moz-background-size: 290%;
     -o-background-size: 290%;
@@ -1907,7 +1899,7 @@ nav.breadcrumbs ul.trail-items li a {
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("img/rockywall.png") left top;
+  background: linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.1));
  /********* CURRENTLY NOT IN USE  *******
    
  // Ministry Leadership
@@ -1967,7 +1959,6 @@ nav.breadcrumbs ul.trail-items li a {
 }
 .about-leadership .wrapper .leadership-container .leadership > figure {
   margin: 0 0 1rem 0;
-  border: 5px solid #fff;
 }
 .about-leadership .wrapper .leadership-container .leadership .title {
   font-size: 0.818em;
@@ -2097,23 +2088,14 @@ nav.breadcrumbs ul.trail-items li a {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
-  .about-mission {
-    padding: 7em 0;
-  }
   .about-mission .wrapper .mission > p {
     font-size: 1.13em;
   }
 
-  .about-believe-container {
-    padding: 7em 0;
-  }
   .about-believe-container .wrapper .believe > p {
     font-size: 1.13em;
   }
 
-  .about-leadership {
-    padding: 7em 0;
-  }
   .about-leadership .wrapper .leadership-container .leadership .title {
     font-size: 1.188em;
   }
@@ -2282,7 +2264,7 @@ nav.breadcrumbs ul.trail-items li a {
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(230, 231, 232, 0.9), rgba(230, 231, 232, 0.85)), url("img/giving2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.9));
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -32,6 +32,7 @@
   <!-- /PAYPAL -->
    
   <!-- DONATE -->
+  <!--
   <div id="givingDonate">
     <section class="giving-donate">
       <div class="wrapper">
@@ -45,6 +46,7 @@
       </div>
     </section>
   </div>
+  -->
   <!-- /DONATE -->
 
 <?php get_footer(); ?>

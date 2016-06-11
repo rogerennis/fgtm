@@ -22,11 +22,13 @@
         <article class="address">
           <h4>Faith Gospel Tabernacle Ministries</h4>
           <address>
-            142 Salvation Road<br>
+            140 Salvation Road<br>
             Brampton, Ontario<br>
             L7A 0W7
           </address>
-          <a class="tel" href="tel:9054594673">Tel 905.459.4673</a>
+          <a href="tel:9054594673">Tel 905.459.4673</a>
+          <br>
+          <a class="tel" href="tel:9054594697">Fax 905.459.4697</a>
           <h4>Office Hours</h4>
           <p>Monday – Friday: 9AM to 4:30PM</p>
         </article>
@@ -53,11 +55,6 @@
       <div>
         <?php echo do_shortcode("[huge_it_maps id='2']"); ?>
       </div>
-<!--
-      <div class="home-live-service-container">
-        <a href="http://www.google.com" target="_blank" class="home-live-service-btn"><div>See it on google</div><span></span></a>
-      </div>
--->
     </section>
   </div>
   <!-- /MAP -->
