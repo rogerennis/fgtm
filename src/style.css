@@ -613,6 +613,29 @@ input[type="search"] {
   color: #fff;
 }
 
+.scrollToTop {
+  padding: 10px;
+  text-align: center;
+  background: #00ab88;
+  color: #fff;
+  text-decoration: none;
+  position: fixed;
+  bottom: 6px;
+  right: 20px;
+  display: none;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  z-index: 99;
+  border-radius: 50px;
+}
+.scrollToTop::after {
+  content: "\279C";
+  font-size: 1.5em;
+}
+.scrollToTop:hover {
+  text-decoration: none;
+}
+
 /*
 .menu {}
 
@@ -637,6 +660,11 @@ input[type="search"] {
   #nav-container nav .outer-menu .checkbox-toggle:checked ~ .fgtm-menu > div {
     -webkit-transform: scale(1.6);
     transform: scale(1.6);
+  }
+
+  .scrollToTop {
+    bottom: 15px;
+    right: 30px;
   }
 }
 /***********************************************
@@ -1655,7 +1683,7 @@ nav.breadcrumbs ul.trail-items li {
   color: #8b8d90;
 }
 nav.breadcrumbs ul.trail-items li:after {
-  content: "\2192";
+  content: "\279C";
   padding: 0 0.5em;
 }
 nav.breadcrumbs ul.trail-items li:last-of-type {

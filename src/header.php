@@ -47,3 +47,6 @@
     		</nav>
         </div>
         <!-- /nav -->
+        
+        <!-- page scroller -->
+        <a href="#" class="scrollToTop"></a>

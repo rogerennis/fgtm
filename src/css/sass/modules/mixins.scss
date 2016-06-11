@@ -29,6 +29,15 @@
 }
 
 
+//ROTATE
+
+@mixin transform($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg);
+};
+
 
 // BORDER
 
