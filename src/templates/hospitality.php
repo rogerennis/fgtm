@@ -19,7 +19,7 @@
           </figure>
           <h3>Hospitality | Ushers</h3>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
-          <a href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk" class="fgtm-btn">Join the team, Signup</a>
+          <a href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk?subject=Hospitality: Sign me up&message=Please sign me up for the hospitality team. What do I do next?" class="fgtm-btn">Join the team, Signup</a>
         </article>
       </div>
     </section>

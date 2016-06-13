@@ -85,6 +85,11 @@
             @include appearance(none);
             background: transparent;
             transition: all $anim-duration ease;
+            
+            &:focus,
+            &:hover {
+              border: 1px solid $fgtm-green;
+            }
           }
           
           .just_contact_form_message {

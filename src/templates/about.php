@@ -9,6 +9,13 @@
 
   <?php include('includes/page_header.php'); ?>
    
+  <nav role="navigation" class="about--secondary-nav">
+    <ul class="about--nav-items">
+      <li><a href="#aboutBelieve">what we believe</a></li>
+      <li><a href="#aboutLeadership">leadership</a></li>
+      <li><a href="#aboutMinistries">ministries</a></li>
+    </ul>
+  </nav>
   <!-- MISSION -->
   <div id="aboutMission">
     <section class="about-mission">
@@ -107,7 +114,7 @@
           </h4>
           
           <h4 class="ministry">
-            <a href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk">Worship Team
+            <a href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk?subject=Worhip Team: Sign me up&message=Please sign me up for the worship team. What do I do next?">Worship Team
               <span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</span>
             </a>
           </h4>

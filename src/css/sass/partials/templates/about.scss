@@ -4,7 +4,44 @@
  * About Page
  */
  
- // Mission
+//Secondary Nav
+nav.about--secondary-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  
+  ul.about--nav-items {
+    li {
+      //display: inline-flex;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: transparent;
+      text-indent: 0;
+      color: $fgtm-black-three;
+      text-align: center;
+      
+      &:nth-child(2) {
+        margin: 1.5rem 0 1.5rem 0;
+      }
+      
+      a {
+        text-transform: capitalize;
+        margin: 0 1.5rem 0 1.5rem;
+        border-bottom: 3px solid rgba(230, 230, 230, 0.1);
+        
+        &:hover {
+          border-bottom: 3px solid $fgtm-green;
+          color: $fgtm-green;
+        }
+      }
+    }
+  }
+}
+
+
+// Mission
 .about-mission {
   padding: 5em 0;
   display: flex;
@@ -99,47 +136,6 @@
       }
     }
   }
-   
-   /********* CURRENTLY NOT IN USE  *******
-     
-   // Ministry Leadership
-  .about-ministry-leadership {
-    padding: 3em 0 0em 0;
-     
-    .ministry-leadership-container {
-      flex: 1 1 auto;
-      text-align: left;
-      color: $fgtm-black;
-        
-      .ministry-leadership {
-        margin-bottom: 3rem;
-         
-        &:last-child {
-          margin-bottom: 0rem;
-        }
-        
-        > figure {
-          margin: 0 0 1rem 0;
-        }
-        
-        > h3 {
-          text-transform: uppercase;
-          text-align: center;
-          margin-bottom: 3rem;
-        }
-        
-        .title {
-          font-size: 0.818em;
-        }
-        
-        > h4 {
-          padding: 0rem 0 0.5rem 0;
-        }
-      }
-    }
-  }
-  
-  ********* CURRENTLY NOT IN USE  *******/
 }
 
 // Ministries
@@ -329,6 +325,21 @@
 /* Portrait */
 @media only screen
   and (min-width: 768px) {
+  
+  //Secondary Nav
+  nav.about--secondary-nav {
+    ul.about--nav-items {
+      li {
+        display: inline-flex;
+        text-align: left;
+        
+        &:nth-child(2) {
+          //margin: 0 1.5rem 0 1.5rem;
+          margin: 0 -0.3rem 0 -0.3rem;
+        }
+      }
+    }
+  }
   
   // Mission
   .about-mission {

@@ -77,7 +77,7 @@
     $(".classes ul:eq(0)").show();
     
     
-    // Smooth Page Scrolling
+    //Smooth Page Scrolling
     $("a[href*='#']:not([href='#'])").click(function() {
       if (location.pathname.replace(/^\//,"") === this.pathname.replace(/^\//,"") && location.hostname === this.hostname) {
         var target = $(this.hash);
@@ -100,13 +100,23 @@
         $(".scrollToTop").fadeOut();
       }
     });
-
+    
+    
     //Click event to scroll to top
     $(".scrollToTop").click(function(){
       $("html, body").animate({scrollTop : 0},800);
       return false;
     });
     
+    
+    //Pre-fill form field via URL
+    var contactFormSubject = window.location.href.match(/\?subject=(.*&)/);
+    var contactFormMsg = window.location.href.match(/\&message=(.*)/);
+    
+    if(contactFormSubject && contactFormMsg) {
+      document.getElementById("justContactFormSubject").value = contactFormSubject[1].split("&").join(".");
+      document.getElementById("justContactFormMessage").value = contactFormMsg[1];
+    }
     
 	});
 
