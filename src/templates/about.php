@@ -10,7 +10,8 @@
   <?php include('includes/page_header.php'); ?>
    
   <nav role="navigation" class="about--secondary-nav">
-    <ul class="about--nav-items">
+    <ul class="about--secondary-nav-items">
+      <li><a href="#aboutMission">mission</a></li>
       <li><a href="#aboutBelieve">what we believe</a></li>
       <li><a href="#aboutLeadership">leadership</a></li>
       <li><a href="#aboutMinistries">ministries</a></li>

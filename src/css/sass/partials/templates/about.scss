@@ -11,9 +11,9 @@ nav.about--secondary-nav {
   align-items: center;
   margin-top: 3rem;
   
-  ul.about--nav-items {
+  ul.about--secondary-nav-items {
     li {
-      //display: inline-flex;
+      font-size: 1.063em + 0.3em;
       margin: 0;
       padding: 0;
       border: none;
@@ -22,7 +22,8 @@ nav.about--secondary-nav {
       color: $fgtm-black-three;
       text-align: center;
       
-      &:nth-child(2) {
+      &:nth-child(2),
+      &:nth-child(3) {
         margin: 1.5rem 0 1.5rem 0;
       }
       
@@ -143,6 +144,7 @@ nav.about--secondary-nav {
   padding: 5em 0 ;
   display: flex;
   flex-direction: column;
+  background: $body-section;
    
   .wrapper {
     > h3 {
@@ -328,13 +330,14 @@ nav.about--secondary-nav {
   
   //Secondary Nav
   nav.about--secondary-nav {
-    ul.about--nav-items {
+    ul.about--secondary-nav-items {
       li {
+        font-size: 1.063em;
         display: inline-flex;
         text-align: left;
         
-        &:nth-child(2) {
-          //margin: 0 1.5rem 0 1.5rem;
+        &:nth-child(2),
+        &:nth-child(3) {
           margin: 0 -0.3rem 0 -0.3rem;
         }
       }

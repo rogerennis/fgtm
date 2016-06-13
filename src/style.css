@@ -1687,7 +1687,7 @@ nav.breadcrumbs ul.trail-items li:after {
   padding: 0 0.5em;
 }
 nav.breadcrumbs ul.trail-items li:last-of-type {
-  color: #00ab88;
+  color: #6dc6b1;
 }
 nav.breadcrumbs ul.trail-items li:last-of-type::after {
   display: none;
@@ -2213,7 +2213,8 @@ nav.about--secondary-nav {
   align-items: center;
   margin-top: 3rem;
 }
-nav.about--secondary-nav ul.about--nav-items li {
+nav.about--secondary-nav ul.about--secondary-nav-items li {
+  font-size: 1.363em;
   margin: 0;
   padding: 0;
   border: none;
@@ -2222,15 +2223,15 @@ nav.about--secondary-nav ul.about--nav-items li {
   color: #696a6c;
   text-align: center;
 }
-nav.about--secondary-nav ul.about--nav-items li:nth-child(2) {
+nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(2), nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(3) {
   margin: 1.5rem 0 1.5rem 0;
 }
-nav.about--secondary-nav ul.about--nav-items li a {
+nav.about--secondary-nav ul.about--secondary-nav-items li a {
   text-transform: capitalize;
   margin: 0 1.5rem 0 1.5rem;
   border-bottom: 3px solid rgba(230, 230, 230, 0.1);
 }
-nav.about--secondary-nav ul.about--nav-items li a:hover {
+nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   border-bottom: 3px solid #00ab88;
   color: #00ab88;
 }
@@ -2362,6 +2363,7 @@ nav.about--secondary-nav ul.about--nav-items li a:hover {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  background: #E6E6E6;
 }
 .about-ministries .wrapper > h3 {
   text-transform: uppercase;
@@ -2512,14 +2514,15 @@ nav.about--secondary-nav ul.about--nav-items li a:hover {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
-  nav.about--secondary-nav ul.about--nav-items li {
+  nav.about--secondary-nav ul.about--secondary-nav-items li {
+    font-size: 1.063em;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
     text-align: left;
   }
-  nav.about--secondary-nav ul.about--nav-items li:nth-child(2) {
+  nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(2), nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(3) {
     margin: 0 -0.3rem 0 -0.3rem;
   }
 
