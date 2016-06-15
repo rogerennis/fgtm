@@ -676,6 +676,7 @@ input[type="search"] {
   }
   #nav-container nav .logo {
     margin-bottom: 10px;
+    margin-right: 50px;
   }
   #nav-container nav .menu-copy {
     display: none;
@@ -739,10 +740,10 @@ input[type="search"] {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
   #nav-container nav .outer-menu .fgtm-menu > div > div > ul {
     list-style: none;
@@ -2211,7 +2212,7 @@ nav.about--secondary-nav {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 nav.about--secondary-nav ul.about--secondary-nav-items li {
   font-size: 1.363em;
@@ -2222,6 +2223,8 @@ nav.about--secondary-nav ul.about--secondary-nav-items li {
   text-indent: 0;
   color: #696a6c;
   text-align: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(2), nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(3) {
   margin: 1.5rem 0 1.5rem 0;
@@ -2230,6 +2233,8 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a {
   text-transform: capitalize;
   margin: 0 1.5rem 0 1.5rem;
   border-bottom: 3px solid rgba(230, 230, 230, 0.1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   border-bottom: 3px solid #00ab88;
@@ -2277,8 +2282,8 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: -webkit-linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 0)), url("img/whatWeBelieve.jpg") no-repeat center center;
-  background: linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 0)), url("img/whatWeBelieve.jpg") no-repeat center center;
+  background: -webkit-linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/whatWeBelieve.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/whatWeBelieve.jpg") no-repeat center center;
   background-size: 907%;
 }
 .about-believe-container .wrapper .believe {
@@ -2287,7 +2292,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   text-align: center;
-  color: #404041;
+  color: #fff;
 }
 .about-believe-container .wrapper .believe > h3 {
   text-transform: uppercase;
@@ -2346,10 +2351,11 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
 }
 .about-leadership .wrapper .leadership-container .leadership .title {
   font-size: 0.818em;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+  color: #8b8d90;
 }
 .about-leadership .wrapper .leadership-container .leadership > h4 {
-  padding: 0rem 0 1.1rem 0;
+  padding: 0rem 0 0.3rem 0;
 }
 
 .about-ministries {
@@ -2534,11 +2540,13 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
     font-size: 1.13em;
   }
 
+  .about-leadership .wrapper .leadership-container {
+    text-align: left;
+  }
   .about-leadership .wrapper .leadership-container .leadership .title {
     font-size: 1.188em;
   }
   .about-leadership .wrapper .leadership-container .leadership > h4 {
-    padding: 0rem 0 1.1rem 0;
     font-size: 1.752em;
   }
   .about-leadership .wrapper .leadership-container .leadership > p {

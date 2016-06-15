@@ -326,6 +326,7 @@
     nav {
       .logo {
         margin-bottom: 10px;
+        margin-right: 50px;
       }
       
       .menu-copy {
@@ -377,7 +378,7 @@
               overflow-y: visible;
               display: flex;
               align-items: center;
-              justify-content: flex-end;
+              justify-content: flex-start;
                    
               > ul {
                 list-style: none;

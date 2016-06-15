@@ -9,7 +9,7 @@ nav.about--secondary-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
   
   ul.about--secondary-nav-items {
     li {
@@ -21,6 +21,7 @@ nav.about--secondary-nav {
       text-indent: 0;
       color: $fgtm-black-three;
       text-align: center;
+      transition: all $anim-duration ease;
       
       &:nth-child(2),
       &:nth-child(3) {
@@ -31,6 +32,7 @@ nav.about--secondary-nav {
         text-transform: capitalize;
         margin: 0 1.5rem 0 1.5rem;
         border-bottom: 3px solid rgba(230, 230, 230, 0.1);
+        transition: all $anim-duration ease;
         
         &:hover {
           border-bottom: 3px solid $fgtm-green;
@@ -73,14 +75,14 @@ nav.about--secondary-nav {
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient( rgba(252, 252, 252, 0), rgba(252, 252, 252, 0)), url('img/whatWeBelieve.jpg') no-repeat center center; 
+  background: linear-gradient( rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url('img/whatWeBelieve.jpg') no-repeat center center;
   @include background-size(907%);
   
   .wrapper {
     .believe {
       flex: 1 1 auto;
       text-align: center;
-      color: $fgtm-black;
+      color: $white;
        
       > h3 {
         text-transform: uppercase;
@@ -128,11 +130,12 @@ nav.about--secondary-nav {
         
         .title {
           font-size: 0.818em;
-          margin-bottom: 0.3rem;
+          margin-bottom: 1.5rem;
+          color: $fgtm-black-four;
         }
         
         > h4 {
-          padding: 0rem 0 1.1rem 0;
+          padding: 0rem 0 0.3rem 0;
         }
       }
     }
@@ -370,13 +373,14 @@ nav.about--secondary-nav {
   .about-leadership {
     .wrapper {
       .leadership-container {
+        text-align: left;
+        
         .leadership {
           .title {
             font-size: 1.188em; // 0.818em + 1/4 scale = 0.37
           }
           
           > h4 {
-            padding: 0rem 0 1.1rem 0;
             font-size: 1.752em; // h4 + 1/4 scale = 0.37
           }
           
