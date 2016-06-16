@@ -24,7 +24,7 @@
         <div class="heading">
            <?php if( get_option('page_for_posts' ) ) : ?>
               <h1>
-                 <?php echo apply_filters( 'the_title', get_page( get_option( 'page_for_posts' ) )->post_title ); ?>
+                 <?php echo apply_filters( 'the_title', get_page( get_option( 'page_for_posts' ) ) -> post_title ); ?>
               </h1>
               <?php echo apply_filters( 'the_content', get_post_field( 'post_content', get_option( 'page_for_posts' ) ) ); ?>
           	<?php endif; ?>
@@ -39,7 +39,7 @@
     <section class="about-the-author">
       <div class="wrapper">
         <article class="author-content">
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/img/leadership/john_christine_williamson.JPG" alt="Christine Williamson" /></figure>
+          <figure><img src="<?php echo get_template_directory_uri(); ?>/img/leadership/pastor_cristine_williamson.jpg" alt="Christine Williamson" /></figure>
           <div>
             <h3>Christine Williamson</h3>
             <p>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>

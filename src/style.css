@@ -2282,9 +2282,9 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: -webkit-linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/whatWeBelieve.jpg") no-repeat center center;
-  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/whatWeBelieve.jpg") no-repeat center center;
-  background-size: 907%;
+  background: -webkit-linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/what-we-believe.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/what-we-believe.jpg") no-repeat center center;
+  background-size: 500%;
 }
 .about-believe-container .wrapper .believe {
   -webkit-box-flex: 1;
@@ -2536,6 +2536,9 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
     font-size: 1.13em;
   }
 
+  .about-believe-container {
+    background-size: 180%;
+  }
   .about-believe-container .wrapper .believe > p {
     font-size: 1.13em;
   }
