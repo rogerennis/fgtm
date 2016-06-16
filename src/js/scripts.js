@@ -116,6 +116,8 @@
     if(contactFormSubject && contactFormMsg) {
       document.getElementById("justContactFormSubject").value = contactFormSubject[1].split("&").join(".");
       document.getElementById("justContactFormMessage").value = contactFormMsg[1];
+      var scrollTo = document.getElementById("contactAsk");
+      scrollTo.scrollIntoView();
     }
     
 	});
