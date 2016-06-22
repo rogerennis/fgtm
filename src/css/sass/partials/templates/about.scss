@@ -12,6 +12,11 @@ nav.about--secondary-nav {
   margin-top: 5rem;
   
   ul.about--secondary-nav-items {
+    border: 1px solid $fgtm-black-five;
+    background: $fgtm-black-five;
+    border-radius: 10px;
+    padding: 12px;
+    
     li {
       font-size: 1.063em + 0.3em;
       margin: 0;
@@ -31,11 +36,11 @@ nav.about--secondary-nav {
       a {
         text-transform: capitalize;
         margin: 0 1.5rem 0 1.5rem;
-        border-bottom: 3px solid rgba(230, 230, 230, 0.1);
+        border-bottom: 3px solid $fgtm-black-five;
         transition: all $anim-duration ease;
         
         &:hover {
-          border-bottom: 3px solid $fgtm-green;
+          //border-bottom: 3px solid $fgtm-green;
           color: $fgtm-green;
         }
       }
@@ -253,7 +258,7 @@ nav.about--secondary-nav {
   // What we Believe
   .about-believe-container {
     .wrapper {
-      padding: 0 5rem;
+      padding: 0 8rem;
       
       .believe {
         > h3 {
@@ -276,7 +281,7 @@ nav.about--secondary-nav {
         flex-wrap: wrap;
          
         .leadership {
-          flex: 1 1 45%;
+          flex: 0 1 45%;
           
           &:nth-child(2),
           &:nth-child(4),
@@ -301,7 +306,7 @@ nav.about--secondary-nav {
         flex-wrap: wrap;
         
         .ministry {
-          flex: 1 1 45%;
+          flex: 0 1 45%;
           
           &:nth-child(2),
           &:nth-child(4),
@@ -390,17 +395,6 @@ nav.about--secondary-nav {
             font-size: 1.13em;
             line-height: 1.593;
           }
-        }
-      }
-    }
-  }
-  
-  // Ministries
-  .about-ministries {
-    .wrapper {
-      .ministries {
-        .ministry {
-          flex: 1 1 45%;
         }
       }
     }

@@ -82,12 +82,14 @@
             <p>If you are inquiring about our fellowship, IF you are looking for a church, IF you need spiritual assistance, prayer and support, <strong>call (905) 459-HOPE</strong>. You will be greeted by a friendly voice and a caring spirit. Drop by or call to make an appointment. Regular office hours, 9:00 am -5:30 pm, Monday-Friday.</p>
           </article>
            
+          <!--
           <article class="leadership">
             <figure><img src="<?php echo get_template_directory_uri(); ?>/img/leadership/pastorRiptonRamsingh.jpg" alt="pastorRiptonRamsingh" /></figure>
             <h4>Ripton Ramsingh</h4>
             <p class="title">Pastor</p>
             <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
           </article>
+           -->
            
           <article class="leadership">
             <figure><img src="<?php echo get_template_directory_uri(); ?>/img/leadership/pastor_monica_mills.jpg" alt="pastor Monica Mills" /></figure>

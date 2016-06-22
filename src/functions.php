@@ -488,7 +488,7 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
+            'name' => __('Custom Post (functions 492)', 'html5blank'), // Rename these to suit
             'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
             'add_new' => __('Add New', 'html5blank'),
             'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),

@@ -199,10 +199,11 @@
       display: flex;
       flex-direction: row;
       padding: 0 1.2rem;
+      flex-wrap: wrap;
       
       .post,
       .status-publish {
-        flex: 1 1 auto;
+        flex: 0 1 48%;
         text-align: left;
         
         &:nth-child(odd) {

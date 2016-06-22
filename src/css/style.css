@@ -1456,16 +1456,16 @@ nav.breadcrumbs ul.trail-items li a {
   padding: 5em 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 0)), url("img/whatWeBelieve.jpg") no-repeat center center;
-  -webkit-background-size: 1030%;
-  -moz-background-size: 1030%;
-  -o-background-size: 1030%;
-  background-size: 1030%;
+  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/what-we-believe.jpg") no-repeat center center;
+  -webkit-background-size: 500%;
+  -moz-background-size: 500%;
+  -o-background-size: 500%;
+  background-size: 500%;
 }
 .newHere-believe-container .wrapper .believe {
   flex: 1 1 auto;
   text-align: center;
-  color: #404041;
+  color: #fff;
 }
 .newHere-believe-container .wrapper .believe > h3 {
   text-transform: uppercase;
@@ -1738,6 +1738,12 @@ nav.breadcrumbs ul.trail-items li a {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
+  .newHere-believe-container {
+    -webkit-background-size: 180%;
+    -moz-background-size: 180%;
+    -o-background-size: 180%;
+    background-size: 180%;
+  }
   .newHere-believe-container .wrapper {
     padding: 0 10rem;
   }
@@ -1857,6 +1863,12 @@ nav.about--secondary-nav {
   align-items: center;
   margin-top: 5rem;
 }
+nav.about--secondary-nav ul.about--secondary-nav-items {
+  border: 1px solid #d5d6d8;
+  background: #d5d6d8;
+  border-radius: 10px;
+  padding: 12px;
+}
 nav.about--secondary-nav ul.about--secondary-nav-items li {
   font-size: 1.363em;
   margin: 0;
@@ -1874,11 +1886,10 @@ nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(2), nav.abou
 nav.about--secondary-nav ul.about--secondary-nav-items li a {
   text-transform: capitalize;
   margin: 0 1.5rem 0 1.5rem;
-  border-bottom: 3px solid rgba(230, 230, 230, 0.1);
+  border-bottom: 3px solid #d5d6d8;
   transition: all 0.4s ease;
 }
 nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
-  border-bottom: 3px solid #00ab88;
   color: #00ab88;
 }
 
@@ -2035,7 +2046,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   }
 
   .about-believe-container .wrapper {
-    padding: 0 5rem;
+    padding: 0 8rem;
   }
   .about-believe-container .wrapper .believe > h3 {
     font-size: 2.166em;
@@ -2050,7 +2061,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
     flex-wrap: wrap;
   }
   .about-leadership .wrapper .leadership-container .leadership {
-    flex: 1 1 45%;
+    flex: 0 1 45%;
   }
   .about-leadership .wrapper .leadership-container .leadership:nth-child(2), .about-leadership .wrapper .leadership-container .leadership:nth-child(4), .about-leadership .wrapper .leadership-container .leadership:nth-child(6) {
     margin-left: 2em;
@@ -2065,7 +2076,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
     flex-wrap: wrap;
   }
   .about-ministries .wrapper .ministries .ministry {
-    flex: 1 1 45%;
+    flex: 0 1 45%;
   }
   .about-ministries .wrapper .ministries .ministry:nth-child(2), .about-ministries .wrapper .ministries .ministry:nth-child(4), .about-ministries .wrapper .ministries .ministry:nth-child(6) {
     margin-left: 2em;
@@ -2117,10 +2128,6 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   .about-leadership .wrapper .leadership-container .leadership > p {
     font-size: 1.13em;
     line-height: 1.593;
-  }
-
-  .about-ministries .wrapper .ministries .ministry {
-    flex: 1 1 45%;
   }
 }
 /***********************************************
@@ -2861,10 +2868,11 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
     display: flex;
     flex-direction: row;
     padding: 0 1.2rem;
+    flex-wrap: wrap;
   }
   .author-posts > .wrapper .post,
   .author-posts > .wrapper .status-publish {
-    flex: 1 1 auto;
+    flex: 0 1 48%;
     text-align: left;
   }
   .author-posts > .wrapper .post:nth-child(odd),
