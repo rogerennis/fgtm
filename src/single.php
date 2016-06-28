@@ -15,7 +15,7 @@
       </a>
       <?php endif; ?>
       <!-- /post thumbnail -->
-  
+      
       <div class="wrapper">
         <!-- post title -->
         <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
@@ -54,7 +54,7 @@
   		<!-- article -->
   		<article>
   
-  			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+  			<h1><?php _e( 'Sorry, nothing to display.', 'fgtm' ); ?></h1>
   
   		</article>
   		<!-- /article -->

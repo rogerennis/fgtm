@@ -14,7 +14,7 @@ nav.about--secondary-nav {
   ul.about--secondary-nav-items {
     border: 1px solid $fgtm-black-five;
     background: $fgtm-black-five;
-    border-radius: 10px;
+    @include border-radius(6px);
     padding: 12px;
     
     li {
@@ -245,7 +245,7 @@ nav.about--secondary-nav {
   // Mission
   .about-mission {
     .wrapper {
-      padding: 0 5rem;
+      padding: 0 8rem;
       
       .mission {
         > h3 {

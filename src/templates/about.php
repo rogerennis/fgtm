@@ -17,6 +17,7 @@
       <li><a href="#aboutMinistries">ministries</a></li>
     </ul>
   </nav>
+  
   <!-- MISSION -->
   <div id="aboutMission">
     <section class="about-mission">
@@ -71,14 +72,14 @@
           <article class="leadership">
             <figure><img src="<?php echo get_template_directory_uri(); ?>/img/leadership/pastors_delando_&_nadine_henry.jpg" alt="pastors Delando & Nadine Henry"/></figure>
             <h4>Delando & Nadine Henry</h4>
-            <p class="title">Youth Leaders</p>
+            <p class="title">Youth Pastors</p>
             <p>Delando & Nadine Henry are originally from Kingston, Jamaica. They have been youth and camp leaders at their church there for many years. They are proud parents of 3 children. Both Delando and Nadine play vital roles in guiding our church youth.</p>
           </article>
            
           <article class="leadership">
             <figure><img src="<?php echo get_template_directory_uri(); ?>/img/leadership/carol_carey.jpg" alt="Carol Carey" /></figure>
             <h4>Carol Carey</h4>
-            <p class="title">Church Secretary</p>
+            <p class="title">Secretary</p>
             <p>If you are inquiring about our fellowship, IF you are looking for a church, IF you need spiritual assistance, prayer and support, <strong>call (905) 459-HOPE</strong>. You will be greeted by a friendly voice and a caring spirit. Drop by or call to make an appointment. Regular office hours, 9:00 am -5:30 pm, Monday-Friday.</p>
           </article>
            

@@ -107,16 +107,6 @@
             transform: none;
          }
       }
-      
-/*
-      span {
-         background: url("img/arrow-right.svg") no-repeat 0 0px;
-         @include background-size(contain);
-         width: 20px;
-         height: 20px;
-         margin-left: 12px;
-      }
-*/
    }
 }
 
@@ -267,7 +257,7 @@
           
           .new-here-link {
             position: relative;
-            flex: 1 1 auto;
+            flex: 1.8 1 auto;
             justify-content: center;
             bottom: 65px;
             transition: all $anim-duration ease;
@@ -287,7 +277,7 @@
           
           .see-more {
             position: relative;
-            display: block;
+            display: flex;
             flex: 1 1 auto;
             bottom: 65px;
             color: $white;
@@ -301,7 +291,12 @@
             }
             
             &:after {
-              content: "";
+              content: "\279C";
+              position: relative;
+              top: 20px;
+              left: -56px;
+              font-size: 1.5em;
+              transform: rotate(90deg);
             }
           }
           

@@ -9,7 +9,7 @@
 
   <?php include('includes/page_header.php'); ?>
   
-  <!-- HOSPITALITY-->
+  <!-- HOSPITALITY / USERS-->
   <div id="hospitalityUsher">
     <section class="hospitality-usher">
       <div class="wrapper">
@@ -19,11 +19,27 @@
           </figure>
           <h3>Hospitality | Ushers</h3>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
-          <a href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk?subject=Hospitality: Sign me up&message=Please sign me up for the hospitality team. What do I do next?" class="fgtm-btn">Join the team, Signup</a>
+          <a href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk?subject=Hospitality-Ushers: Sign me up&message=Please sign me up for the hospitality-ushers team. What do I do next?" class="fgtm-btn">Join the hospitality team</a>
         </article>
       </div>
     </section>
   </div>
-  <!-- HOSPITALITY -->
+  <!-- HOSPITALITY / USHERS -->
   
+  <!-- USERS -->
+  <div id="usher">
+    <section class="usher-container">
+      <div class="wrapper">
+        <article class="usher">
+          <figure>
+            <img src="#" alt="">
+          </figure>
+          <h3>Ushers</h3>
+          <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="<?php echo get_template_directory_uri(); ?>/contact#contactAsk?subject=Usher: Sign me up&message=Please sign me up for the usher team. What do I do next?" class="fgtm-btn">Join the usher team</a>
+        </article>
+      </div>
+    </section>
+  </div>
+  <!-- USHERS -->
 <?php get_footer(); ?>

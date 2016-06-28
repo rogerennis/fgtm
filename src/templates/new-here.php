@@ -70,7 +70,7 @@
            </div>
         </article>
         <div class="btn-container">
-           <a href="<?php echo get_template_directory_uri(); ?>/youth" class="fgtm-btn">Explore FGTM Youth</a>
+           <a href="<?php echo get_template_directory_uri(); ?>/fgtm-youth" class="fgtm-btn">Explore FGTM Youth</a>
         </div>
       </div>
     </section>

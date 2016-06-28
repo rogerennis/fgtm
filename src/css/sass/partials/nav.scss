@@ -244,8 +244,9 @@
 .scrollToTop{
   padding: 8px 11px;
   text-align: center; 
-  background: $fgtm-green;
-  color: $white;
+  background: $fgtm-black-five;
+  border: 1px solid $fgtm-black-four;
+  color: $fgtm-black-four;
   text-decoration: none;
   position: fixed;
   bottom: 6px;
@@ -336,7 +337,7 @@
       .outer-menu {
         position: none;
         display: flex;
-        width: 90%;
+        width: 88%;
         padding-top: 17px;
         
         .checkbox-toggle {
