@@ -16,6 +16,8 @@
       
       figure {
         margin: 0 0 3rem 0;
+        overflow: hidden;
+        height: 100px;
       }
       
       h3 {
@@ -151,6 +153,10 @@
   .bible-study-container {
     .wrapper {
       .bible-study {
+        figure {
+          height: 170px;
+        }
+        
         p {
           padding: 0 9rem;
         }

@@ -2979,6 +2979,8 @@ main.single article.post .wrapper p.post-category {
 .youth-childrens-ministry .wrapper .nursery figure,
 .youth-childrens-ministry .wrapper .childrens-ministry figure {
   margin: 0 0 3rem 0;
+  overflow: hidden;
+  height: 100px;
 }
 .youth-nursery .wrapper .nursery h3,
 .youth-nursery .wrapper .childrens-ministry h3,
@@ -3015,7 +3017,11 @@ main.single article.post .wrapper p.post-category {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  background: #404041;
+  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/youngAdults_ministryHeader.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #fff;
 }
 .youth-adults .wrapper .adults {
@@ -3053,6 +3059,8 @@ main.single article.post .wrapper p.post-category {
 .youth-youth .wrapper .junior-youth figure,
 .youth-youth .wrapper .youth figure {
   margin: 0 0 3rem 0;
+  overflow: hidden;
+  height: 100px;
 }
 .youth-junior-youth .wrapper .junior-youth h3,
 .youth-junior-youth .wrapper .youth h3,
@@ -3170,6 +3178,11 @@ main.single article.post .wrapper p.post-category {
     padding: 0 6rem;
   }
 
+  .youth-adults {
+    padding: 7rem 0;
+    background-position-y: -230px;
+  }
+
   .youth-junior-youth .wrapper .junior-youth p,
   .youth-junior-youth .wrapper .youth p,
   .youth-youth .wrapper .junior-youth p,
@@ -3181,6 +3194,12 @@ main.single article.post .wrapper p.post-category {
 * DESKTOP
 ***********************************************/
 @media only screen and (min-width: 1024px) {
+  .youth-nursery .wrapper .nursery figure,
+  .youth-nursery .wrapper .childrens-ministry figure,
+  .youth-childrens-ministry .wrapper .nursery figure,
+  .youth-childrens-ministry .wrapper .childrens-ministry figure {
+    height: 170px;
+  }
   .youth-nursery .wrapper .nursery p,
   .youth-nursery .wrapper .childrens-ministry p,
   .youth-childrens-ministry .wrapper .nursery p,
@@ -3188,6 +3207,12 @@ main.single article.post .wrapper p.post-category {
     padding: 0 9rem;
   }
 
+  .youth-junior-youth .wrapper .junior-youth figure,
+  .youth-junior-youth .wrapper .youth figure,
+  .youth-youth .wrapper .junior-youth figure,
+  .youth-youth .wrapper .youth figure {
+    height: 170px;
+  }
   .youth-junior-youth .wrapper .junior-youth p,
   .youth-junior-youth .wrapper .youth p,
   .youth-youth .wrapper .junior-youth p,
@@ -3210,6 +3235,8 @@ main.single article.post .wrapper p.post-category {
 }
 .ladies-programs-bible .wrapper .programs-bible figure {
   margin: 0 0 3rem 0;
+  overflow: hidden;
+  height: 100px;
 }
 .ladies-programs-bible .wrapper .programs-bible h3 {
   text-transform: uppercase;
@@ -3255,6 +3282,9 @@ main.single article.post .wrapper p.post-category {
 * DESKTOP
 ***********************************************/
 @media only screen and (min-width: 1024px) {
+  .ladies-programs-bible .wrapper .programs-bible figure {
+    height: 170px;
+  }
   .ladies-programs-bible .wrapper .programs-bible p {
     padding: 0 9rem;
   }
@@ -3274,6 +3304,8 @@ main.single article.post .wrapper p.post-category {
 }
 .hospitality-usher .wrapper .hospitality figure {
   margin: 0 0 3rem 0;
+  overflow: hidden;
+  height: 100px;
 }
 .hospitality-usher .wrapper .hospitality h3 {
   text-transform: uppercase;
@@ -3297,6 +3329,8 @@ main.single article.post .wrapper p.post-category {
 }
 .usher-container .wrapper .usher figure {
   margin: 0 0 3rem 0;
+  overflow: hidden;
+  height: 100px;
 }
 .usher-container .wrapper .usher h3 {
   text-transform: uppercase;
@@ -3319,6 +3353,13 @@ main.single article.post .wrapper p.post-category {
   .hospitality-usher .wrapper .hospitality a {
     display: inline-block;
   }
+
+  .usher-container .wrapper .usher p {
+    padding: 0 3rem;
+  }
+  .usher-container .wrapper .usher a {
+    display: inline-block;
+  }
 }
 /***********************************************
 * TABLET
@@ -3328,12 +3369,26 @@ main.single article.post .wrapper p.post-category {
   .hospitality-usher .wrapper .hospitality p {
     padding: 0 6rem;
   }
+
+  .usher-container .wrapper .usher p {
+    padding: 0 6rem;
+  }
 }
 /***********************************************
 * DESKTOP
 ***********************************************/
 @media only screen and (min-width: 1024px) {
+  .hospitality-usher .wrapper .hospitality figure {
+    height: 170px;
+  }
   .hospitality-usher .wrapper .hospitality p {
+    padding: 0 9rem;
+  }
+
+  .usher-container .wrapper .usher figure {
+    height: 170px;
+  }
+  .usher-container .wrapper .usher p {
     padding: 0 9rem;
   }
 }
@@ -3352,6 +3407,8 @@ main.single article.post .wrapper p.post-category {
 }
 .bible-study-container .wrapper .bible-study figure {
   margin: 0 0 3rem 0;
+  overflow: hidden;
+  height: 100px;
 }
 .bible-study-container .wrapper .bible-study h3 {
   text-transform: uppercase;
@@ -3427,6 +3484,9 @@ main.single article.post .wrapper p.post-category {
 * DESKTOP
 ***********************************************/
 @media only screen and (min-width: 1024px) {
+  .bible-study-container .wrapper .bible-study figure {
+    height: 170px;
+  }
   .bible-study-container .wrapper .bible-study p {
     padding: 0 9rem;
   }

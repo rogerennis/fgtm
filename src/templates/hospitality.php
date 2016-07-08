@@ -15,7 +15,7 @@
       <div class="wrapper">
         <article class="hospitality">
           <figure>
-            <img src="#" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ministries/hospitality_&_ushers_ministryHeader.jpg" alt="Hospitality & Usher Women image">
           </figure>
           <h3>Hospitality | Ushers</h3>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -32,7 +32,7 @@
       <div class="wrapper">
         <article class="usher">
           <figure>
-            <img src="#" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ministries/ushers_ministryHeader.jpg" alt="Usher Men image">
           </figure>
           <h3>Ushers</h3>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>

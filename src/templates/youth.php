@@ -15,7 +15,7 @@
       <div class="wrapper">
         <article class="nursery">
           <figure>
-            <img src="#" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ministries/nursery_ministryHeader.jpg" alt="Nursery image">
           </figure>
           <h3>Nursery</h3>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -37,7 +37,7 @@
       <div class="wrapper">
         <article class="childrens-ministry">
           <figure>
-            <img src="#" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ministries/childrensMinistry_ministryHeader.jpg" alt="Nursery image">
           </figure>
           <h3>Children's Ministry</h3>
           <p>The program provides a relational, applicable and learner-based Bible curriculum. Sunday school teachers partner with parents as “faith-shapers” of children. Teachers are continually equipping children with experiences that teach them to thrive in a secular world as a God-fearing masterpiece made by God.</p>
@@ -77,7 +77,7 @@
       <div class="wrapper">
         <article class="junior-youth">
           <figure>
-            <img src="#" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ministries/jrYouth_ministryHeader.jpg" alt="Junior Youth image">
           </figure>
           <h3>Junior Youth</h3>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -99,7 +99,7 @@
       <div class="wrapper">
         <article class="youth">
           <figure>
-            <img src="#" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ministries/youth_ministryHeader.jpg" alt="Youth image">
           </figure>
           <h3>Youth</h3>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>

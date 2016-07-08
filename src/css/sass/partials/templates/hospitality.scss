@@ -16,6 +16,8 @@
       
       figure {
         margin: 0 0 3rem 0;
+        overflow: hidden;
+        height: 100px;
       }
       
       h3 {
@@ -47,6 +49,8 @@
       
       figure {
         margin: 0 0 3rem 0;
+        overflow: hidden;
+        height: 100px;
       }
       
       h3 {
@@ -100,6 +104,21 @@
       }
     }
   }
+  
+  //USHER
+  .usher-container {
+    .wrapper {
+      .usher {
+        p {
+          padding: 0 3rem;
+        }
+        
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
 }
 
 
@@ -121,6 +140,17 @@
       }
     }
   }
+  
+  //USHER
+  .usher-container {
+    .wrapper {
+      .usher {
+        p {
+          padding: 0 6rem;
+        }
+      }
+    }
+  }
 }
 
 /***********************************************
@@ -134,6 +164,25 @@
   .hospitality-usher {
     .wrapper {
       .hospitality {
+        figure {
+          height: 170px;
+        }
+        
+        p {
+          padding: 0 9rem;
+        }
+      }
+    }
+  }
+  
+  //USHER
+  .usher-container {
+    .wrapper {
+      .usher {
+        figure {
+          height: 170px;
+        }
+        
         p {
           padding: 0 9rem;
         }

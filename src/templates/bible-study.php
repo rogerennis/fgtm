@@ -15,7 +15,7 @@
       <div class="wrapper">
         <article class="bible-study">
           <figure>
-            <img src="#" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ministries/bibleStudy_ministryHeader.jpg" alt="Bible Study image" />
           </figure>
           <h3>Bible Study</h3>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
