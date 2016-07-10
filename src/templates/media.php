@@ -20,7 +20,7 @@
         
       ?>
         <div class="ustream-container">
-          <iframe width="100%" height="100%" allowfullscreen webkitallowfullscreen src="http://www.ustream.tv/embed/4664505?html5ui&showtitle=false" frameborder="0">
+          <iframe width="100%" height="85%" allowfullscreen webkitallowfullscreen src="http://www.ustream.tv/embed/4664505?html5ui&showtitle=false" frameborder="0">
           </iframe>
         </div>
       <?php else : ?>
@@ -45,9 +45,9 @@
         <article class="media">
           <h3>Video Archives</h3>
           <div>
-            <!--
+            
             <?php echo do_shortcode("[embedyt] http://www.youtube.com/embed?layout=gallery&listType=playlist&list=UUD-7VHa4bAnfIqOs2bWvwmw[/embedyt]"); ?>
-            -->
+            
             </div>
         </article>
       </div>

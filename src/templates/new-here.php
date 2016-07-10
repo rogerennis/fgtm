@@ -60,18 +60,40 @@
     <section class="newHere-youth">
       <div class="wrapper">
         <article class="youth-container">
-           <h3>Experience Youth</h3>
-           <p>Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-           <div class="youth">
-             <div class="nursery">Nursery</div>
-             <div class="children">Children's Ministries</div>
-             <div class="jr-youth">Jr Youth</div>
-             <div class="young-adults">Young Adults</div>
-           </div>
+          <h3>Experience Youth</h3>
+          <p>Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+          <div class="youth">
+            <h4 class="nursery">
+              <a href="<?php echo get_template_directory_uri(); ?>/about/fgtm-youth#youthNursery">
+                <span>Nursery</span>
+              </a>
+            </h4>
+            
+            <h4 class="children">
+              <a href="<?php echo get_template_directory_uri(); ?>/about/fgtm-youth#youthChildrensMinistry">
+                <span>Children's Ministries</span>
+              </a>
+            </h4>
+            
+            <h4 class="young-adults">
+              <a href="<?php echo get_template_directory_uri(); ?>/about/fgtm-youth#youthAdults">
+                <span>Young Adults</span>
+              </a>
+            </h4>
+            
+            <h4 class="jr-youth">
+              <a href="<?php echo get_template_directory_uri(); ?>/about/fgtm-youth#youthJuniorYouth">
+                <span>Jr Youth</span>
+              </a>
+            </h4>
+            
+            <h4 class="--youth">
+              <a href="<?php echo get_template_directory_uri(); ?>/about/fgtm-youth#youthYouth">
+                <span>Youth</span>
+              </a>
+            </h4>
+          </div>
         </article>
-        <div class="btn-container">
-           <a href="<?php echo get_template_directory_uri(); ?>/fgtm-youth" class="fgtm-btn">Explore FGTM Youth</a>
-        </div>
       </div>
     </section>
   </div>

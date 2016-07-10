@@ -31,8 +31,6 @@ var gulp = require( "gulp" ),
 			"src/css/banner.css",
 			/** Normalize */
 			"src/bower_components/normalize.css/normalize.css",
-			/** Flexslider */
-		  "src/bower_components/flexslider/flexslider.css",
 			/** Theme style */
 			"src/css/style.css"
 		]

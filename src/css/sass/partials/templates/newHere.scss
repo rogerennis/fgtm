@@ -99,7 +99,7 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url('img/experienceYouth.jpg') center center no-repeat; 
-  @include background-size(880%);
+  @include background-size(1000%);
    
   .wrapper {
     .youth-container {
@@ -124,30 +124,56 @@
         
         .nursery,
         .children,
+        .young-adults,
         .jr-youth,
-        .young-adults {
+        .--youth {
           @include border-radius(4px);
           flex: 1 0 100%;
-          background: $white;
-          color: $fgtm-black;
-          padding: 7rem 1.5rem;
           font-size: 1.8em;
           margin-top: 1rem;
           margin-bottom: 1rem;
+          transition: all $anim-duration ease;
+          border: 1px solid $fgtm-green;
           
           &:first-child {
             margin-top: 0;
           }
+          
+          a {
+            display: block;
+            padding: 7rem 1.5rem;
+            color: $white;
+            
+            span {
+              display: block;
+            }
+          }
         }
-      }
-    }
-      
-    .btn-container {
-      text-align: center;
-         
-      .fgtm-btn {
-        margin-top: 2rem;
-        display: block;
+        
+        .nursery {
+          background: linear-gradient( rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url('img/ministries/nursery_ministryHeader.jpg') center center no-repeat;
+          @include background-size(500%);
+        }
+        
+        .children {
+          background: linear-gradient( rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url('img/ministries/childrensMinistry_ministryHeader.jpg') center center no-repeat;
+          @include background-size(500%);
+        }
+        
+        .young-adults {
+          background: linear-gradient( rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url('img/ministries/youngAdults_ministryHeader.jpg') center center no-repeat;
+          @include background-size(200%);
+        }
+        
+        .jr-youth {
+          background: linear-gradient( rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url('img/ministries/jrYouth_ministryHeader.jpg') center center no-repeat;
+          @include background-size(500%);
+        }
+        
+        .--youth {
+          background: linear-gradient( rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url('img/ministries/youth_ministryHeader.jpg') center center no-repeat;
+          @include background-size(500%);
+        }
       }
     }
   }
@@ -211,7 +237,6 @@
       padding: 0 4rem;
     }
   }
-  
 }
   
    
@@ -283,9 +308,10 @@
           
           .nursery,
           .children,
+          .young-adults,
           .jr-youth,
-          .young-adults {
-            flex: 1 1 45%;
+          .--youth {
+            flex: 0 1 47.25%;
             margin-top: 0rem;
             margin-bottom: 2rem;
             
@@ -295,17 +321,9 @@
           }
           
           .children,
-          .young-adults {
+          .jr-youth {
             margin-left: 2rem;
           }
-        }
-      }
-        
-      .btn-container {
-        text-align: center;
-           
-        .fgtm-btn {
-          display: inline-flex;
         }
       }
     }
@@ -379,7 +397,7 @@
             > .first-time,
             > .second-time,
             > .third-time {
-              padding: 2.2em 1.5rem 1.4em;
+              padding: 1.7em 1.5rem 1.4em;
             }
           }
         }
@@ -447,35 +465,47 @@
   
   // Experience Youth
   .newHere-youth {
-    @include background-size(150%);
-    
     .wrapper {
       .youth-container {
         .youth {
           .nursery,
           .children,
+          .young-adults,
           .jr-youth,
-          .young-adults {
-            flex: 1 0 22%;
+          .--youth {
+            flex: 0 1 18%;
             margin-bottom: 0;
+            
+            &:hover {
+              border-color: $white;
+            }
           }
           
           .children,
           .jr-youth,
-          .young-adults {
-            margin-left: 2rem;
+          .young-adults,
+          .--youth {
+            margin-left: 1rem;
           }
-        }
-      }
-        
-      .btn-container {
-        text-align: center;
-           
-        .fgtm-btn {
-          display: inline-flex;
           
-          &:hover {
-            background: $fgtm-hover;
+          .nursery {
+            @include background-size(810%);
+          }
+          
+          .children {
+            @include background-size(810%);
+          }
+          
+          .young-adults {
+            @include background-size(300%);
+          }
+          
+          .jr-youth {
+            @include background-size(810%);
+          }
+          
+          .--youth {
+            @include background-size(810%);
           }
         }
       }

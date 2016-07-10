@@ -127,18 +127,18 @@
             <a href="<?php echo get_template_directory_uri(); ?>/ladies-programs">Ladies Programs
               <span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</span>
             </a>
-          </h4><!-- TODO add Ladies Programs page -- Women's Bible Study section: Tuesday 7pm -->
+          </h4>
           <h4 class="ministry">
             <a href="<?php echo get_template_directory_uri(); ?>/hospitality">Hospitality
               <span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</span>
             </a>
-          </h4><!-- TODO add Hospitality page -- Hospitality / Kitchen section: Join the Team button  & Ushers section: Join the Team button -->
+          </h4>
           
           <h4 class="ministry">
             <a href="<?php echo get_template_directory_uri(); ?>/bible-study">Bible Study
               <span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</span>
             </a>
-          </h4><!-- TODO add Bible Study page -- check requirements for sections -->
+          </h4>
           
           <h4 class="ministry">
             <a>Wednesday Night Prayer

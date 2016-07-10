@@ -1853,7 +1853,7 @@ nav.breadcrumbs ul.trail-items li a {
   flex-direction: column;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("img/experienceYouth.jpg") center center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("img/experienceYouth.jpg") center center no-repeat;
-  background-size: 880%;
+  background-size: 1000%;
 }
 .newHere-youth .wrapper .youth-container {
   -webkit-box-flex: 1;
@@ -1887,32 +1887,68 @@ nav.breadcrumbs ul.trail-items li a {
 }
 .newHere-youth .wrapper .youth-container .youth .nursery,
 .newHere-youth .wrapper .youth-container .youth .children,
+.newHere-youth .wrapper .youth-container .youth .young-adults,
 .newHere-youth .wrapper .youth-container .youth .jr-youth,
-.newHere-youth .wrapper .youth-container .youth .young-adults {
+.newHere-youth .wrapper .youth-container .youth .--youth {
   border-radius: 4px;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 100%;
   -ms-flex: 1 0 100%;
   flex: 1 0 100%;
-  background: #fff;
-  color: #404041;
-  padding: 7rem 1.5rem;
   font-size: 1.8em;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border: 1px solid #00ab88;
 }
 .newHere-youth .wrapper .youth-container .youth .nursery:first-child,
 .newHere-youth .wrapper .youth-container .youth .children:first-child,
+.newHere-youth .wrapper .youth-container .youth .young-adults:first-child,
 .newHere-youth .wrapper .youth-container .youth .jr-youth:first-child,
-.newHere-youth .wrapper .youth-container .youth .young-adults:first-child {
+.newHere-youth .wrapper .youth-container .youth .--youth:first-child {
   margin-top: 0;
 }
-.newHere-youth .wrapper .btn-container {
-  text-align: center;
-}
-.newHere-youth .wrapper .btn-container .fgtm-btn {
-  margin-top: 2rem;
+.newHere-youth .wrapper .youth-container .youth .nursery a,
+.newHere-youth .wrapper .youth-container .youth .children a,
+.newHere-youth .wrapper .youth-container .youth .young-adults a,
+.newHere-youth .wrapper .youth-container .youth .jr-youth a,
+.newHere-youth .wrapper .youth-container .youth .--youth a {
   display: block;
+  padding: 7rem 1.5rem;
+  color: #fff;
+}
+.newHere-youth .wrapper .youth-container .youth .nursery a span,
+.newHere-youth .wrapper .youth-container .youth .children a span,
+.newHere-youth .wrapper .youth-container .youth .young-adults a span,
+.newHere-youth .wrapper .youth-container .youth .jr-youth a span,
+.newHere-youth .wrapper .youth-container .youth .--youth a span {
+  display: block;
+}
+.newHere-youth .wrapper .youth-container .youth .nursery {
+  background: -webkit-linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/nursery_ministryHeader.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/nursery_ministryHeader.jpg") center center no-repeat;
+  background-size: 500%;
+}
+.newHere-youth .wrapper .youth-container .youth .children {
+  background: -webkit-linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/childrensMinistry_ministryHeader.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/childrensMinistry_ministryHeader.jpg") center center no-repeat;
+  background-size: 500%;
+}
+.newHere-youth .wrapper .youth-container .youth .young-adults {
+  background: -webkit-linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/youngAdults_ministryHeader.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/youngAdults_ministryHeader.jpg") center center no-repeat;
+  background-size: 200%;
+}
+.newHere-youth .wrapper .youth-container .youth .jr-youth {
+  background: -webkit-linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/jrYouth_ministryHeader.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/jrYouth_ministryHeader.jpg") center center no-repeat;
+  background-size: 500%;
+}
+.newHere-youth .wrapper .youth-container .youth .--youth {
+  background: -webkit-linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/youth_ministryHeader.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 171, 136, 0.8), rgba(0, 171, 136, 0.8)), url("img/ministries/youth_ministryHeader.jpg") center center no-repeat;
+  background-size: 500%;
 }
 
 .newHere-cta {
@@ -2030,33 +2066,26 @@ nav.breadcrumbs ul.trail-items li a {
   }
   .newHere-youth .wrapper .youth-container .youth .nursery,
   .newHere-youth .wrapper .youth-container .youth .children,
+  .newHere-youth .wrapper .youth-container .youth .young-adults,
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
-  .newHere-youth .wrapper .youth-container .youth .young-adults {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 45%;
-    -ms-flex: 1 1 45%;
-    flex: 1 1 45%;
+  .newHere-youth .wrapper .youth-container .youth .--youth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 47.25%;
+    -ms-flex: 0 1 47.25%;
+    flex: 0 1 47.25%;
     margin-top: 0rem;
     margin-bottom: 2rem;
   }
   .newHere-youth .wrapper .youth-container .youth .nursery:first-child,
   .newHere-youth .wrapper .youth-container .youth .children:first-child,
+  .newHere-youth .wrapper .youth-container .youth .young-adults:first-child,
   .newHere-youth .wrapper .youth-container .youth .jr-youth:first-child,
-  .newHere-youth .wrapper .youth-container .youth .young-adults:first-child {
+  .newHere-youth .wrapper .youth-container .youth .--youth:first-child {
     margin-top: 0rem;
   }
   .newHere-youth .wrapper .youth-container .youth .children,
-  .newHere-youth .wrapper .youth-container .youth .young-adults {
+  .newHere-youth .wrapper .youth-container .youth .jr-youth {
     margin-left: 2rem;
-  }
-  .newHere-youth .wrapper .btn-container {
-    text-align: center;
-  }
-  .newHere-youth .wrapper .btn-container .fgtm-btn {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
   }
 
   .newHere-cta {
@@ -2111,7 +2140,7 @@ nav.breadcrumbs ul.trail-items li a {
   .newHere-service-times .wrapper .service-times .time-container .time-content > .first-time,
   .newHere-service-times .wrapper .service-times .time-container .time-content > .second-time,
   .newHere-service-times .wrapper .service-times .time-container .time-content > .third-time {
-    padding: 2.2em 1.5rem 1.4em;
+    padding: 1.7em 1.5rem 1.4em;
   }
 
   .newHere-youth {
@@ -2153,35 +2182,44 @@ nav.breadcrumbs ul.trail-items li a {
     padding: 2.0em 1.5rem 1.4em;
   }
 
-  .newHere-youth {
-    background-size: 150%;
-  }
   .newHere-youth .wrapper .youth-container .youth .nursery,
   .newHere-youth .wrapper .youth-container .youth .children,
+  .newHere-youth .wrapper .youth-container .youth .young-adults,
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
-  .newHere-youth .wrapper .youth-container .youth .young-adults {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 22%;
-    -ms-flex: 1 0 22%;
-    flex: 1 0 22%;
+  .newHere-youth .wrapper .youth-container .youth .--youth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 18%;
+    -ms-flex: 0 1 18%;
+    flex: 0 1 18%;
     margin-bottom: 0;
+  }
+  .newHere-youth .wrapper .youth-container .youth .nursery:hover,
+  .newHere-youth .wrapper .youth-container .youth .children:hover,
+  .newHere-youth .wrapper .youth-container .youth .young-adults:hover,
+  .newHere-youth .wrapper .youth-container .youth .jr-youth:hover,
+  .newHere-youth .wrapper .youth-container .youth .--youth:hover {
+    border-color: #fff;
   }
   .newHere-youth .wrapper .youth-container .youth .children,
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
+  .newHere-youth .wrapper .youth-container .youth .young-adults,
+  .newHere-youth .wrapper .youth-container .youth .--youth {
+    margin-left: 1rem;
+  }
+  .newHere-youth .wrapper .youth-container .youth .nursery {
+    background-size: 810%;
+  }
+  .newHere-youth .wrapper .youth-container .youth .children {
+    background-size: 810%;
+  }
   .newHere-youth .wrapper .youth-container .youth .young-adults {
-    margin-left: 2rem;
+    background-size: 300%;
   }
-  .newHere-youth .wrapper .btn-container {
-    text-align: center;
+  .newHere-youth .wrapper .youth-container .youth .jr-youth {
+    background-size: 810%;
   }
-  .newHere-youth .wrapper .btn-container .fgtm-btn {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-  .newHere-youth .wrapper .btn-container .fgtm-btn:hover {
-    background: #01715a;
+  .newHere-youth .wrapper .youth-container .youth .--youth {
+    background-size: 810%;
   }
 
   .newHere-cta {
