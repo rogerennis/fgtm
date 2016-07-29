@@ -32,8 +32,8 @@ if (function_exists('add_theme_support'))
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('events-home', 480, 400, true); //280
-    add_image_size('nursery-home', 480, 400, true);
-    add_image_size('youth-home', 480, 400, true);
+    add_image_size('custom-home-1', 480, 400, true);
+    add_image_size('custom-home-2', 480, 400, true);
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
@@ -70,7 +70,7 @@ function bct_theme_setup() {
     Functions
 \*------------------------------------*/
 
-// HTML5 Blank navigation
+// FGTM navigation
 function fgtm_nav()
 {
     wp_nav_menu(
@@ -95,7 +95,7 @@ function fgtm_nav()
     );
 }
 
-// Register HTML5 Blank Navigation
+// Register Navigation
 function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
@@ -501,7 +501,7 @@ function create_post_type_html5()
             'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
             'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
         ),
-        'public' => true,
+        'public' => false,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
         'has_archive' => true,
         'supports' => array(

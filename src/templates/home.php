@@ -126,56 +126,54 @@
             <main role="main">
 
                <article class="nursery">
-                  <h3>Nursery</h3>
-
                   <?php
                     $args = array(
-                      'post_type'    => 'nursery-home',
+                      'post_type'    => 'custom-home-1',
                       'post_per_page' => 1
                     );
                     
                     $nursery = new WP_Query( $args );
                     
                     if ( $nursery->have_posts() ) : ?>
-                     <ul>
-                        <?php while( $nursery->have_posts() ) : $nursery->the_post(); ?>
-                        <li>
-                           <?php the_post_thumbnail(' nursery-home ') ?>
-                           <?php the_content(); ?>
-                        </li>
-                        <?php endwhile ?>
-                     </ul>
+                      <?php while( $nursery->have_posts() ) : $nursery->the_post(); ?>
+                        <?php the_title('<h3>', '</h3>') ?>
+                        <ul>
+                          <li>
+                            <?php the_post_thumbnail(' custom-home-1 ') ?>
+                            <?php the_content(); ?>
+                          </li>
+                        </ul>
+                      <?php endwhile ?>
                   <?php endif ?>
 
                   <div class="btn-container">
-                     <a href="<?php echo get_template_directory_uri(); ?>/fgtm-youth#youthNursery" class="fgtm-btn">See the Nursery</a>
+                    <?php echo get_post_meta($post->ID, 'button', true); ?>
                   </div>
                </article>
 
                <article class="youth">
-                  <h3>Youth</h3>
-
                   <?php
                     $args = array(
-                      'post_type'    => 'youth-home',
+                      'post_type'    => 'custom-home-2',
                       'post_per_page' => 1
                     );
                     
                     $youth = new WP_Query( $args );
                     
                     if ( $youth->have_posts() ) : ?>
-                     <ul>
-                        <?php while( $youth->have_posts() ) : $youth->the_post(); ?>
-                        <li>
-                           <?php the_post_thumbnail(' youth-home ') ?>
-                           <?php the_content() ?>
-                        </li>
-                        <?php endwhile ?>
-                     </ul>
+                      <?php while( $youth->have_posts() ) : $youth->the_post(); ?>
+                        <?php the_title('<h3>', '</h3>') ?>
+                        <ul>
+                          <li>
+                            <?php the_post_thumbnail(' custom-home-2 ') ?>
+                            <?php the_content() ?>
+                          </li>
+                        </ul>
+                      <?php endwhile ?>
                   <?php endif ?>
 
                   <div class="btn-container">
-                     <a href="<?php echo get_template_directory_uri(); ?>/fgtm-youth#youthYouth" class="fgtm-btn">Check out the Youth</a>
+                    <?php echo get_post_meta($post->ID, 'button', true); ?>
                   <div>
                </article>
 

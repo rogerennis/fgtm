@@ -6,7 +6,7 @@
 
 #nav-container {
   padding: 10px 15px 13px;
-  background: $white;
+  background: rgba(255, 255, 255, 0.9);;
   width: 100%;
   position: fixed;
   top: 0;
@@ -51,6 +51,13 @@
       left: 0;
       z-index: 1;
       margin-top: 0px;
+      
+        &:before {
+          content: "MENU";
+          position: relative;
+          margin-left: -2.3rem;
+          top: 1rem;
+        }
       
       .checkbox-toggle {
         position: absolute;
@@ -327,7 +334,6 @@
     nav {
       .logo {
         margin-bottom: 10px;
-        margin-right: 50px;
       }
       
       .menu-copy {
@@ -339,6 +345,10 @@
         display: flex;
         width: 88%;
         padding-top: 17px;
+        
+        &:before {
+          content: "";
+        }
         
         .checkbox-toggle {
           opacity: 0;

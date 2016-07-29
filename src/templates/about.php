@@ -11,10 +11,10 @@
    
   <nav role="navigation" class="about--secondary-nav">
     <ul class="about--secondary-nav-items">
-      <li><a href="#aboutMission">mission</a></li>
-      <li><a href="#aboutBelieve">what we believe</a></li>
-      <li><a href="#aboutLeadership">leadership</a></li>
-      <li><a href="#aboutMinistries">ministries</a></li>
+      <li><a href="#aboutMission">Mission statement</a></li>
+      <li><a href="#aboutBelieve">What we believe</a></li>
+      <li><a href="#aboutLeadership">Leadership</a></li>
+      <li><a href="#aboutMinistries">Ministries</a></li>
     </ul>
   </nav>
   

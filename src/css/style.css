@@ -174,7 +174,7 @@ input[type="search"] {
 .fgtm-btn {
   background: #00ab88;
   border: 0;
-  color: #fff;
+  color: white;
   padding: 1.1rem 2rem;
   text-transform: uppercase;
   -webkit-border-radius: 6px;
@@ -188,7 +188,7 @@ input[type="search"] {
 }
 
 .fgtm-line-btn {
-  background: #fff;
+  background: white;
   border: 2px solid #00ab88;
   color: #00ab88;
   padding: 1.1rem 2rem;
@@ -201,12 +201,12 @@ input[type="search"] {
 }
 .fgtm-line-btn:hover {
   background: #00ab88;
-  color: #fff;
+  color: white;
 }
 
 .fgtm-404-btn {
   background: #aa1e25;
-  color: #fff;
+  color: white;
   padding: 1.1rem 2rem;
   text-transform: uppercase;
   -webkit-border-radius: 6px;
@@ -294,9 +294,18 @@ input[type="search"] {
  */
 .wrapper {
   max-width: 1000px;
-  padding: 0 20px;
   margin: 0px auto 0;
-  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.wrapper > * {
+  flex: 1 100%;
+  padding: 0 20px;
 }
 
 /**
@@ -306,7 +315,7 @@ input[type="search"] {
  */
 #nav-container {
   padding: 10px 15px 13px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   position: fixed;
   top: 0;
@@ -347,6 +356,12 @@ input[type="search"] {
   left: 0;
   z-index: 1;
   margin-top: 0px;
+}
+#nav-container nav .outer-menu:before {
+  content: "MENU";
+  position: relative;
+  margin-left: -2.3rem;
+  top: 1rem;
 }
 #nav-container nav .outer-menu .checkbox-toggle {
   position: absolute;
@@ -512,7 +527,7 @@ input[type="search"] {
   display: none;
 }
 #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li .sub-menu > li {
-  color: #fff;
+  color: white;
 }
 
 .scrollToTop {
@@ -583,7 +598,6 @@ input[type="search"] {
   }
   #nav-container nav .logo {
     margin-bottom: 10px;
-    margin-right: 50px;
   }
   #nav-container nav .menu-copy {
     display: none;
@@ -593,6 +607,9 @@ input[type="search"] {
     display: flex;
     width: 88%;
     padding-top: 17px;
+  }
+  #nav-container nav .outer-menu:before {
+    content: "";
   }
   #nav-container nav .outer-menu .checkbox-toggle {
     opacity: 0;
@@ -672,7 +689,7 @@ input[type="search"] {
     display: none;
   }
   #nav-container nav .outer-menu .fgtm-menu > div > div > ul > li .sub-menu > li {
-    color: #fff;
+    color: white;
   }
 }
 /**
@@ -685,7 +702,7 @@ input[type="search"] {
  */
 #footer-container {
   background: #282828;
-  color: #fff;
+  color: white;
   margin-top: 0px;
   padding: 55px 15px 20px;
   text-align: center;
@@ -710,7 +727,7 @@ input[type="search"] {
 #footer-container .footer .full-width-widget a .facebook.svg path,
 #footer-container .footer .full-width-widget a .twitter.svg path,
 #footer-container .footer .full-width-widget a .insta.svg path {
-  fill: #fff;
+  fill: white;
   transition: all 0.4s ease;
 }
 #footer-container .footer .full-width-widget a .youtube {
@@ -719,7 +736,7 @@ input[type="search"] {
   margin: -5px 10px;
 }
 #footer-container .footer .full-width-widget a .youtube.svg path {
-  fill: #fff;
+  fill: white;
   transition: all 0.4s ease;
 }
 #footer-container .footer .footer-logo {
@@ -748,14 +765,14 @@ input[type="search"] {
   #footer-container .footer .full-width-widget a .facebook.svg path,
   #footer-container .footer .full-width-widget a .twitter.svg path,
   #footer-container .footer .full-width-widget a .insta.svg path {
-    fill: #fff;
+    fill: white;
   }
   #footer-container .footer .full-width-widget a .youtube {
     width: 40px;
     height: 40px;
   }
   #footer-container .footer .full-width-widget a .youtube.svg path {
-    fill: #fff;
+    fill: white;
   }
   #footer-container .footer .footer-logo {
     width: 60px;
@@ -774,7 +791,7 @@ input[type="search"] {
   #footer-container .footer .full-width-widget a .facebook.svg path,
   #footer-container .footer .full-width-widget a .twitter.svg path,
   #footer-container .footer .full-width-widget a .insta.svg path {
-    fill: #fff;
+    fill: white;
   }
   #footer-container .footer .full-width-widget a .facebook.svg path:hover,
   #footer-container .footer .full-width-widget a .twitter.svg path:hover,
@@ -786,7 +803,7 @@ input[type="search"] {
     height: 40px;
   }
   #footer-container .footer .full-width-widget a .youtube.svg path {
-    fill: #fff;
+    fill: white;
   }
   #footer-container .footer .full-width-widget a .youtube.svg path:hover {
     fill: #00ab88;
@@ -873,7 +890,6 @@ input[type="search"] {
 .header-container {
   display: flex;
   flex-direction: column;
-  margin-top: 75px;
 }
 .header-container header.header {
   flex: 1 1 auto;
@@ -923,7 +939,7 @@ input[type="search"] {
   bottom: 65px;
 }
 .header-container header.header .hero-call-to-action .new-here-link a {
-  color: #fff;
+  color: white;
   font-family: "Geogrotesque-Regular";
   font-size: 1.1em;
   text-transform: none;
@@ -942,7 +958,7 @@ input[type="search"] {
   transition: all 0.2s ease 0.2s;
 }
 .home-live-service-container a {
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -1044,7 +1060,7 @@ input[type="search"] {
     transition: all 0.4s ease;
   }
   .header-container header.header .hero-call-to-action .new-here-link a {
-    color: #fff;
+    color: white;
     font-family: "Geogrotesque-Regular";
     font-size: 1.2em;
     text-transform: none;
@@ -1058,7 +1074,7 @@ input[type="search"] {
     display: flex;
     flex: 1 1 auto;
     bottom: 65px;
-    color: #fff;
+    color: white;
     font-size: 1.2em;
     font-family: "Geogrotesque-Regular";
     cursor: pointer;
@@ -1097,7 +1113,7 @@ input[type="search"] {
   .header-container header.header .hero-call-to-action .social-media a figure .facebook.svg path,
   .header-container header.header .hero-call-to-action .social-media a figure .twitter.svg path,
   .header-container header.header .hero-call-to-action .social-media a figure .insta.svg path {
-    fill: #fff;
+    fill: white;
     transition: all 0.4s ease;
   }
   .header-container header.header .hero-call-to-action .social-media a figure .facebook.svg path:hover,
@@ -1111,7 +1127,7 @@ input[type="search"] {
     margin: -5px 10px;
   }
   .header-container header.header .hero-call-to-action .social-media a figure .youtube.svg path {
-    fill: #fff;
+    fill: white;
     transition: all 0.4s ease;
   }
   .header-container header.header .hero-call-to-action .social-media a figure .youtube.svg path:hover {
@@ -1368,7 +1384,7 @@ input[type="search"] {
 .page-header-container {
   display: flex;
   flex-direction: row;
-  margin-top: 75px;
+  margin-top: 0;
 }
 .page-header-container header.header {
   flex: 1 1 auto;
@@ -1379,13 +1395,13 @@ input[type="search"] {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 3.5rem 1.5rem 4rem 1.5rem;
+  padding: 8rem 1.5rem 4rem 1.5rem;
   text-align: center;
 }
 .page-header-container header.header .page-header .heading {
   opacity: 1;
   transition: all 0.2s ease 0.2s;
-  color: #fff;
+  color: white;
 }
 .page-header-container header.header .page-header .heading h1 {
   font-size: 2.666em;
@@ -1445,7 +1461,7 @@ nav.breadcrumbs ul.trail-items li a {
 ***********************************************/
 @media only screen and (min-width: 1024px) {
   .page-header-container header.header .page-header {
-    padding: 5.5rem 1.5rem 6rem 1.5rem;
+    padding: 9rem 1.5rem 6rem 1.5rem;
   }
 }
 /**
@@ -1466,7 +1482,7 @@ nav.breadcrumbs ul.trail-items li a {
 .newHere-believe-container .wrapper .believe {
   flex: 1 1 auto;
   text-align: center;
-  color: #fff;
+  color: white;
 }
 .newHere-believe-container .wrapper .believe > h3 {
   text-transform: uppercase;
@@ -1551,7 +1567,7 @@ nav.breadcrumbs ul.trail-items li a {
 .newHere-youth .wrapper .youth-container {
   flex: 1 1 auto;
   text-align: center;
-  color: #fff;
+  color: white;
 }
 .newHere-youth .wrapper .youth-container > h3 {
   text-transform: uppercase;
@@ -1596,7 +1612,7 @@ nav.breadcrumbs ul.trail-items li a {
 .newHere-youth .wrapper .youth-container .youth .--youth a {
   display: block;
   padding: 7rem 1.5rem;
-  color: #fff;
+  color: white;
 }
 .newHere-youth .wrapper .youth-container .youth .nursery a span,
 .newHere-youth .wrapper .youth-container .youth .children a span,
@@ -1656,7 +1672,7 @@ nav.breadcrumbs ul.trail-items li a {
   flex-shrink: 1;
   flex-basis: auto;
   text-align: center;
-  color: #fff;
+  color: white;
 }
 .newHere-cta .wrapper .cta > h3 {
   text-transform: uppercase;
@@ -1759,7 +1775,7 @@ nav.breadcrumbs ul.trail-items li a {
   .newHere-cta .wrapper .cta {
     flex: 1 1 auto;
     text-align: center;
-    color: #fff;
+    color: white;
   }
   .newHere-cta .wrapper .cta > h3 {
     font-size: 2.166em;
@@ -1860,7 +1876,7 @@ nav.breadcrumbs ul.trail-items li a {
   .newHere-youth .wrapper .youth-container .youth .young-adults:hover,
   .newHere-youth .wrapper .youth-container .youth .jr-youth:hover,
   .newHere-youth .wrapper .youth-container .youth .--youth:hover {
-    border-color: #fff;
+    border-color: white;
   }
   .newHere-youth .wrapper .youth-container .youth .children,
   .newHere-youth .wrapper .youth-container .youth .jr-youth,
@@ -1927,16 +1943,15 @@ nav.about--secondary-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 nav.about--secondary-nav ul.about--secondary-nav-items {
-  border: 1px solid #d5d6d8;
-  background: #d5d6d8;
+  background: #E6E6E6;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   border-radius: 6px;
-  padding: 12px;
+  padding: 24px 5px 24px;
 }
 nav.about--secondary-nav ul.about--secondary-nav-items li {
   font-size: 1.363em;
@@ -1953,9 +1968,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(2), nav.abou
   margin: 1.5rem 0 1.5rem 0;
 }
 nav.about--secondary-nav ul.about--secondary-nav-items li a {
-  text-transform: capitalize;
   margin: 0 1.5rem 0 1.5rem;
-  border-bottom: 3px solid #d5d6d8;
   transition: all 0.4s ease;
 }
 nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
@@ -1995,7 +2008,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
 .about-believe-container .wrapper .believe {
   flex: 1 1 auto;
   text-align: center;
-  color: #fff;
+  color: white;
 }
 .about-believe-container .wrapper .believe > h3 {
   text-transform: uppercase;
@@ -2059,7 +2072,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
 }
 .about-ministries .wrapper .ministries .ministry {
   flex: 1 1 auto;
-  background: #fff;
+  background: white;
   padding-bottom: 0rem;
   margin-bottom: 0;
   border: 1px solid #d5d6d8;
@@ -2162,13 +2175,22 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
 ***********************************************/
 /* Portrait */
 @media only screen and (min-width: 768px) {
+  nav.about--secondary-nav {
+    margin-top: 3rem;
+  }
+  nav.about--secondary-nav ul.about--secondary-nav-items {
+    padding: 0 15px 0;
+  }
   nav.about--secondary-nav ul.about--secondary-nav-items li {
-    font-size: 1.063em;
     display: inline-flex;
+    font-size: 1.063em;
     text-align: left;
   }
   nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(2), nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(3) {
-    margin: 0 -0.3rem 0 -0.3rem;
+    margin: 1rem 0 1rem 0;
+  }
+  nav.about--secondary-nav ul.about--secondary-nav-items li a {
+    margin: 0 1rem 0 1rem;
   }
 
   .about-mission .wrapper .mission > p {
@@ -2203,6 +2225,34 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
 * DESKTOP
 ***********************************************/
 @media only screen and (min-width: 1024px) {
+  nav.about--secondary-nav {
+    margin-top: 3rem;
+  }
+  nav.about--secondary-nav ul.about--secondary-nav-items {
+    border: 0;
+    background: none;
+    padding: 0 0 35px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+  }
+  nav.about--secondary-nav ul.about--secondary-nav-items li {
+    display: inline-flex;
+    font-size: 1.063em;
+    text-align: left;
+  }
+  nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(2), nav.about--secondary-nav ul.about--secondary-nav-items li:nth-child(3) {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+  nav.about--secondary-nav ul.about--secondary-nav-items li a {
+    margin: 0 1rem 0 1rem;
+    border-bottom: 6px solid #f5f5f5;
+  }
+  nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
+    border-bottom: 6px solid #00ab88;
+  }
+
   .about-ministries .wrapper .ministries .ministry:hover {
     border-color: #00ab88;
   }
@@ -2239,13 +2289,13 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   padding: 2.5em 2em;
 }
 .media-service h3 {
-  color: #fff;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
 .media-service a {
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -2275,7 +2325,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   left: 0;
 }
 .media-service h4 {
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
@@ -2311,7 +2361,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
 ***********************************************/
 @media only screen and (min-width: 414px) {
   .media-service h4 {
-    color: #fff;
+    color: white;
     text-align: center;
   }
 }
@@ -2321,7 +2371,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
     padding-right: 4em;
   }
   .media-service h4 {
-    color: #fff;
+    color: white;
     text-align: center;
   }
 
@@ -2398,7 +2448,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
 .giving-donate .wrapper .donate {
   flex-grow: 1 1 auto;
   text-align: center;
-  color: #fff;
+  color: white;
 }
 .giving-donate .wrapper .donate > h3 {
   text-transform: uppercase;
@@ -2555,7 +2605,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   border-radius: 6px;
-  background: #fff;
+  background: white;
   border: 1px solid #d5d6d8;
 }
 .contact-wrapper .contact-ask fieldset h3 {
@@ -2611,7 +2661,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
 .contact-wrapper .contact-ask fieldset .just-contact-form-wrap p:nth-child(n+7) .just-contact-form-submit {
   background: #00ab88;
   border: 0;
-  color: #fff;
+  color: white;
   padding: 1.1rem 0rem;
   text-transform: uppercase;
   width: 100%;
@@ -2633,7 +2683,7 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   transition: all 0.4s ease;
 }
 .contact-wrapper .contact-ask fieldset .just-contact-form-wrap .just-contact-form-result p {
-  color: #fff;
+  color: white;
   font-size: 1.063em;
   margin: 0px;
   padding: 0;
@@ -2731,18 +2781,18 @@ nav.about--secondary-nav ul.about--secondary-nav-items li a:hover {
   margin-top: 75px;
   padding: 1.5em 0 4em 0;
   background: #00ab88;
-  color: #fff;
+  color: white;
 }
 .four-o-four-container section .wrapper .four-o-four h1 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 2rem;
-  color: #fff;
+  color: white;
   font-size: 4em;
 }
 .four-o-four-container section .wrapper .four-o-four .message {
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid #fff;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
   padding: 2em 0;
 }
 .four-o-four-container section .wrapper .four-o-four .message h2 {
@@ -3087,7 +3137,7 @@ main.single article.post .wrapper p.post-category {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #fff;
+  color: white;
 }
 .youth-adults .wrapper .adults {
   text-align: center;
